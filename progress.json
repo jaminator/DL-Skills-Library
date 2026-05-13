@@ -2,11 +2,11 @@
   "schema_version": "1.0",
   "repo": "overland-uw-library",
   "wiki": {
-    "seed_complete": false,
+    "seed_complete": true,
     "pending_raw_files": [],
-    "last_ingest_date": null,
+    "last_ingest_date": "2026-05-13",
     "last_lint_date": null,
-    "page_count": 0
+    "page_count": 26
   },
   "pilot": {
     "phase_selected": null,
@@ -15,5 +15,16 @@
     "project_instruction_complete": false,
     "schema_complete": false
   },
-  "checkpoints": []
+  "checkpoints": [
+    {
+      "phase": 0,
+      "completed_at": "2026-05-13",
+      "deliverable": "bootstrap scaffold"
+    },
+    {
+      "phase": 1,
+      "completed_at": "2026-05-13",
+      "deliverable": "wiki seed (26 pages, 9 categories)"
+    }
+  ]
 }

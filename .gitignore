@@ -1,0 +1,22 @@
+# Obsidian vault metadata — the wiki is Obsidian-readable but vault config is local
+.obsidian/
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.mypy_cache/
+.ruff_cache/
+
+# Stray empty top-level dirs that have appeared in this workspace
+en/
