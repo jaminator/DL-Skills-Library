@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "repo": "overland-uw-library",
+  "wiki": {
+    "seed_complete": false,
+    "pending_raw_files": [],
+    "last_ingest_date": null,
+    "last_lint_date": null,
+    "page_count": 0
+  },
+  "pilot": {
+    "phase_selected": null,
+    "skill_complete": false,
+    "prompt_complete": false,
+    "project_instruction_complete": false,
+    "schema_complete": false
+  },
+  "checkpoints": []
+}
