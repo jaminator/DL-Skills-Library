@@ -13,10 +13,14 @@
     "stage": "6 - Asset Management",
     "pattern": "extract-and-validate",
     "arrakis_target_app": "A12 Corrino",
-    "skill_complete": false,
-    "prompt_complete": false,
-    "project_instruction_complete": false,
-    "schema_complete": false
+    "skill_complete": true,
+    "skill_path": "skills/parsing-compliance-certificates/",
+    "prompt_complete": true,
+    "prompt_path": "prompts/stage-6-asset-management/P17-compliance-certificate-parser.md",
+    "project_instruction_complete": true,
+    "project_instruction_path": "project-instructions/stage-6-asset-management.md",
+    "schema_complete": true,
+    "schema_path": "schemas/compliance_certificate_validation.py"
   },
   "checkpoints": [
     {
@@ -33,6 +37,11 @@
       "phase": 2,
       "completed_at": "2026-05-13",
       "deliverable": "pilot selection: P17 Compliance Certificate Parser"
+    },
+    {
+      "phase": 3,
+      "completed_at": "2026-05-13",
+      "deliverable": "pilot vertical slice (skill + 2 reference files + prompt + project instruction + Pydantic schema)"
     }
   ]
 }
