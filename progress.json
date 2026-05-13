@@ -42,6 +42,11 @@
       "phase": 3,
       "completed_at": "2026-05-13",
       "deliverable": "pilot vertical slice (skill + 2 reference files + prompt + project instruction + Pydantic schema)"
+    },
+    {
+      "phase": 4,
+      "completed_at": "2026-05-13",
+      "deliverable": "self-validation: PASS on all four checks (see docs/pilot-validation.md)"
     }
   ]
 }
