@@ -9,7 +9,10 @@
     "page_count": 26
   },
   "pilot": {
-    "phase_selected": null,
+    "phase_selected": "P17 Compliance Certificate Parser",
+    "stage": "6 - Asset Management",
+    "pattern": "extract-and-validate",
+    "arrakis_target_app": "A12 Corrino",
     "skill_complete": false,
     "prompt_complete": false,
     "project_instruction_complete": false,
@@ -25,6 +28,11 @@
       "phase": 1,
       "completed_at": "2026-05-13",
       "deliverable": "wiki seed (26 pages, 9 categories)"
+    },
+    {
+      "phase": 2,
+      "completed_at": "2026-05-13",
+      "deliverable": "pilot selection: P17 Compliance Certificate Parser"
     }
   ]
 }
