@@ -90,14 +90,16 @@ The deal lifecycle deck consistently flags Stages 5–6 as the most underbuilt t
 
 ## What this means for the library
 
-The pilot is built upstream (P4) because the construction pattern is most cleanly demonstrable there. But the **highest-yield follow-on builds** are the closing and AM extract-and-validate skills:
+The library's actual first pilot is **P17 Compliance Certificate Parser** — see [[compliance-certificate-parser-pilot]]. P17 was chosen ahead of the deck's recommended P4 pilot because the AM friction is acute audit/regulatory exposure today and the extract-and-validate shape demonstrates the [[library-artifact-bundle]] cleanly. The **highest-yield follow-on builds** continue the closing-and-AM thread plus return upstream to P4:
 
-- **Compliance certificate parser** (P17) — extract covenant metrics from non-standard PDFs, validate against credit agreement definitions, flag CFO arithmetic errors before they reach Overland's manual catch.
+- **Compliance certificate parser** (P17) — **built**. Extract covenant metrics from non-standard PDFs, validate against credit agreement definitions, flag CFO arithmetic errors before they reach Overland's manual catch.
+- **RCF / DDTL draw verification** (P17) — same extract-and-validate shape, smaller scope, recommended next build.
+- **Mark-to-market triage** (P18) — first-pass fair-value estimate with comparable selection, surfaced for human review. Exercises the second of the three [[opportunity-shapes]] (generate-with-review).
 - **Closing memo auto-gen** (P16) — populate the closing memo from upstream artifacts (executed credit agreement terms, funds flow, KYC status).
-- **Mark-to-market triage** (P18) — first-pass fair-value estimate with comparable selection, surfaced for human review.
+- **P4 posting memo draft** — the originally-recommended pilot, generate-with-review shape, high-frequency phase.
 - **Amendment doc workflow** (P19) — structured tracking and document generation for amendments and workouts.
 
-Each of these uses the same pilot construction pattern (skill + prompt + project instruction + Pydantic schema, HITL-gated, graduating into Arrakis) but targets the governance gaps that exist independent of the [[growth-gap]].
+Each of these uses the same construction pattern (skill + prompt + project instruction + Pydantic schema, HITL-gated, graduating into Arrakis) but targets the governance gaps that exist independent of the [[growth-gap]].
 
 ## Related Concepts
 
@@ -105,6 +107,7 @@ Each of these uses the same pilot construction pattern (skill + prompt + project
 - [[ic-and-asset-mgmt-gaps]] — detailed friction in this stage range
 - [[foundation-controls]] — governance investments at any portfolio scale
 - [[application-directory]] — A9 Heighliner, A10 Atreides, A11 Stillsuit, A12 Corrino, A13 Melange
+- [[compliance-certificate-parser-pilot]] — the P17 pilot built in this stage
 
 ## Sources
 

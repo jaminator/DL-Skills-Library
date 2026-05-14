@@ -52,7 +52,7 @@ The deal lifecycle deck identifies **roughly 19 automation opportunities** acros
 
 ## Three recurring shapes
 
-Every opportunity above resolves to one of three skill / prompt patterns. This taxonomy guides how to think about a new build:
+Every opportunity above resolves to one of three skill / prompt patterns. See [[opportunity-shapes]] for the full taxonomy — shape determines which artifact in the [[library-artifact-bundle]] dominates, what the review profile looks like, and where the output lands in Arrakis.
 
 | Shape | What it does | Typical phases | Example |
 | --- | --- | --- | --- |
@@ -60,7 +60,7 @@ Every opportunity above resolves to one of three skill / prompt patterns. This t
 | **Generate-with-review** | Generate a draft (memo, narrative, response) from upstream structured inputs, surface to a human reviewer with a HITL banner. | P4, P7, P10, P11, P12, P16, P18 | Posting memo, IC memo, closing memo, LP commentary |
 | **Route-and-track** | Maintain a workflow state machine and route artifacts to the right team or system at the right time. | P2, P5, P9, P13, P15, P19 | NDA workflow, DDQ tracker, closing checklist, amendment workflow |
 
-The pilot build always uses one of these three shapes. The pilot phase recommendation (P4 Posting Memo) is **generate-with-review** — see [[posting-memo-friction]].
+The pilot build always uses one of these three shapes. The first pilot in this library — the [[compliance-certificate-parser-pilot]] — exercises **extract-and-validate**. The next recommended build (P4 posting memo) exercises **generate-with-review** — see [[posting-memo-friction]].
 
 ## Why three shapes matters
 
@@ -74,8 +74,10 @@ The portability rule (see [[hitl-state-machine]]) applies to all three: the same
 
 ## Related Concepts
 
+- [[opportunity-shapes]] — full taxonomy of the three recurring shapes
 - [[pain-point-register]] — the friction these opportunities answer
 - [[posting-memo-friction]] — flagship Stage-2 opportunity
+- [[compliance-certificate-parser-pilot]] — the first pilot built, extract-and-validate shape
 - [[hitl-state-machine]] — review gating that every generate-with-review uses
 - [[deal-lifecycle-overview]] — the spine
 

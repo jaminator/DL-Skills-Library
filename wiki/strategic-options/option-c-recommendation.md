@@ -49,7 +49,7 @@ Commercial vendors built for sponsor-backed BSL apply the wrong workflow assumpt
 
 ## Why Option A alone is wrong
 
-Option A's artifacts live in individual users' contexts. Nothing accrues to the firm; nothing compounds across deals; the foundation controls stay open. Option A is the right **bridge** because immediate IP-level productivity is real and useful — but the artifacts must be constructed so they graduate into Option C without rewriting. **This library is exactly that bridge.** Every prompt, skill, and instruction here is built portable: stable system prefix, semantic XML inputs, Pydantic-validated outputs, HITL watermark.
+Option A's artifacts live in individual users' contexts. Nothing accrues to the firm; nothing compounds across deals; the foundation controls stay open. Option A is the right **bridge** because immediate IP-level productivity is real and useful — but the artifacts must be constructed so they graduate into Option C without rewriting. **This library is exactly that bridge.** Every prompt, skill, and instruction here is built portable as the [[library-artifact-bundle]] — stable system prefix, semantic XML inputs, Pydantic-validated outputs, HITL watermark. The [[compliance-certificate-parser-pilot]] is the first proof that the bundle graduates cleanly.
 
 ## The recommended posture, restated
 
