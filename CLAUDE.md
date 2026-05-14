@@ -114,7 +114,7 @@ Every skill in `skills/` follows the pattern **`ol-<domain>-<action-or-subtype>`
 | `memo` | Posting, pre-screen, commitment, closing, redacted memos | `ol-memo-posting`, `ol-memo-prescreen`, `ol-memo-commitment`, `ol-memo-closing`, `ol-memo-redact` |
 | `termsheet` | Term sheet drafting and revision | `ol-termsheet-draft` |
 | `ca` | Credit agreement parsing | `ol-ca-extract` |
-| `compliance` | Compliance certificate verification | `ol-compliance-verify` |
+| `compcert` | Compliance certificate review (parse, recompute, flag) | `ol-compcert-review` |
 | `valuation` | ASC 820 valuation narrative drafting | `ol-valuation-draft` |
 | `amendment` | Amendment summarization | `ol-amendment-summarize` |
 | `wiki` | Wiki-editor operations (development environment only; never compiled into distribution) | `ol-wiki-ingest`, `ol-wiki-query`, `ol-wiki-lint`, `ol-wiki-update` |

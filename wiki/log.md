@@ -55,3 +55,17 @@ Append-only chronology of every INGEST, QUERY, LINT, and UPDATE operation perfor
 - New categories: `methodology` (first page: `skill-naming-convention`)
 - New tags: `skills`, `conventions`, `naming`
 - Notes: Codifies the `ol-<domain>-<action-or-subtype>` skill naming convention adopted in `CLAUDE.md` in the same commit cluster. The wiki page is the queryable synthesis; `CLAUDE.md` is the binding instruction. The 16-domain registry is mirrored on both — drift between the two is a future lint finding. The convention sits on top of `docs/anthropic/Skills_Best_Practices.md` and never overrides it. The pilot skill (`parsing-compliance-certificates`) does not yet conform and will be migrated in a follow-on commit; the wiki page already names `ol-compliance-verify` as the target so the cross-link from `compliance-certificate-parser-pilot` lands correctly once the rename happens.
+
+## 2026-05-13 — UPDATE — Pilot skill renamed; compcert domain registered
+
+- Files touched:
+  - **Renamed:** `skills/parsing-compliance-certificates/` → `skills/ol-compcert-review/` (directory + 3 files: `SKILL.md`, `reference/covenant-types.md`, `reference/cfo-error-patterns.md` — only `SKILL.md` content modified).
+  - **Updated pages (3):**
+    - `wiki/library-design/compliance-certificate-parser-pilot.md` — artifact table rows updated to new skill path; "Gerund-named" descriptor replaced with `ol-<domain>-<action-or-subtype>` convention reference.
+    - `wiki/methodology/skill-naming-convention.md` — registry row `compliance` → `compcert`; "Adding a new domain" inline example updated; Related Concepts cross-link updated to `ol-compcert-review`.
+    - `wiki/log.md` — this entry.
+  - **Non-wiki updates** (recorded here for cross-environment traceability since this UPDATE has wiki-side consequences): `CLAUDE.md` registry (compliance → compcert), `progress.json` (skill_path), `project-instructions/stage-6-asset-management.md` (P17 row), `schemas/compliance_certificate_validation.py` (docstring), `docs/pilot-validation.md` (artifact path, char count, name-convention sub-check superseded from "gerund form" to "ol-<domain>-<action-or-subtype>" check).
+- New categories: none.
+- New tags: none.
+- Registry change: `compliance` (canonical example `ol-compliance-verify`) → `compcert` (canonical example `ol-compcert-review`). The semantic scope ("compliance certificate review") is unchanged; the domain slug is tightened to a compound-noun form so a future `compliance` slug remains available for non-certificate regulatory work if needed. Updated in lockstep in `CLAUDE.md` and `wiki/methodology/skill-naming-convention.md` in the same commit.
+- Notes: Supersedes the forward-looking note in the prior log entry that named `ol-compliance-verify` as the rename target. The actual rename target was `ol-compcert-review`, chosen because `compliance` is too broad for a domain (could later collide with KYC/regulatory compliance work) and `compcert` is the precise compound noun for the input class. Final grep confirms zero remaining references to `parsing-compliance-certificates` outside of pedagogical "legacy gerund-form names" examples in the methodology page, and zero references to `ol-compliance-verify` outside of the historical context of the prior log entry. Page count unchanged (32). `last_ingest_date` unchanged.

@@ -48,14 +48,14 @@ All other constraints from `docs/anthropic/Skills_Best_Practices.md` apply uncha
 | `memo` | Posting, pre-screen, commitment, closing, redacted memos | `ol-memo-posting`, `ol-memo-prescreen`, `ol-memo-commitment`, `ol-memo-closing`, `ol-memo-redact` |
 | `termsheet` | Term sheet drafting and revision | `ol-termsheet-draft` |
 | `ca` | Credit agreement parsing | `ol-ca-extract` |
-| `compliance` | Compliance certificate verification | `ol-compliance-verify` |
+| `compcert` | Compliance certificate review (parse, recompute, flag) | `ol-compcert-review` |
 | `valuation` | ASC 820 valuation narrative drafting | `ol-valuation-draft` |
 | `amendment` | Amendment summarization | `ol-amendment-summarize` |
 | `wiki` | Wiki-editor operations (development environment only; never compiled into distribution) | `ol-wiki-ingest`, `ol-wiki-query`, `ol-wiki-lint`, `ol-wiki-update` |
 
 ## Adding a new domain
 
-A new domain is added **only** when a proposed skill genuinely doesn't fit any existing domain — not because a slightly different label feels more natural. Before adding, check whether an action verb on an existing domain captures the same thing (`ol-compliance-verify` covers parsing, validating, and flagging a compliance certificate; a separate `parse` domain would not earn its keep).
+A new domain is added **only** when a proposed skill genuinely doesn't fit any existing domain — not because a slightly different label feels more natural. Before adding, check whether an action verb on an existing domain captures the same thing (`ol-compcert-review` covers parsing, validating, and flagging a compliance certificate in one skill; a separate `parse` domain would not earn its keep).
 
 When a new domain is justified, the maintainer records it in two places, in the same commit:
 
@@ -73,7 +73,7 @@ The convention applies to skills in `skills/` only. Agents in `agents/` (includi
 ## Related Concepts
 
 - [[library-artifact-bundle]] — the four-artifact construction pattern the naming convention plugs into
-- [[compliance-certificate-parser-pilot]] — the first skill renamed under this convention (`ol-compliance-verify`)
+- [[compliance-certificate-parser-pilot]] — the first skill renamed under this convention (`ol-compcert-review`)
 - [[prompt-versioning-governance]] — analogous versioning discipline for the prompt half of each bundle
 
 ## Sources

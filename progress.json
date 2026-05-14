@@ -14,7 +14,7 @@
     "pattern": "extract-and-validate",
     "arrakis_target_app": "A12 Corrino",
     "skill_complete": true,
-    "skill_path": "skills/parsing-compliance-certificates/",
+    "skill_path": "skills/ol-compcert-review/",
     "prompt_complete": true,
     "prompt_path": "prompts/stage-6-asset-management/P17-compliance-certificate-parser.md",
     "project_instruction_complete": true,

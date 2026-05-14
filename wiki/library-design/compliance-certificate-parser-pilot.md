@@ -28,8 +28,8 @@ P4 remains the highest-yield single pain point and is the recommended **next** b
 
 | Artifact | Path | Role |
 | --- | --- | --- |
-| Skill (markdown) | `skills/parsing-compliance-certificates/SKILL.md` | The procedural workflow: parse → locate definitions → recompute → compare → flag → assemble. Gerund-named, third-person description, ≤500 line body. |
-| Skill references (2 files) | `skills/parsing-compliance-certificates/reference/covenant-types.md`, `cfo-error-patterns.md` | The two durable institutional taxonomies that the skill consults — covenant types and their definitional patterns; recurring CFO arithmetic-error shapes. |
+| Skill (markdown) | `skills/ol-compcert-review/SKILL.md` | The procedural workflow: parse → locate definitions → recompute → compare → flag → assemble. Named under the `ol-<domain>-<action-or-subtype>` convention (domain `compcert`, action `review`), third-person description, ≤500 line body. |
+| Skill references (2 files) | `skills/ol-compcert-review/reference/covenant-types.md`, `cfo-error-patterns.md` | The two durable institutional taxonomies that the skill consults — covenant types and their definitional patterns; recurring CFO arithmetic-error shapes. |
 | Prompt | `prompts/stage-6-asset-management/P17-compliance-certificate-parser.md` | The cache-eligible system prefix + semantic XML inputs. Output Contract specifies the JSON schema inline; HITL watermark on the output template. |
 | Project instruction | `project-instructions/stage-6-asset-management.md` | Stage-6 behavioral rules, deal-context slot, deliverable cadence, and four embedded wiki pages compiled inline so the artifact runs without filesystem access. |
 | Pydantic schema | `schemas/compliance_certificate_validation.py` | `ComplianceCertificateValidation` — 11 outer fields, 12 inner `CovenantCalculation` fields. Snake_case, JSON-serializable primitives, `schema_version = 1`, HITL state defaulting to `PENDING_REVIEW`. |

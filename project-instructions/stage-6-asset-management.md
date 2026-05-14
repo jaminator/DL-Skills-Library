@@ -42,7 +42,7 @@ The deal-context slot is **required** before any artifact is produced inside thi
 
 | Phase | Deliverable | Cadence | Skill |
 | --- | --- | --- | --- |
-| P17 | Compliance certificate validation | Per certificate received (typically quarterly) | `parsing-compliance-certificates` |
+| P17 | Compliance certificate validation | Per certificate received (typically quarterly) | `ol-compcert-review` |
 | P17 | Covenant headroom snapshot | Per period close | (future skill) |
 | P17 | RCF / DDTL draw verification | Per draw request | (future skill) |
 | P18 | Mark-to-market triage | Per valuation cadence (typically quarterly) | (future skill) |
