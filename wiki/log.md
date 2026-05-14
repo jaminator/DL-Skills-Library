@@ -46,3 +46,12 @@ Append-only chronology of every INGEST, QUERY, LINT, and UPDATE operation perfor
   - **Missing sources:** none. All pages declare at least one source in frontmatter.
   - **Schema violations:** none. All pages carry required frontmatter, body within 200–800 words, `## Related Concepts` and `## Sources` sections present.
 - Page count: 26 → 31 (five additions). `progress.json.wiki.page_count` updated. `progress.json.wiki.last_lint_date` set to 2026-05-13.
+
+## 2026-05-13 — INGEST — Skill naming convention documented
+
+- Files touched:
+  - **New pages (1):** `wiki/methodology/skill-naming-convention.md`
+  - **Updated pages (1):** `wiki/index.md` — new row for `skill-naming-convention`; new `methodology` category recorded
+- New categories: `methodology` (first page: `skill-naming-convention`)
+- New tags: `skills`, `conventions`, `naming`
+- Notes: Codifies the `ol-<domain>-<action-or-subtype>` skill naming convention adopted in `CLAUDE.md` in the same commit cluster. The wiki page is the queryable synthesis; `CLAUDE.md` is the binding instruction. The 16-domain registry is mirrored on both — drift between the two is a future lint finding. The convention sits on top of `docs/anthropic/Skills_Best_Practices.md` and never overrides it. The pilot skill (`parsing-compliance-certificates`) does not yet conform and will be migrated in a follow-on commit; the wiki page already names `ol-compliance-verify` as the target so the cross-link from `compliance-certificate-parser-pilot` lands correctly once the rename happens.
