@@ -90,6 +90,43 @@ Portability is achieved through how artifacts are built. Boilerplate frontmatter
 
 ---
 
+## Skill naming convention
+
+Every skill in `skills/` follows the pattern **`ol-<domain>-<action-or-subtype>`** from creation. The prefix gives Claude Desktop users a single discovery affordance: typing `/ol-` surfaces every Overland skill, and typing `/ol-<domain>-` surfaces every skill within a domain (e.g., `/ol-ddq-` returns the full DDQ family).
+
+- `ol-` — fixed prefix marking the skill as Overland Underwriting Library.
+- `<domain>` — the deliverable cluster or input type the skill operates on. Domain values are shared across related skills so the family surfaces together when typed.
+- `<action-or-subtype>` — what the skill does to that domain, or which subtype of the domain it handles.
+
+**Domain registry.** Use these values; add a new domain only when a skill genuinely doesn't fit an existing one. New domains are recorded both here and in `wiki/methodology/skill-naming-convention.md`.
+
+| Domain | Meaning | Example skill names |
+| --- | --- | --- |
+| `teaser` | Inbound teaser parsing and enrichment | `ol-teaser-parse` |
+| `criteria` | Overland investment-criteria screening | `ol-criteria-screen` |
+| `nda` | NDA workflow | `ol-nda-extract` |
+| `ddq` | Due-diligence question lists across all rounds | `ol-ddq-kickoff`, `ol-ddq-initial`, `ol-ddq-followup`, `ol-ddq-gap` |
+| `financials` | GAAP normalization, addbacks, bridges | `ol-financials-normalize` |
+| `databook` | Initial and updated DD databook construction | `ol-databook-customers`, `ol-databook-model`, `ol-databook-comps`, `ol-databook-assemble` |
+| `expert` | Expert-call synthesis (AlphaSights, GLG) | `ol-expert-synthesize` |
+| `mgmt` | Management operational due diligence | `ol-mgmt-synthesize` |
+| `stoplight` | Eight-dimension risk rating | `ol-stoplight-rate` |
+| `memo` | Posting, pre-screen, commitment, closing, redacted memos | `ol-memo-posting`, `ol-memo-prescreen`, `ol-memo-commitment`, `ol-memo-closing`, `ol-memo-redact` |
+| `termsheet` | Term sheet drafting and revision | `ol-termsheet-draft` |
+| `ca` | Credit agreement parsing | `ol-ca-extract` |
+| `compliance` | Compliance certificate verification | `ol-compliance-verify` |
+| `valuation` | ASC 820 valuation narrative drafting | `ol-valuation-draft` |
+| `amendment` | Amendment summarization | `ol-amendment-summarize` |
+| `wiki` | Wiki-editor operations (development environment only; never compiled into distribution) | `ol-wiki-ingest`, `ol-wiki-query`, `ol-wiki-lint`, `ol-wiki-update` |
+
+**Canonical reference.** `wiki/methodology/skill-naming-convention.md` is the queryable wiki page agents should consult for the convention. This `CLAUDE.md` section is the binding instruction; the wiki page is the synthesized explanation.
+
+**Relationship to skill-authoring best practices.** This naming pattern sits on top of `docs/anthropic/Skills_Best_Practices.md`; it never overrides it. All other rules in the best-practices file — names are lowercase with hyphens only, no reserved words ("anthropic", "claude"), ≤64 characters, description ≤1024 characters in third person, SKILL.md body ≤500 lines, references one level deep, progressive disclosure — remain in force. The pattern is the "action-oriented" alternative form explicitly permitted by the best-practices guidance, adapted with the `ol-` prefix and shared-domain segment.
+
+The `wiki-editor` agent is exempt only in that it lives in `agents/`, not `skills/`. The `ol-wiki-*` domain is reserved for any future Claude Desktop wiki-management skills (none required for the initial build).
+
+---
+
 ## Commit convention
 
 Phase commits: `feat: phase-<n> <deliverable>`.
