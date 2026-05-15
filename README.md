@@ -53,3 +53,27 @@ The initial build (Phases 0–4) produces:
 Out of scope for the initial build: additional phase coverage, a CI/CD distribution pipeline, role-based system instructions, additional specialist agents.
 
 See `CLAUDE.md` for the full conformance contract.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file
+for details.
+
+## Ownership
+
+This repository is developed and maintained by Jamie Anderson in a personal
+capacity. It is not produced, sponsored, or maintained on behalf of any
+employer, and the views, code, and design decisions represented here are those
+of the author alone.
+
+## Company Collaboration
+
+The original author, Jamie Anderson, may from time to time permit Centerbridge
+Partners L.P., its affiliates, and other Persons (including without limitation
+their partners, employees, advisors, consultants, and any other natural
+persons or entities designated by Jamie Anderson) to view, use, edit,
+contribute to, or otherwise work with this codebase in separate forks,
+branches, cloned repositories, or other derivative or related code bases,
+whether internal or external. Any such activity, and any such forks, branches,
+clones, or related code bases, do not change, limit, or otherwise affect the
+licensing of this repository, which remains licensed under the MIT License.
