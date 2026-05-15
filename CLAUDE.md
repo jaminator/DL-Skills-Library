@@ -146,7 +146,7 @@ Subsequent (post-pilot) work uses normal Conventional Commits prefixes (`feat:`,
 
 ## Plan documents
 
-Every push/build plan (`push-<n>-plan-*.md`, and any analogous design contract written before an execution checkpoint) lives in **`plans/`** — not `docs/`. This is the default location for all future push plans; create the file in `plans/` from the outset rather than relocating it later. `docs/` is reserved for reference material (sources, best-practices, validation records); `plans/` is the staging area for forward-looking design contracts.
+Every push/build plan (`push-<n>-plan-*.md`, and any analogous design contract written before an execution checkpoint) lives in **`plan/`** (singular) — not `docs/`, and not `plans/`. This is the default location for all future push plans; create the file in `plan/` from the outset rather than relocating it later. `docs/` is reserved for reference material (sources, best-practices, validation records); `plan/` is the staging area for forward-looking design contracts.
 
 ---
 
@@ -161,7 +161,7 @@ dl-skills-library/                     # repo root (the "Direct Lending UW Libra
 │   ├── sources/                       ← deal lifecycle deck PDF + Arrakis blueprint
 │   ├── anthropic/                     ← prompting, skills, agent-teams best-practices
 │   └── pilot-validation.md            ← created in Phase 4
-├── plans/                             ← push/build design contracts (push-<n>-plan-*.md)
+├── plan/                              ← push/build design contracts (push-<n>-plan-*.md)
 ├── raw/                               ← flat. No subfolders. Maintainer drop zone.
 ├── wiki/
 │   ├── WIKI-SCHEMA.md                 ← page format, conventions, lint rules
