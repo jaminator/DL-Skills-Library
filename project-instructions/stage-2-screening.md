@@ -39,14 +39,14 @@ The deal-context slot is **required** before any artifact is produced inside thi
 
 | Phase | Deliverable | Cadence | Skill |
 | --- | --- | --- | --- |
-| P3 | Kick-off DDQ / data request generation | Per opportunity entering screening | (future skill) |
+| P3 | Kick-off data requests — outbound `.docx` | Per opportunity entering screening (post-NDA) | `dl-ddq-kickoff` |
 | P3 | Standardized data book | Per opportunity (heavy primary-materials pre-work) | (future skill — see watchpoint) |
 | P4 | Posting memo — narrative `.docx` | Per screened opportunity | `dl-memo-posting` |
 | P4 | Posting memo backup — quantitative `.xlsx` | Per screened opportunity (feeds the memo's financial exhibits) | `dl-memo-posting-backup` |
 
-This pass ships the **P4 pair** (`dl-memo-posting` + `dl-memo-posting-backup`). They are the narrative/quantitative split of a *single* deliverable, not two independent deliverables — the `.xlsx` outputs flow one-to-one into the `.docx` financial exhibits. P3 rows are explicit future placeholders.
+This stage now ships the **P3 kick-off data request** (`dl-ddq-kickoff`) and the **P4 pair** (`dl-memo-posting` + `dl-memo-posting-backup`). P3 runs first, immediately post-NDA: it sends the borrower/debt-advisor the narrow data ask whose returned data is the upstream feed for the P4 pair (and the later databook and model). The P4 pair is the narrative/quantitative split of a *single* deliverable — the `.xlsx` outputs flow one-to-one into the `.docx` financial exhibits. The P3 standardized-databook row remains a future placeholder.
 
-**Documented fragmentation watchpoint.** If Stage 2 later gains both the P3 auto-DDQ skill *and* the standardized-databook skill, split this file into `stage-2a-kickoff-ddq.md` + `stage-2b-posting-memo.md`. The databook deliverable carries heavy non-sponsored primary-materials ETL/data-cleaning pre-work — the fragmentation trigger (many phases × many deliverables × heavy per-deliverable sub-processes). Not split today because P3 has no skill yet and P4 is a single deliverable pair.
+**Documented fragmentation watchpoint.** If Stage 2 later gains the standardized-databook skill (joining `dl-ddq-kickoff` on the P3 side), split this file into `stage-2a-kickoff.md` + `stage-2b-posting-memo.md`. The databook deliverable carries heavy non-sponsored primary-materials ETL/data-cleaning pre-work — the fragmentation trigger (many phases × many deliverables × heavy per-deliverable sub-processes). Not split today: P3 currently has one lightweight skill (`dl-ddq-kickoff`, an outbound one-pager with no heavy pre-work) and P4 is a single deliverable pair, so the file stays cohesive.
 
 ---
 
@@ -68,20 +68,20 @@ Increment `N` on every revision. The date is the operative LTM/period the financ
 
 ## Behavioral rules
 
-1. **Watermark obligation and the P4 `.docx` carve-out.** The posting memo is IC-facing, so the `[DRAFT — HUMAN REVIEW REQUIRED]` watermark obligation (CLAUDE.md rule 5) applies to the deliverable. **However, the watermark is NOT injected into the Word body.** `dl-memo-posting` populates the bundled Word template *in place* via its script, preserving auto-numbering and run-level formatting; injecting a banner into the `.docx` body would alter the proven production artifact. The draft state is instead signalled by **(a)** the skill's existing `vS` draft-filename suffix, **(b)** the "Pending Overland IC Feedback" default in the recommendation/next-steps section, and **(c)** the HITL `PENDING_REVIEW` state on the structured output. The watermark proper is applied at the HITL/PENDING_REVIEW layer (and becomes the rendered review banner in Arrakis), not in the Word body. The backup `.xlsx` likewise carries no injected banner — its draft state is the `PENDING_REVIEW` state on the extraction-summary schema.
+1. **Watermark obligation and the `.docx` carve-out (D-2).** The posting memo is IC-facing and the kick-off data request is borrower/debt-advisor-facing, so the `[DRAFT — HUMAN REVIEW REQUIRED]` watermark obligation (CLAUDE.md rule 5) applies to both deliverables. **However, the watermark is NOT injected into the Word body.** `dl-memo-posting` and `dl-ddq-kickoff` populate their bundled Word templates *in place* via their scripts, preserving auto-numbering, list styling, and (for the kick-off) the two footnotes; injecting a banner into the `.docx` body would alter the proven production artifact — and the kick-off is sent to an external party, where a banner would be doubly inappropriate. The draft state is instead signalled by **(a)** the skills' existing `vS` draft-filename suffix, **(b)** for the posting memo, the "Pending Overland IC Feedback" default in the recommendation/next-steps section, and **(c)** the HITL `PENDING_REVIEW` state on the structured output. The watermark proper is applied at the HITL/PENDING_REVIEW layer (and becomes the rendered review banner in Arrakis), not in the Word body. The backup `.xlsx` likewise carries no injected banner — its draft state is the `PENDING_REVIEW` state on the extraction-summary schema.
 2. **Never silently omit.** Use `[INSUFFICIENT DATA — <what is missing>]` (and the skills' own `TBD (source)` convention) for any required field the inputs do not support. Never fabricate; **blank ≠ zero** in the backup (zeros corrupt growth/CAGR formulas).
 3. **CA EBITDA is the only EBITDA label** in the narrative — never "Adjusted" or "Diligence Adjusted." No posting-team follow-ups anywhere in the memo (it reports facts; it never assigns tasks or prescribes diligence). No speculation or conditional hedging — flag deviation magnitude and direction, not causes.
 4. **Protect every formula in the backup.** The backup skill writes input cells only, behind a mandatory pre-write `is_formula` gate; detailed FinSum and Returns tabs are off-limits. Intentional formula modifications (M2, CAGR columns, K2-first date anchor) are logged as intentional in the extraction summary.
-5. **Internal / CONFIDENTIAL classification.** Posting-stage outputs are deal-team and IC facing. They are not co-lender- or LP-facing; the external redaction checklist does not apply at this stage.
+5. **Classification — and the P3 outbound exception.** The P4 posting memo and backup are internal deal-team / IC-facing (CONFIDENTIAL, possibly RESTRICTED if portfolio context is cited); they are not co-lender- or LP-facing, so that external redaction checklist does not apply to them. **The P3 kick-off data request is different: it is sent *out* to the borrower / debt advisor.** It must therefore carry no firm-internal economics, no IC deliberation content, no individual IC votes, and no other portfolio context — apply the outbound redaction checklist before it is sent. A pure data ask inherently contains none of that; the rule is to keep it that way (request only borrower data; never echo Overland return thresholds, designated criteria, or fund economics into the list).
 6. **HITL state tagged.** Every structured output carries `review_state: "PENDING_REVIEW"`. The posting-team / IC reviewer is the only party that may transition state.
-7. **Schema-validated outputs.** The narrative content validates against `schemas/posting_memo_content.py`; the backup extraction summary validates against `schemas/posting_memo_backup_extraction.py`. If a value cannot fit the schema, use `[INSUFFICIENT DATA]` rather than reshaping the schema.
+7. **Schema-validated outputs.** The kick-off structured output validates against `schemas/kickoff_data_request.py`; the narrative content validates against `schemas/posting_memo_content.py`; the backup extraction summary validates against `schemas/posting_memo_backup_extraction.py`. If a value cannot fit the schema, use `[INSUFFICIENT DATA]` rather than reshaping the schema.
 8. **Apply the credit framework, do not cite it.** D&A, strengths, and considerations apply the base-rate evidence hierarchy; never fabricate industry base rates; never name academic/practitioner authors in memo output even when the analysis is sound.
 
 ---
 
 ## Institutional Knowledge
 
-The four wiki pages below are embedded as compiled content from the development environment. **Compile date: 2026-05-15.** A reader operating this project in Claude Desktop does not need access to the wiki — the relevant institutional knowledge for this stage is inlined here.
+The embedded sections below are compiled content from the development environment. **Compile date: 2026-05-15.** A reader operating this project in Claude Desktop does not need access to the wiki — the relevant institutional knowledge for this stage is inlined here.
 
 When the wiki is updated, this section is recompiled by the maintainer (next compile due when any embedded page's `last_updated` is newer than the date above).
 
@@ -123,8 +123,25 @@ The firm's first-principles analytical spine for non-sponsored MM underwriting; 
 
 **Base-rate evidence hierarchy** (governs D&A and considerations in the memo): any external benchmarking must be grounded in **Tier 1** public comps with observable metrics, **Tier 2** user-provided base rates, or **Tier 3** comp/precedent data embedded in the CIM/QoE. Absent all three, default to internal historical benchmarking — measure against the fullest available company history (including recessionary periods), flag step-changes, frame strictly relative to the company's own history with no invented external distribution. Fabricating or implying industry-level base-rate statistics is prohibited; "base rate"/"mean reversion" framing and any named author are barred from memo output even when the analysis is sound.
 
+### Embedded: kick-off downstream-pre-seeding map
+
+*Compiled from `wiki/deal-templates/screening-input-schema.md`, `wiki/deal-templates/dd-workbook-input-schema.md`, and `skills/dl-ddq-kickoff/reference/kpi-frameworks.md` — last updated 2026-05-15.*
+
+The P3 kick-off ask is engineered so its returned data drops directly into the artifacts that follow it — that is *why* it is shaped the way it is. Each request has a named downstream consumer:
+
+- **Quarterly internal IS/BS/CF** (computed range) → databook quarterly P&L driver grid (`fin_inputs`).
+- **LTM income statement + bridge to consolidated EBITDA** → posting-memo backup LTM anchor and EBITDA build (`ltm_anchor`, `ebitda_build`).
+- **Top-N customer / supplier concentration** → databook concentration tables; posting-memo Customers/Suppliers bullets and the Concentration risk flag.
+- **Maintenance vs. growth capex split** → Overland model capex driver; posting-memo Capex D&A bullet.
+- **NWC build (by FY and quarter)** → databook working-capital block (DSO/DIH/DPO/CCC).
+- **Existing debt & debt-like items + earn-out/deferred schedule** → sources & uses, pro-forma cap, the payment-bomb screen.
+- **Add-on cohort history + consideration structure** (buy-and-build) → DDTL governor sizing and the roll-up base-rate read.
+- **Borrower-specific KPI block** → posting-memo Company Overview / D&A demand-driver characterization and the industry attractiveness read.
+
+The kick-off itself populates only the `data_request_periods` bucket (it has no economics — it is what the lender *sends out*); it is the upstream feed for every downstream bucket. The borrower-specific KPI block is derived by reasoning from the NAICS/GICS classification through the Overland credit framework's demand-driver-quality, growth-quality, and operating-leverage dimensions, constrained to plausibly off-the-shelf metrics.
+
 ---
 
 ## Summary
 
-This project supports the Stage 2 Screening workflow on a single screened opportunity. Fill the deal-context slot at kick-off. Use the `dl-memo-posting` + `dl-memo-posting-backup` pair for P4 — the `.xlsx` feeds the `.docx` financial exhibits. The watermark obligation applies to the IC-facing memo but is **not injected into the Word/Excel body** (carve-out, rule 1): draft state is the `vS` filename, the "Pending Overland IC Feedback" default, and the HITL `PENDING_REVIEW` state. Every output validates against its schema, uses `[INSUFFICIENT DATA]` rather than fabrication, applies the credit framework without citing it, and lands in `PENDING_REVIEW` for the posting-team / IC reviewer. P3 deliverables are surfaced above as future placeholders with a recorded fragmentation watchpoint.
+This project supports the Stage 2 Screening workflow on a single screened opportunity. Fill the deal-context slot at kick-off. Run `dl-ddq-kickoff` first, immediately post-NDA, to send the borrower/debt-advisor the data ask; its returned data is the upstream feed for the `dl-memo-posting` + `dl-memo-posting-backup` P4 pair (the `.xlsx` feeds the `.docx` financial exhibits) and the later databook/model. The watermark obligation applies to the IC-facing memo and the outbound kick-off but is **not injected into the Word/Excel body** (D-2 carve-out, rule 1): draft state is the `vS` filename, the posting memo's "Pending Overland IC Feedback" default, and the HITL `PENDING_REVIEW` state. The P3 kick-off is outbound to an external party — apply the outbound redaction checklist (rule 5); the P4 outputs are internal and that checklist does not apply to them. Every output validates against its schema, uses `[INSUFFICIENT DATA]` rather than fabrication, applies the credit framework without citing it, and lands in `PENDING_REVIEW` for the human reviewer. The P3 standardized-databook deliverable remains a future placeholder with a recorded fragmentation watchpoint.

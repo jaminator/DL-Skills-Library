@@ -35,6 +35,7 @@ Master catalog of every page in the wiki. Maintained by the `wiki-editor` agent.
 | [[restricted-content-discipline]] | governance | Redaction obligation for external-facing artifacts; canonical checklist text | seed |
 | [[compliance-certificate-parser-pilot]] | library-design | The P17 pilot — first end-to-end vertical slice, extract-and-validate shape, A12 Corrino target | lint |
 | [[library-artifact-bundle]] | library-design | The four-artifact construction pattern (skill + prompt + project instruction + Pydantic schema) | lint |
+| [[kickoff-data-request-bundle]] | library-design | The push-2 P3 kick-off data-request bundle; first upstream deliverable, feeds the P4 pair; execution-validated scripted period engine + in-place populator | ingest |
 | [[skill-naming-convention]] | methodology | The `dl-<domain>-<action-or-subtype>` skill naming pattern and the 18-domain registry; production-skill conformance into `skills/` (deployment names kept as provenance) | lint |
 | [[template-library-overview]] | deal-templates | Gateway: the 17-template + 2-reference deal-document chain, dependency map, recurring construction patterns | ingest |
 | [[screening-templates]] | deal-templates | P3–P4 cluster: kick-off data requests, posting memo + backup, screening memo + sponsor addendum | ingest |
@@ -71,7 +72,7 @@ The wiki-editor records each category here the first time it writes a page in th
 | data-substrate | snowflake-medallion (2026-05-13) | 3 |
 | llm-integration | spice-llm-service (2026-05-13) | 5 |
 | governance | data-classification-tiers (2026-05-13) | 2 |
-| library-design | compliance-certificate-parser-pilot (2026-05-13) | 2 |
+| library-design | compliance-certificate-parser-pilot (2026-05-13) | 3 |
 | methodology | skill-naming-convention (2026-05-13) | 2 |
 | deal-templates | template-library-overview (2026-05-15) | 14 |
 | production-skills | production-skill-inventory (2026-05-15) | 4 |

@@ -179,4 +179,157 @@ Each follow-on uses the same construction pattern proven by this pilot.
 
 ---
 
+# Push-2 Validation — `dl-ddq-kickoff` Kick-Off Data Requests Bundle
+
+**Deliverable:** Stage 2 / P3 Kick-Off Data Requests four-artifact bundle
+**Pattern:** generate-with-review over a deterministic period-math core
+**Arrakis target app:** Foldspace screening application (same app as the P4 pair)
+**Validated:** 2026-05-15
+**Validator:** Claude Code session, executing the push-2 plan build sequence
+**Execution environment note:** unlike the P17 pilot (markdown-only, no scripts),
+this bundle ships two executable scripts, so validation is **execution-based**,
+not inspection-only. Python 3.12 + python-docx 1.2.0 + pydantic were installed
+locally so the scripts, the schema, and the generated `.docx` could be run and
+inspected for real. Evaluation harnesses are retained under the skill's
+`_evaltmp/` during the build and removed before commit (they are scratch, not
+shipped artifacts).
+
+## Overall verdict
+
+**PASS** — all four artifact checks pass and all three functional evaluations
+pass, with the period engine and population mechanic verified by execution.
+
+| # | Check | Verdict |
+| --- | --- | --- |
+| 1 | Prompt — cache-stable system prefix, semantic XML inputs, outbound redaction line | PASS |
+| 2 | Skill — best-practices conformance, scripted/text degrees-of-freedom split | PASS |
+| 3 | Project instruction — amended (not duplicated), P3 row + compiled IK embed | PASS |
+| 4 | Pydantic schema — parses, instance constructs, projection drives the script with no drift | PASS |
+| 5 | `compute_periods.py` — deterministic, FYE-aware, edge-handled (executed) | PASS |
+| 6 | `populate_kickoff.py` — in-place, styles/numbering/footnotes preserved (executed) | PASS |
+| 7 | Three functional evaluations | PASS |
+
+## Check 1 — Prompt
+
+**Artifact:** `prompts/stage-2-screening/P3-kickoff-data-requests.md`
+
+Cache-eligible system prefix runs `# System` → `# Output Contract`; variable
+inputs follow in semantic XML (`<system_date>`, `<sector_classification>`,
+`<teaser>`, `<email_color optional>`, `<desktop_research optional>`,
+`<pitchbook_excerpt optional>`, `<fiscal_year_end optional>`,
+`<existing_lender_status optional>`, `<history_years optional>`,
+`<forecast_horizon optional>`). The prompt mirrors — does not re-specify — the
+skill. Because the artifact is **outbound to the borrower/debt advisor**, the
+*Classification and review* section carries an explicit outbound redaction
+checklist line (per [[restricted-content-discipline]]) and the D-2 watermark
+carve-out. `[INSUFFICIENT DATA — sector classification not provided]` handling
+is explicit. A `<thinking>` allowance is permitted and explicitly excluded from
+the `.docx`. **PASS.**
+
+## Check 2 — Skill
+
+**Artifact:** `skills/dl-ddq-kickoff/SKILL.md` (+ 2 reference files, 2 scripts)
+
+`name` = `dl-ddq-kickoff` (14 chars, lowercase+hyphens, no reserved words,
+matches the `dl-<domain>-<action>` convention; `ddq` domain pre-exists in the
+registry — no CLAUDE.md edit). `description` third-person, 962 chars (≤1024,
+both what + when). Body 223 lines (≤500). References one level deep
+(`reference/kpi-frameworks.md`, `reference/population-mechanics.md`), both with
+a Contents ToC. Forward slashes only (the single backslash is a shell
+line-continuation in a bash code block, not a path). No `wiki/`/`docs/` path
+leakage. Degrees-of-freedom split is explicit and correct: low (scripted)
+period math + population, deterministic standard set, high (text + worked
+examples) borrower-KPI block — matching `Skills_Best_Practices.md`. Anti-patterns
+section present. **PASS.**
+
+## Check 3 — Project instruction
+
+**Artifact:** `project-instructions/stage-2-screening.md` (amended, not duplicated)
+
+One PI per stage preserved. The P3 active-deliverables row now maps to
+`dl-ddq-kickoff`; the post-table narrative and fragmentation watchpoint were
+updated (P3 now has one lightweight skill; the databook row stays a future
+placeholder). Behavioral rule 1 generalized to the P3+P4 `.docx` D-2 carve-out;
+rule 5 gained the **P3 outbound exception** (the kick-off is borrower-facing →
+outbound redaction checklist applies, distinct from the internal P4 outputs);
+rule 7 adds `schemas/kickoff_data_request.py`. A new compile-dated IK embed
+(*kick-off downstream-pre-seeding map*, compiled 2026-05-15) inlines the
+request → downstream-field map so the PI runs in Claude Desktop with no
+filesystem access. Summary updated. **PASS.**
+
+## Check 4 — Pydantic schema
+
+**Artifact:** `schemas/kickoff_data_request.py`
+
+Parses cleanly; an instance with `KickoffPeriods` + `KpiRequest` children
+constructs. snake_case, JSON-serializable primitives, explicit required/optional,
+one-line field descriptions, `schema_version: int = 1`, HITL defaults
+(`review_state: Literal["PENDING_REVIEW"]`, `requires_human_review = True`).
+Module docstring names P3 / Foldspace screening app / `SCREENING_LAND` tier /
+`PENDING_REVIEW` and documents the **projection** to the `populate_kickoff.py`
+content dict. Cross-validation (`_evaltmp/xval.py`): the documented projection
+of a constructed instance was written to JSON and fed to `populate_kickoff.py`,
+which exited 0 — every script-consumed key resolves with no drift; provenance
+fields (`naics_code`, `gics_*`, per-KPI `rationale`/`downstream_target`) are
+Arrakis-side capture the script does not read, and are genuinely emitter-produced
+(not aspirational). **PASS.**
+
+## Check 5 — Period engine (executed)
+
+`compute_periods.py` self-tested across the three eval system dates and edges:
+
+| Input | audited | LTM | quarter | budget | forecast |
+| --- | --- | --- | --- | --- | --- |
+| 2026-05-28, calendar | FY'23-'25 | 3/26 | Q1'26 | FY'26 | FY'26-'30 |
+| 2026-05-28, FYE 03-31 | FY'24-'26 | 3/26 | Q4'26 | FY'27 | FY'27-'31 |
+| 2026-01-15, hist=1 | FY'24 | 9/25 | Q3'25 | FY'25 | FY'25-'29 |
+
+The 30-day close buffer, non-calendar FYE quarter labeling, `history_years=1`
+single-FY form, and invalid-date / invalid-FYE inputs (exit 2 with explicit
+messages, no punt) all behave correctly. **PASS.**
+
+## Check 6 — Population mechanic (executed)
+
+`populate_kickoff.py` output inspected at the OOXML level:
+
+- The seven standard lines are rewritten from the period fragments; both
+  footnote references (`w:id="1"` on the LTM line, `w:id="2"` on the Mgmt. KPI
+  line) survive and stay bound to their paragraphs.
+- All inserted stock-cut and borrower-KPI bullets carry `pStyle Bullet2`; the
+  three `NumberList1` headers and `numId 9` numbering are untouched.
+- `compliance_cert_applicable=false` suffixes ` — N/A (no existing reporting
+  facility)`; the line is never deleted.
+- Header `Company Name`/`Sponsor` placeholders substituted; `owner=None`
+  removes the `(Sponsor)` parenthetical; the cached DATE value is refreshed.
+- `MAX_KPI_LINES=14` raises a verbose, overflow-listing error (exit 2) when
+  exceeded.
+- The output opens cleanly as a valid package via python-docx. **PASS.**
+
+## Check 7 — Functional evaluations
+
+| Eval | Scenario | Expected | Result |
+| --- | --- | --- | --- |
+| 1 | Residential HVAC roll-up, post-NDA, 5/28/2026, calendar FYE | FY'23-'25 + Q1'26; compliance active; add-on cohort + consideration lines; HVAC KPI block (membership/agreements, technician utilization, 4-wall by branch) | PASS |
+| 2 | Vertical SaaS, no existing debt, calendar FY | compliance line N/A; no add-on cohort block; KPI block shifts to ARR/NRR/GRR, CAC payback, logo concentration; `owner=None` drops parenthetical | PASS |
+| 3 | Industrials mfr, non-calendar FYE 3/31, existing BSL | FYE-aware labels (audited FY'24-'26, quarter **Q4'26**, budget FY'27); compliance active; backlog/book-to-bill + raw-material pass-through KPI cuts | PASS |
+
+## Portability assessment
+
+The bundle graduates into the Arrakis Foldspace screening application without
+rewrite: `KickoffDataRequest` registers as the structured-output validator and
+the `SCREENING_LAND` data-product schema; the stable prompt prefix is the
+Spice-brokered cache-eligible portion; `<sector_classification>` /
+`<system_date>` map to MCP tool calls; the D-2 watermark maps to the rendered
+review banner with `review_state: "PENDING_REVIEW"`; `[INSUFFICIENT DATA — …]`
+emissions feed the Observatory quality dimension. The two scripts carry through
+unchanged. No artifact needs rewriting to graduate.
+
+## Recommendation
+
+`dl-ddq-kickoff` is ready for use in Claude Desktop by the deal team for the P3
+post-NDA kick-off data request. It is the upstream feed for the P4 posting-memo
+pair: P3 → returned data → `dl-memo-posting` + `dl-memo-posting-backup`.
+
+---
+
 *End of report.*

@@ -195,3 +195,27 @@ Append-only chronology of every INGEST, QUERY, LINT, and UPDATE operation perfor
   - **Contradictions — broader factual sweep:** none. Full read of all 51 pages plus cross-checks of recurring numeric anchors (status-quo 110 vs target 225 portfolio cos and +115 delta; 4% lead-to-close; 1.88× peer cos/IP → 5.0×/6.5×; ~75 IPs avoided; $42.8M/yr net; $285M cumulative fee delta; 19 phases / 6 stages; 23 pain points; ~19 opportunities; 13 apps + Foldspace; 16 RAW landing schemas; seven master entities; eight foundation controls; five validation-disposition categories) found no incompatible cross-page claims. Numbers are used consistently across `growth-gap`, `efficiency-dividend`, `three-roi-levers`, `non-sponsor-friction-premium`, `option-c-recommendation`, `deal-lifecycle-overview`, and the architecture pages.
 - Out of scope / untouched: the `skill-naming-convention.md` domain-registry table is orchestrator-owned — linted for links/sources/schema only (clean), rows not altered. No `raw/`, `docs/`, `skills/`, `prompts/`, `project-instructions/`, `schemas/`, or `CLAUDE.md` writes. No git operations. No agents spawned.
 - `progress.json`: `wiki.last_lint_date` set to 2026-05-15 (atomic — the sole field touched by the wiki-editor this operation; `page_count`, `last_ingest_date`, and all other fields untouched).
+
+## 2026-05-15 — UPDATE — Record the push-2 `dl-ddq-kickoff` bundle
+
+- Trigger: push-2 artifact-coding checkpoint completed (the Stage 2 / P3 Kick-Off Data Requests four-artifact bundle).
+- New page: `wiki/library-design/kickoff-data-request-bundle.md` — "Kick-Off Data Request Bundle (P3)". Records the push-2 build analogously to `compliance-certificate-parser-pilot`. 7 outbound concept links wired (`library-artifact-bundle`, `posting-memo-automation`, `screening-templates`, `screening-input-schema`, `compliance-certificate-parser-pilot`, `skill-naming-convention`, `restricted-content-discipline`).
+- `index.md`: one catalog row added under the library-design block; Categories table `library-design` count 2 → 3.
+- New categories: none (library-design pre-exists). New tags: none (process, opportunity, application, schema all in the taxonomy).
+- `progress.json`: `wiki.page_count` 51 → 52; `wiki.last_ingest_date` 2026-05-15 (UPDATE writes a page). A `push-2` checkpoint and a `push_2` bundle block were added by the orchestrator in the same push.
+- Out of scope / untouched: `raw/`, `docs/sources/`, `docs/anthropic/`, `CLAUDE.md`. Skill/prompt/schema/project-instruction artifacts were written by the orchestrator as part of the bundle build; this UPDATE only records them.
+
+## 2026-05-15 — LINT — Post-push-2 lint pass; clean across all six checks
+
+- Files touched: `wiki/log.md` (this entry only). No wiki page edited; no cosmetic repair required.
+- Scope: full sweep of all 52 topical pages plus `index.md` reconciliation, against WIKI-SCHEMA §5, with targeted attention to the newly added `kickoff-data-request-bundle`.
+- Findings — all checks clean:
+  - **Broken wikilinks:** clean. Every `[[target]]` in the new page resolves to an existing slug; the new page's outbound links all resolve, and no existing page references the new slug incorrectly.
+  - **Orphans:** the new page has its catalog row and is intentionally a leaf "build record" page (as `compliance-certificate-parser-pilot` was at its introduction). Reciprocal inbound links from existing pages are deferred to a future UPDATE to keep this push scoped — recorded here so the next lint does not re-flag it.
+  - **Missing sources:** none. The new page declares three `sources:` and a populated `## Sources` section.
+  - **Schema violations:** none. Five frontmatter fields, `## Related Concepts`, `## Sources`, body within 200–800 words, `category: library-design` matches the folder.
+  - **Stale pages:** none. All 52 pages dated 2026-05-13 or 2026-05-15.
+  - **Index / file reconciliation:** clean. 52 on-disk topical pages, 52 `index.md` rows, `progress.json.wiki.page_count` = 52 — all agree. Categories table sums to 52; library-design now 3, all other counts unchanged.
+  - **Contradictions:** none. The new page's D-2 carve-out and outbound-redaction framing are consistent with `posting-memo-automation`, `restricted-content-discipline`, and the amended `project-instructions/stage-2-screening.md`.
+- Out of scope / untouched: `skill-naming-convention.md` domain registry (`ddq` row pre-existed, not altered). No `raw/`, `docs/`, or `CLAUDE.md` writes by the wiki-editor. No git operations. No agents spawned.
+- `progress.json`: `wiki.last_lint_date` set to 2026-05-15 (atomic).
