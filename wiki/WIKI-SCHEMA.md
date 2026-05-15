@@ -1,6 +1,6 @@
 # Wiki Schema and Conventions
 
-The wiki is the LLM-curated, interlinked institutional-knowledge layer of the Overland Underwriting Library. The `wiki-editor` agent is the sole writer; every other session reads. This document specifies the page format, the four operations, the lint rules, and the deal-data exclusion rule.
+The wiki is the LLM-curated, interlinked institutional-knowledge layer of the Direct Lending Underwriting Library. The `wiki-editor` agent is the sole writer; every other session reads. This document specifies the page format, the four operations, the lint rules, and the deal-data exclusion rule.
 
 The wiki is Obsidian-compatible — `[[wikilinks]]` and standard markdown render correctly in any Obsidian vault.
 
@@ -152,7 +152,7 @@ Excluded from the wiki:
 - Real EBITDA, revenue, leverage, or facility-size figures from a live deal.
 - IC deliberation content, individual IC votes, or conditional approval text from a specific deal.
 - Fund-level economics above the co-lender tranche.
-- Centerbridge-internal portfolio context.
+- firm-internal portfolio context.
 
 If a maintainer's anonymized lesson would be unreadable without specifics, generalize the lesson and use a placeholder example (`Co A, a $50M EBITDA software business, ...`) rather than naming the real deal. The lesson lives in the wiki; the deal lives in its Claude Desktop project.
 

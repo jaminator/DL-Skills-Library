@@ -3,7 +3,7 @@ title: Opportunity Register
 category: opportunities
 tags: [opportunity, process]
 sources:
-  - Overland_Deal_Lifecycle_Automation_051326_vJA.pdf
+  - deal_lifecycle_automation_051326_vJA.pdf
 last_updated: 2026-05-13
 ---
 
@@ -83,4 +83,4 @@ The portability rule (see [[hitl-state-machine]]) applies to all three: the same
 
 ## Sources
 
-- `Overland_Deal_Lifecycle_Automation_051326_vJA.pdf`, slide 06
+- `deal_lifecycle_automation_051326_vJA.pdf`, slide 06

@@ -3,7 +3,7 @@ title: Term Sheet and Commitment (Stages 3–4)
 category: deal-lifecycle
 tags: [process, deal-lifecycle]
 sources:
-  - Overland_Deal_Lifecycle_Automation_051326_vJA.pdf
+  - deal_lifecycle_automation_051326_vJA.pdf
 last_updated: 2026-05-13
 ---
 
@@ -87,4 +87,4 @@ Each follow-on follows the same construction pattern proven by the pilot.
 
 ## Sources
 
-- `Overland_Deal_Lifecycle_Automation_051326_vJA.pdf`, slides 04–06
+- `deal_lifecycle_automation_051326_vJA.pdf`, slides 04–06

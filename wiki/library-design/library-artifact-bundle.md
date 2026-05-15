@@ -4,7 +4,7 @@ category: library-design
 tags: [architecture, process, template, governance]
 sources:
   - arrakis_blueprint_v2_3.md
-  - Overland_Deal_Lifecycle_Automation_051326_vJA.pdf
+  - deal_lifecycle_automation_051326_vJA.pdf
 last_updated: 2026-05-13
 ---
 
@@ -91,4 +91,4 @@ Same artifacts, different runtimes. That is the portability principle made opera
 ## Sources
 
 - `arrakis_blueprint_v2_3.md`, Section 7 — LLM Integration Layer Architecture
-- `Overland_Deal_Lifecycle_Automation_051326_vJA.pdf`, slide 09 (foundation controls), slide 06 (opportunity shapes)
+- `deal_lifecycle_automation_051326_vJA.pdf`, slide 09 (foundation controls), slide 06 (opportunity shapes)

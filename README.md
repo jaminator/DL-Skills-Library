@@ -1,8 +1,8 @@
-# Overland Underwriting Library
+# Direct Lending Underwriting Library
 
-A Claude-based knowledge and automation library supporting Overland's non-sponsored US middle-market direct lending underwriting team across the 6-stage, 19-phase deal lifecycle.
+A Claude-based knowledge and automation library supporting a direct lending firm's non-sponsored US middle-market underwriting team across the 6-stage, 19-phase deal lifecycle.
 
-This repository is the **development environment** for the library. The Overland UW team consumes the library exclusively through **Claude Desktop**, using the assets curated here. Maintainers iterate using Claude Code.
+This repository is the **development environment** for the library. The UW team consumes the library exclusively through **Claude Desktop**, using the assets curated here. Maintainers iterate using Claude Code.
 
 ---
 
@@ -10,7 +10,7 @@ This repository is the **development environment** for the library. The Overland
 
 | Folder | Purpose | Audience |
 | --- | --- | --- |
-| `docs/sources/` | Canonical Overland sources (deal lifecycle deck, Arrakis blueprint) | Maintainers + Claude Code |
+| `docs/sources/` | Canonical sources (deal lifecycle deck, Arrakis blueprint) | Maintainers + Claude Code |
 | `docs/anthropic/` | Anthropic best-practices references (prompting, skills, agent teams) | Maintainers + Claude Code |
 | `raw/` | Flat drop zone for unstructured source documents | Maintainers (write); `wiki-editor` agent (read) |
 | `wiki/` | LLM-curated, interlinked institutional-knowledge wiki (Obsidian-compatible) | All sessions read; `wiki-editor` agent writes |

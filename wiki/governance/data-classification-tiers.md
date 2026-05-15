@@ -15,7 +15,7 @@ Arrakis uses a **four-tier data classification scheme** that governs every colum
 
 | Tier | What goes here | Examples |
 | --- | --- | --- |
-| **RESTRICTED** | Most sensitive. Audit-grade access controls, masking when crossing tenant boundaries, no exposure to co-lenders or LPs. | IC deliberation content, individual IC votes, fund-level economics above the co-lender tranche, Centerbridge-internal portfolio context |
+| **RESTRICTED** | Most sensitive. Audit-grade access controls, masking when crossing tenant boundaries, no exposure to co-lenders or LPs. | IC deliberation content, individual IC votes, fund-level economics above the co-lender tranche, firm-internal portfolio context |
 | **CONFIDENTIAL** | Deal-specific commercial information. Visible to deal team and approved internal consumers; redacted for external counterparties unless explicitly cleared. | Deal financials, model outputs, DD findings, term-sheet economics, borrower KYC status |
 | **INTERNAL** | Non-commercially sensitive operational data. Visible to all internal users with platform access. | Workflow state, task assignments, notification routing, system metadata |
 | **PUBLIC** | None in this domain. The tier exists in the scheme but is not used for Arrakis data products. | — |
@@ -37,7 +37,7 @@ Any artifact intended for **co-lender or LP distribution** explicitly excludes:
 - Fund-level economics above the co-lender tranche.
 - IC deliberation content.
 - Individual IC votes.
-- Centerbridge-internal portfolio context.
+- firm-internal portfolio context.
 
 Every external-facing prompt in this library carries an inline **redaction checklist line** stating these exclusions before the structured output. See [[restricted-content-discipline]] for the full pattern and the canonical checklist text.
 

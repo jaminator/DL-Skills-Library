@@ -3,7 +3,7 @@ title: Closing and Asset Management (Stages 5–6)
 category: deal-lifecycle
 tags: [process, deal-lifecycle, governance]
 sources:
-  - Overland_Deal_Lifecycle_Automation_051326_vJA.pdf
+  - deal_lifecycle_automation_051326_vJA.pdf
 last_updated: 2026-05-13
 ---
 
@@ -39,7 +39,7 @@ Stages 5 and 6 cover **P13 Co-Lender / GP Syndication through P19 Amendments / W
 
 **Pain points (4).**
 - Commitment book tracked in ad hoc Excel; no syndication management system.
-- WF inexperience with DDTL / direct lending pushes administrative burden onto Overland.
+- WF inexperience with DDTL / direct lending pushes administrative burden onto the firm.
 - No closing checklist tracking; KYC repository fully manual.
 - Inconsistent UW-to-AM handoff at close; databook may not reach Chronograph.
 
@@ -92,7 +92,7 @@ The deal lifecycle deck consistently flags Stages 5–6 as the most underbuilt t
 
 The library's actual first pilot is **P17 Compliance Certificate Parser** — see [[compliance-certificate-parser-pilot]]. P17 was chosen ahead of the deck's recommended P4 pilot because the AM friction is acute audit/regulatory exposure today and the extract-and-validate shape demonstrates the [[library-artifact-bundle]] cleanly. The **highest-yield follow-on builds** continue the closing-and-AM thread plus return upstream to P4:
 
-- **Compliance certificate parser** (P17) — **built**. Extract covenant metrics from non-standard PDFs, validate against credit agreement definitions, flag CFO arithmetic errors before they reach Overland's manual catch.
+- **Compliance certificate parser** (P17) — **built**. Extract covenant metrics from non-standard PDFs, validate against credit agreement definitions, flag CFO arithmetic errors before they reach the firm's manual catch.
 - **RCF / DDTL draw verification** (P17) — same extract-and-validate shape, smaller scope, recommended next build.
 - **Mark-to-market triage** (P18) — first-pass fair-value estimate with comparable selection, surfaced for human review. Exercises the second of the three [[opportunity-shapes]] (generate-with-review).
 - **Closing memo auto-gen** (P16) — populate the closing memo from upstream artifacts (executed credit agreement terms, funds flow, KYC status).
@@ -111,4 +111,4 @@ Each of these uses the same construction pattern (skill + prompt + project instr
 
 ## Sources
 
-- `Overland_Deal_Lifecycle_Automation_051326_vJA.pdf`, slides 04–06, 09
+- `deal_lifecycle_automation_051326_vJA.pdf`, slides 04–06, 09

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "repo": "overland-uw-library",
+  "repo": "dl-skills-library",
   "wiki": {
     "seed_complete": true,
     "pending_raw_files": [],
@@ -14,7 +14,7 @@
     "pattern": "extract-and-validate",
     "arrakis_target_app": "A12 Corrino",
     "skill_complete": true,
-    "skill_path": "skills/ol-compcert-review/",
+    "skill_path": "skills/dl-compcert-review/",
     "prompt_complete": true,
     "prompt_path": "prompts/stage-6-asset-management/P17-compliance-certificate-parser.md",
     "project_instruction_complete": true,

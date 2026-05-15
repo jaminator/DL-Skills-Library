@@ -49,15 +49,15 @@
 
 ## Check 2 — Pilot skill
 
-**Artifact:** `skills/ol-compcert-review/SKILL.md` (plus two reference files)
+**Artifact:** `skills/dl-compcert-review/SKILL.md` (plus two reference files)
 
 ### Sub-checks
 
 | Sub-check | Verdict | Evidence |
 | --- | --- | --- |
-| YAML frontmatter `name` is lowercase + hyphens, ≤64 chars | PASS | `ol-compcert-review` (18 chars). Verified by regex against the file. |
+| YAML frontmatter `name` is lowercase + hyphens, ≤64 chars | PASS | `dl-compcert-review` (18 chars). Verified by regex against the file. |
 | `name` does not contain reserved words ("anthropic", "claude") | PASS | Verified. |
-| `name` follows the `ol-<domain>-<action-or-subtype>` convention | PASS | Domain `compcert`, action `review`. See `wiki/methodology/skill-naming-convention.md`. (Superseded the earlier gerund-form sub-check; the file was renamed and re-validated against the current convention.) |
+| `name` follows the `dl-<domain>-<action-or-subtype>` convention | PASS | Domain `compcert`, action `review`. See `wiki/methodology/skill-naming-convention.md`. (Superseded the earlier gerund-form sub-check; the file was renamed and re-validated against the current convention.) |
 | `description` is third-person | PASS | "Extracts...", "Produces...", "Use when..." — no first or second person. |
 | `description` ≤1024 chars | PASS | 574 characters (verified by Python script). |
 | `description` includes both "what" and "when" | PASS | What: "Extracts covenant metrics from borrower compliance certificate PDFs, recomputes them..." When: "Use when reviewing a quarterly or monthly compliance certificate, validating covenant calculations against the credit agreement, or preparing the AM portfolio monitoring update." |

@@ -4,7 +4,7 @@ category: arrakis-architecture
 tags: [architecture, application]
 sources:
   - arrakis_blueprint_v2_3.md
-  - Overland_Deal_Lifecycle_Automation_051326_vJA.pdf
+  - deal_lifecycle_automation_051326_vJA.pdf
 last_updated: 2026-05-13
 ---
 
@@ -36,7 +36,7 @@ The naming convention is Frank Herbert's *Dune*. **Foldspace** is the spice-enab
 
 ## Mapping the deck's A1–A13 to the blueprint
 
-The Overland deck names the apps by function (A1 Pipeline Intelligence, A2 NDA Workflow, A3 Deal CRM, etc.). The blueprint names the same apps by their *Dune* identity. The mapping is one-to-one and order-preserving — A1 in the deck is Thumper in the blueprint, A2 is Gom Jabbar, and so on.
+The deal lifecycle deck names the apps by function (A1 Pipeline Intelligence, A2 NDA Workflow, A3 Deal CRM, etc.). The blueprint names the same apps by their *Dune* identity. The mapping is one-to-one and order-preserving — A1 in the deck is Thumper in the blueprint, A2 is Gom Jabbar, and so on.
 
 ## Build sequence
 
@@ -62,4 +62,4 @@ This library's pilot for P4 Posting Memo lands in Phase 2 of the Arrakis build (
 ## Sources
 
 - `arrakis_blueprint_v2_3.md`, Overview (Application Directory) and Section 11 (Build Sequencing)
-- `Overland_Deal_Lifecycle_Automation_051326_vJA.pdf`, slides 22–24
+- `deal_lifecycle_automation_051326_vJA.pdf`, slides 22–24

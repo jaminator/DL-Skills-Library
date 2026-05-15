@@ -3,7 +3,7 @@ title: Origination and Screening (Stages 1–2)
 category: deal-lifecycle
 tags: [process, deal-lifecycle]
 sources:
-  - Overland_Deal_Lifecycle_Automation_051326_vJA.pdf
+  - deal_lifecycle_automation_051326_vJA.pdf
 last_updated: 2026-05-13
 ---
 
@@ -17,7 +17,7 @@ Stages 1 and 2 cover **P1 Deal Sourcing through P4 Posting Memo** — the funnel
 
 **Teams.** WFSC · WF Relationship Managers · Company Owners / GCs · PE Sponsors · M&A / Debt Advisory IBs.
 
-**Tooling.** Salesforce (WFSC) · DealCloud (Overland) · Confi Manager · PitchBook · Preqin · CapIQ · Outlook · SharePoint.
+**Tooling.** Salesforce (WFSC) · DealCloud (direct-lending instance) · Confi Manager · PitchBook · Preqin · CapIQ · Outlook · SharePoint.
 
 **Pain points.**
 - Salesforce-to-DealCloud sync is nightly batch only — leads arrive over email and the system trail lags.
@@ -82,4 +82,4 @@ Stage 3+ phases run on much larger upstream context (full DD findings, executed 
 
 ## Sources
 
-- `Overland_Deal_Lifecycle_Automation_051326_vJA.pdf`, slides 04–06
+- `deal_lifecycle_automation_051326_vJA.pdf`, slides 04–06

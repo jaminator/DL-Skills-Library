@@ -1,26 +1,26 @@
                                                        MAY 2026
 
-INTERNAL TECHNOLOGY DEVELOPMENT MEMO · 5-YEAR HORIZON
+INTERNAL TECHNOLOGY DEVELOPMENT MEMO ï¿½ 5-YEAR HORIZON
 
-Centerbridge | Overland
+Centerbridge | Direct Lending
 Deal Lifecycle Automation
 
-2026 -- 2030  CBP & Overland Senior Leadership
+2026 -- 2030  CBP & firm Senior Leadership
 SECTION 01 OF 05                                                              DIVIDER
 
 Executive Summary
 
 Where the diagnostic landed and what the next phase is being asked to scope.
 
-CENTERBRIDGE | OVERLAND · DEAL LIFECYCLE PROCESS MAPPING
+CENTERBRIDGE | DIRECT LENDING ï¿½ DEAL LIFECYCLE PROCESS MAPPING
                                                                                                                                                                                                                                                         EXECUTIVE SUMMARY
 
-03 · STATUS UPDATE · CURRENT-STATE DIAGNOSTIC COMPLETE · NEXT PHASE SCOPED
+03 ï¿½ STATUS UPDATE ï¿½ CURRENT-STATE DIAGNOSTIC COMPLETE ï¿½ NEXT PHASE SCOPED
 
 Current-state diagnostic is complete; the next phase scopes
 operations, AM, and applied AI tooling.
 
-01 · COMPLETED                                                                                      02 · REMAINING
+01 ï¿½ COMPLETED                                                                                      02 ï¿½ REMAINING
 
 What's been done                                                                                    What remains
 
@@ -46,11 +46,11 @@ What's been done                                                                
                                                                                                         committing capex.
                                                                                                                                                                                                         EXECUTIVE SUMMARY
 
-04 · DEAL LIFECYCLE · 19 PHASES · 5 STAGES · ORIGINATION  ASSET MANAGEMENT
+04 ï¿½ DEAL LIFECYCLE ï¿½ 19 PHASES ï¿½ 5 STAGES ï¿½ ORIGINATION  ASSET MANAGEMENT
 
 Deal Lifecycle at a Glance
 
-Overland's credit process is an end-to-end workflow spanning 19 phases -- moving each opportunity through five visible stages from sourcing and screening, through term sheet and commitment, into
+the firm's credit process is an end-to-end workflow spanning 19 phases -- moving each opportunity through five visible stages from sourcing and screening, through term sheet and commitment, into
 closing and active portfolio management.
 
               ORIGINATION                                                    UNDERWRITING SCREEN                                                                       TERM SHEET
@@ -69,32 +69,32 @@ closing and active portfolio management.
 ORIGINATION                                                                                                                                                   CLOSING
                                             UNDERWRITING SCREEN              TERM SHEET                                COMMITMENT                                                                           ASSET MGMT
 
-01            P1­P4                         02                   P5­P8                   03                 P9­P12                            04                       P13­P16              05                          P17­P19
+01            P1ï¿½P4                         02                   P5ï¿½P8                   03                 P9ï¿½P12                            04                       P13ï¿½P16              05                          P17ï¿½P19
 
 Origination & Screening                     Term Sheet                                   Commitment                                           Closing                                       Asset Management
 
 SOURCING, NDA, KICK-OFF & POSTING           INITIAL DD, PRE-SCREEN IC, TERM SHEET        FOLLOW-UP DD, IC, EL / DCPS                          SYNDICATION, DOCUMENTATION, FUNDING           MONITORING, REPORTING, AMENDMENTS
 
-· Sourcing via WFSC RMs, sponsors, and      · Initial DDQ issued and reviewed (P5)       · Follow-Up DDQ based on IC pre-screen               · Co-Lender / GP syndication coordinated      · Quarterly compliance certificates
-    external IBs (P1)                       · Initial DD: databook, model, expert calls      feedback (P9)                                        (P13)                                         reviewed in Chronograph (P17)
+ï¿½ Sourcing via WFSC RMs, sponsors, and      ï¿½ Initial DDQ issued and reviewed (P5)       ï¿½ Follow-Up DDQ based on IC pre-screen               ï¿½ Co-Lender / GP syndication coordinated      ï¿½ Quarterly compliance certificates
+    external IBs (P1)                       ï¿½ Initial DD: databook, model, expert calls      feedback (P9)                                        (P13)                                         reviewed in Chronograph (P17)
 
-· NDA processing via Ontra; deal entered        (P6)                                     · Follow-Up DD; final IC Commitment                  · Credit Agreement negotiated and             · Valuations and marks maintained for NAV
-    into DealCloud (P2)                     · Pre-Screen IC Memo prepared and                Memo prepared (P10)                                  executed (P14)                                / LP reporting (P18)
+ï¿½ NDA processing via Ontra; deal entered        (P6)                                     ï¿½ Follow-Up DD; final IC Commitment                  ï¿½ Credit Agreement negotiated and             ï¿½ Valuations and marks maintained for NAV
+    into DealCloud (P2)                     ï¿½ Pre-Screen IC Memo prepared and                Memo prepared (P10)                                  executed (P14)                                / LP reporting (P18)
 
-· Kick-Off DDQ issued; CIM and other            reviewed (P7)                            · Commitment IC: formal investment                   · KYC, funds flow, and closing & funding      · Amendments and watchlist management
-    materials received (P3)                 · Term Sheet issued to borrower (P8)             committee approval (P11)                             completed (P15)                               as needed (P19)
+ï¿½ Kick-Off DDQ issued; CIM and other            reviewed (P7)                            ï¿½ Commitment IC: formal investment                   ï¿½ KYC, funds flow, and closing & funding      ï¿½ Amendments and watchlist management
+    materials received (P3)                 ï¿½ Term Sheet issued to borrower (P8)             committee approval (P11)                             completed (P15)                               as needed (P19)
 
-· Posting Memo drafted with stoplight risk                                               · Exclusivity Letter / Commitment Papers             · Closing Memo distributed to AM and          · Workout and exit coordination by CBP
+ï¿½ Posting Memo drafted with stoplight risk                                               ï¿½ Exclusivity Letter / Commitment Papers             ï¿½ Closing Memo distributed to AM and          ï¿½ Workout and exit coordination by CBP
     rating (P4)                                                                              (optional) (P12)                                     finance teams (P16)                           Asset Mgmt
 
 DEAL FLOW                                                                    CRITERIA                                                                 CO-LENDERS
 
-~4% lead-to-close                                                            $25M+ EBITDA                                                             1­6+ LPs & select GPs
+~4% lead-to-close                                                            $25M+ EBITDA                                                             1ï¿½6+ LPs & select GPs
 
-~945­1.22k deals screened / year by EoY 2030 to meet target Cos / AUM goals  $250­300MM facility + $20­50MM+ RCF · Non-sponsored, cash flow-oriented  BCI, Liberty Mutual, NY Life, National Life, Hamilton Lane, StepStone
-                                                                                                                                                                                                     PROCESS DIAGNOSTIC · PAIN POINTS
+~945ï¿½1.22k deals screened / year by EoY 2030 to meet target Cos / AUM goals  $250ï¿½300MM facility + $20ï¿½50MM+ RCF ï¿½ Non-sponsored, cash flow-oriented  BCI, Liberty Mutual, NY Life, National Life, Hamilton Lane, StepStone
+                                                                                                                                                                                                     PROCESS DIAGNOSTIC ï¿½ PAIN POINTS
 
-05 · DEAL LIFECYCLE · PAIN POINTS
+05 ï¿½ DEAL LIFECYCLE ï¿½ PAIN POINTS
 
 Identified Pain Points
 
@@ -130,7 +130,7 @@ TOOLING                                      TOOLING                            
 
                                                                                                                                                                                      Ext. VDRs (Datasite, Intralinks, Debtdomain)  Outlook (AM dist list)
 
-PAIN POINTS · 4                              PAIN POINTS · 3                               PAIN POINTS · 4                               PAIN POINTS · 4                            PAIN POINTS · 4                             PAIN POINTS · 4
+PAIN POINTS ï¿½ 4                              PAIN POINTS ï¿½ 3                               PAIN POINTS ï¿½ 4                               PAIN POINTS ï¿½ 4                            PAIN POINTS ï¿½ 4                             PAIN POINTS ï¿½ 4
 
   Sales Force to DealCloud is nightly batch    Posting memo credit process consumes        No DDQ item lifecycle tracker; status across  No IC vote / approval system of record     Commitment book tracked in ad hoc Excel;    Chronograph not fully utilized as source of
   only -- creates lag; email leads, system     significant time with high rejection rate   iterations is ad hoc                                                                     no syndication mgmt system                  truth; monitoring features not leveraged
@@ -149,7 +149,7 @@ PAIN POINTS · 4                              PAIN POINTS · 3                    
                                                                                            Gap type:        Technology Gap               Process Gap
                                                                                                                                                                                                                 EXECUTIVE SUMMARY
 
-  06 · DEAL LIFECYCLE · OPPORTUNITIES · AI-DRIVEN AUTOMATION ACROSS 19 PHASES
+  06 ï¿½ DEAL LIFECYCLE ï¿½ OPPORTUNITIES ï¿½ AI-DRIVEN AUTOMATION ACROSS 19 PHASES
 
 Identified Opportunities
 
@@ -174,17 +174,17 @@ TOOLING                             TOOLING                              OL U/W 
  Confi Manager                       Excel / Word                       TOOLING
  Pitchbook / Prequin                 Outlook                             DealCloud                             TOOLING                                  TOOLING                      TOOLING
  CapIQ                                                                   SharePoint                             DealCloud
- Outlook                            OPPORTUNITIES · 3                    Excel / Word                           SharePoint                               DealCloud                    Chronograph
+ Outlook                            OPPORTUNITIES ï¿½ 3                    Excel / Word                           SharePoint                               DealCloud                    Chronograph
  SharePoint                                                              Outlook / Teams                        Excel / Word
                                      Auto-DDQ generation                 Ext. VDRs (Datasite, etc.)             Outlook / Teams                          SharePoint                   Excel (mark to market)
-OPPORTUNITIES · 3                                                        Market Intel (PB, CapIQ, AS, BamSEC)   Ext. VDRs (Datasite, etc.)
+OPPORTUNITIES ï¿½ 3                                                        Market Intel (PB, CapIQ, AS, BamSEC)   Ext. VDRs (Datasite, etc.)
                                      AI posting memo draft               AI (Claude, Endex, BlueFlame)          Market Intel (PB, CapIQ, AS)             Word / Excel                 SharePoint
  AI teaser auto-parse                                                                                           AI (Claude, Endex, BlueFlame, Read.ai)
-                                     Standardized data book             OPPORTUNITIES · 3                                                                Outlook                      DealCloud
+                                     Standardized data book             OPPORTUNITIES ï¿½ 3                                                                Outlook                      DealCloud
  DealCloud/SF auto-sync
                                                                          AI initial DD synthesis                                                         Ext. VDRs (Datasite, Intralinks, Debtdomain)  Outlook (AM dist list)
  Auto-NDA generation
-                                                                         Pre-screen IC pack auto               OPPORTUNITIES · 3                        OPPORTUNITIES · 3            OPPORTUNITIES · 4
+                                                                         Pre-screen IC pack auto               OPPORTUNITIES ï¿½ 3                        OPPORTUNITIES ï¿½ 3            OPPORTUNITIES ï¿½ 4
                                                                                                                 Follow-up DD AI summary                  Syndication CRM auto         Chronograph auto-feed
                                                                          Term sheet auto-draft
                                                                                                                IC memo auto-build                       Credit agree redline AI      AI valuation triage
@@ -196,7 +196,7 @@ OPPORTUNITIES · 3                                                        Market 
                                                                         Gap type:  AI-Driven Solution          Exploration / Investigation
                                                                                                                                                                     EXECUTIVE SUMMARY
 
-07 · THE GROWTH GAP · STATUS QUO vs. GROWTH TARGET · PORTFOLIO TRAJECTORY 2025­2030
+07 ï¿½ THE GROWTH GAP ï¿½ STATUS QUO vs. GROWTH TARGET ï¿½ PORTFOLIO TRAJECTORY 2025ï¿½2030
 
 The Growth Gap -- Status Quo vs. Growth Target
 
@@ -227,11 +227,11 @@ PORTFOLIO GAP                                         AUM SHORTFALL             
 
 110 (SQ) vs. 225 (target)                             $8.3B (SQ) vs. $16.9B (target)                                             $120M (SQ) vs. $245M (target)
 
-Deal lifecycle optimizations reduce cost-per-close -- but without WF lead-enablement (P1) to accelerate sourcing, Overland stays on the gray line: 115 fewer names,
+Deal lifecycle optimizations reduce cost-per-close -- but without WF lead-enablement (P1) to accelerate sourcing, the firm stays on the gray line: 115 fewer names,
 $8.6B less AUM, and $125M less fee revenue at 2030 run-rate.
                                                                                                                                                      EXECUTIVE SUMMARY
 
-08 · DEAL LIFECYCLE OPTIMIZATION · NO AUTOMATION vs. AUTOMATION BASE · COST TRAJECTORY 2025­2030
+08 ï¿½ DEAL LIFECYCLE OPTIMIZATION ï¿½ NO AUTOMATION vs. AUTOMATION BASE ï¿½ COST TRAJECTORY 2025ï¿½2030
 
 The Efficiency Dividend -- No Automation vs. Automation-Enabled
 
@@ -256,14 +256,14 @@ HEADCOUNT SAVINGS                                       IP COST SAVINGS         
 
 ~75 IPs                                                 $44.8M / yr                                                   $42.8M / yr
 
-120 (No Auto) vs. 45 (Auto) at 5.0x cos/IP              $71.8M (No Auto) vs. $27M (Auto) at 2030 run-rate             $44.8M IP savings ­ $2M tech cost; $119.9M cumulative over 5
+120 (No Auto) vs. 45 (Auto) at 5.0x cos/IP              $71.8M (No Auto) vs. $27M (Auto) at 2030 run-rate             $44.8M IP savings ï¿½ $2M tech cost; $119.9M cumulative over 5
                                                                                                                       yrs
 
-Automation doesn't change what Overland needs to achieve -- it changes what it costs to get there, lifting cos/IP from 1.88x (peer avg) to 5.0x and saving ~75 IPs at
+Automation doesn't change what the firm needs to achieve -- it changes what it costs to get there, lifting cos/IP from 1.88x (peer avg) to 5.0x and saving ~75 IPs at
 scale. At $10M cumulative tech investment over 5 years, the net ROI is $119.9M -- a 12x return.
                                                                                                                 EXECUTIVE SUMMARY
 
-09 · GOVERNANCE INVESTMENTS · GP BEST-PRACTICE CONTROLS · PORTFOLIO-AGNOSTIC
+09 ï¿½ GOVERNANCE INVESTMENTS ï¿½ GP BEST-PRACTICE CONTROLS ï¿½ PORTFOLIO-AGNOSTIC
 
 Foundation Controls: Governance Investments Required at Any Scale
 
@@ -272,8 +272,8 @@ infrastructure
 
 Conflicts & Cross-Strategy Allocation                                                                           Compliance Certs, Leverage & ECF
 
-Treasury allocation across Overland fund entities -- hold size, investment criteria, concentration limits, and  Are the Company's certs accurate -- leverage and ECF calculations tied to the credit agreement's specific
-economic targets differ by SMA and fund -- and across non-Overland Credit, PE, and RE pockets; the logic must   definitions, sweeps applied at the right level, and ECF allocated pro rata across tranches when owed.
+Treasury allocation across the firm's fund entities -- hold size, investment criteria, concentration limits, and  Are the Company's certs accurate -- leverage and ECF calculations tied to the credit agreement's specific
+economic targets differ by SMA and fund -- and across non-direct-lending Credit, PE, and RE pockets; the logic must   definitions, sweeps applied at the right level, and ECF allocated pro rata across tranches when owed.
 be systematic, defensible, and auditable.
 
 IC Approvals & Approval Tracking                                                                                Valuation / Mark-to-Market
@@ -292,7 +292,7 @@ Draws are conditional -- no default or EoD, pro forma leverage within covenant, 
 Those conditions must be enforced at funding so we never wire to a Company that technically isn't entitled to   amendment counts across the book; technical vs. material classification; and drivers (performance, liquidity,
 the money.                                                                                                      post-close clean-up) on demand.
 
-ONE-TEAM · A CORE VALUE, NOT YET A TECHNOLOGICAL REALITY
+ONE-TEAM ï¿½ A CORE VALUE, NOT YET A TECHNOLOGICAL REALITY
 
 One Team is a core CB value, but it is not yet a technological reality -- the data across our strategies does not talk to itself. When an IP in any strategy isn't sought out, forgets a detail, or leaves the platform, their insights
 leave with them. Build the controls above on a common architecture and the knowledge base does not just persist -- it grows, compounds across Credit, PE, and RE, and accrues to every future deal team.
@@ -302,13 +302,13 @@ portable across Centerbridge. Several gaps (IC approval tracking, valuation, com
 risk and incremental compliance cost as the portfolio scales, but the obligation exists independent of growth path.
                                                                         EXECUTIVE SUMMARY
 
-10 · PATH FORWARD · THREE OPTIONS · ONE RECOMMENDATION
+10 ï¿½ PATH FORWARD ï¿½ THREE OPTIONS ï¿½ ONE RECOMMENDATION
 
 Three paths to close the gap -- only one delivers One Team.
 
 Two alternatives move a number. One moves the operating model.
 
-ALTERNATIVES CONSIDERED                                                 RECOMMENDATION · OPTION C
+ALTERNATIVES CONSIDERED                                                 RECOMMENDATION ï¿½ OPTION C
 
 OPTION A                                                                Build a custom application suite over a shared substrate.
 
@@ -322,7 +322,7 @@ Claude library. Useful regardless of the path chosen.                   Turns a 
 WHY NOT
                                                                         CLOSES THE GROWTH GAP
 Artifacts live in individual users' contexts -- nothing accrues to the
-firm, nothing compounds across deals, and the foundation controls       Solves the P1 lead-enablement layer no vendor can supply -- putting +$285M of cumulative fee revenue (2026­30), +$8.6B
+firm, nothing compounds across deals, and the foundation controls       Solves the P1 lead-enablement layer no vendor can supply -- putting +$285M of cumulative fee revenue (2026ï¿½30), +$8.6B
 stay open.                                                              of YE2030 funded AUM, and +115 portfolio companies on the table vs. the Status Quo.
 
 OPTION B                                                                CAPTURES THE EFFICIENCY DIVIDEND
@@ -349,41 +349,41 @@ The Business Case
 
 Three independent ROI levers stack to a buildout that self-funds from year one.
 
-CENTERBRIDGE | OVERLAND · DEAL LIFECYCLE PROCESS MAPPING
+CENTERBRIDGE | DIRECT LENDING ï¿½ DEAL LIFECYCLE PROCESS MAPPING
                                                                                                                                                                                                                                                         THE BUSINESS CASE
 
-12 · THREE LEVERS · $285M CUMULATIVE FEE DELTA VS. STATUS QUO · $42.8M HC AVOIDANCE · CBP "ONE -TEAM" TECHNOLOGY STACK · BUILDOUT SELF-FUNDS FROM YEAR ONE
+12 ï¿½ THREE LEVERS ï¿½ $285M CUMULATIVE FEE DELTA VS. STATUS QUO ï¿½ $42.8M HC AVOIDANCE ï¿½ CBP "ONE -TEAM" TECHNOLOGY STACK ï¿½ BUILDOUT SELF-FUNDS FROM YEAR ONE
 
 The buildout pencils on three independent ROI levers -- and
 self-funds from year one of the phased rollout.
 
-LEVER 01 · FEE ACCRETION                                       LEVER 02 · HEAD COUNT AVOIDANCE                              LEVER 03 · CBP DATA UNIFICATION
+LEVER 01 ï¿½ FEE ACCRETION                                       LEVER 02 ï¿½ HEAD COUNT AVOIDANCE                              LEVER 03 ï¿½ CBP DATA UNIFICATION
 
 $285 M cumulative                                              $42.8 M / yr                                                 ~$46 B AUM
 
-5-yr fee delta vs. Status Quo (110 PCs by YE'30); Automation-  2030 run-rate savings vs. peer-regression baseline (1.88×).  Strategy-agnostic data substrate amortized across ~$46B
-Base scales to 225 PCs and $245M run-rate fees vs. $120M.      Sensitivity band $25­49M at base $600K/IP; up to $54M at     AUM (CB Credit, PE, RE) -- spreads buildout cost and
+5-yr fee delta vs. Status Quo (110 PCs by YE'30); Automation-  2030 run-rate savings vs. peer-regression baseline (1.88ï¿½).  Strategy-agnostic data substrate amortized across ~$46B
+Base scales to 225 PCs and $245M run-rate fees vs. $120M.      Sensitivity band $25ï¿½49M at base $600K/IP; up to $54M at     AUM (CB Credit, PE, RE) -- spreads buildout cost and
                                                                $750K/IP.                                                    unlocks one-team workflows.
 
-CUMULATIVE BUILDOUT · 2026 ­ 2030                                                           PAYBACK ON FULL BUILDOUT
+CUMULATIVE BUILDOUT ï¿½ 2026 ï¿½ 2030                                                           PAYBACK ON FULL BUILDOUT
 
-$7.5 ­ 12.5M total($10Mbase)                                                                Self-funds fromYearOne
+$7.5 ï¿½ 12.5M total($10Mbase)                                                                Self-funds fromYearOne
 
-$1.5­2.5M/yr at run-rate; 3.5­4.5 incremental FTE on top of existing 5-person CB dev team.  $10M cumulative spend recovered in ~3 months at 2030 run-rate; annual benefit ($8M 
+$1.5ï¿½2.5M/yr at run-rate; 3.5ï¿½4.5 incremental FTE on top of existing 5-person CB dev team.  $10M cumulative spend recovered in ~3 months at 2030 run-rate; annual benefit ($8M 
                                                                                             $43M) exceeds spend in every year.
 
-Load-bearing assumption. Multiagent engineering throughput drives the $1.5­2.5M/yr cost frame; if it does not materialize, run-rate reverts toward $3­6M/yr and firm-wide amortization carries proportionally
+Load-bearing assumption. Multiagent engineering throughput drives the $1.5ï¿½2.5M/yr cost frame; if it does not materialize, run-rate reverts toward $3ï¿½6M/yr and firm-wide amortization carries proportionally
 more weight.
                                                                                                                                                                                              THE BUSINESS CASE
 
-13 · ROI VECTOR · ALL SCENARIOS · $42.8M / YR NET BENEFIT AT 225 NAMES (BASE)
+13 ï¿½ ROI VECTOR ï¿½ ALL SCENARIOS ï¿½ $42.8M / YR NET BENEFIT AT 225 NAMES (BASE)
 
 Across four scenarios, automation at base case delivers $42.8M/yr vs holding the line without
 automation, and $76.9M/yr vs status quo at today's scale. Upside case extends to $83.1M/yr.
 
-2030 run-rate · $M unless noted · vs. Status Quo baseline (110 cos today) for  framing
+2030 run-rate ï¿½ $M unless noted ï¿½ vs. Status Quo baseline (110 cos today) for  framing
 
-METRIC                                         UNIT     STATUS QUO · 110 COS                       NO AUTOMATION · 225 COS                            AUTO · BASE · 225 COS                  AUTO · UPSIDE · 225 COS
+METRIC                                         UNIT     STATUS QUO ï¿½ 110 COS                       NO AUTOMATION ï¿½ 225 COS                            AUTO ï¿½ BASE ï¿½ 225 COS                  AUTO ï¿½ UPSIDE ï¿½ 225 COS
 Portfolio companies                            #                                         110                                               225                                         225                                        225
 Cumulative funded AUM                          $B                                         8.3                                              16.9                                       16.9                                       16.9
 NAV                                            $B                                         3.9                                               8.0                                         8.0                                        8.0
@@ -397,41 +397,41 @@ Net benefit vs. No Automation (pure tech ROI)  $M/yr                            
                                                                                                                                       $34.1M                                      $76.9M                                     $83.1M
                                                                                                                                                   --                                 $42.8M                                     $49.0M
 
-STATUS QUO (110 COS)                                    AUTOMATION · BASE (5.0× COS/IP)                                                               AUTOMATION · UPSIDE (6.5× COS/IP)
+STATUS QUO (110 COS)                                    AUTOMATION ï¿½ BASE (5.0ï¿½ COS/IP)                                                               AUTOMATION ï¿½ UPSIDE (6.5ï¿½ COS/IP)
 
 $34.1M / yr cost of standing still vs. growing without  $42.8M / yr saved vs. no-automation; $76.9M vs. status                                        $49.0M / yr vs. no-automation; $83.1M vs. status quo
 automation                                              quo
 
-Assumption Status Quo holds today's 110 cos / 8 IPs scale; No Automation grows to 225 cos at 1.88× cos/IP peer benchmark (120 IPs). Automation cases grow to 225 cos at 5.0× (Base) and 6.5× (Upside) cos/IP. $600K/IP fully
+Assumption Status Quo holds today's 110 cos / 8 IPs scale; No Automation grows to 225 cos at 1.88ï¿½ cos/IP peer benchmark (120 IPs). Automation cases grow to 225 cos at 5.0ï¿½ (Base) and 6.5ï¿½ (Upside) cos/IP. $600K/IP fully
 loaded; $2.0M/yr tech run-rate.
 Note  vs. Status Quo bundles growth AND tech-cost benefit (per prompt anchor).  vs. No Automation isolates pure technology ROI holding scale constant at 225 names. 1 IPs vs. Status Quo crosses portfolio-size assumptions
 (225 vs. 110 names). The operational savings lever is vs. No Automation: 120 IPs  45 IPs (-75 IPs; -$44.8M/yr at $600K/IP fully loaded). Source: ROI Model v1, Summary tab.
-SECTION 03 OF 05 · LEVER 01 · FEE ACCRETION                                                        DIVIDER
+SECTION 03 OF 05 ï¿½ LEVER 01 ï¿½ FEE ACCRETION                                                        DIVIDER
 
 The Diversification Gap
 
-Closing the 200­250-name gap converts portfolio scale into $285M cumulative fee delta and a $245M
+Closing the 200ï¿½250-name gap converts portfolio scale into $285M cumulative fee delta and a $245M
 run-rate by 2030.
 
-CENTERBRIDGE | OVERLAND · DEAL LIFECYCLE PROCESS MAPPING
+CENTERBRIDGE | DIRECT LENDING ï¿½ DEAL LIFECYCLE PROCESS MAPPING
                                                                                                                                                                                                                                                                                                                                                   THE DIVERSIFICATION GAP
 
-15 · THE GROWTH GAP · OVERLAND NEEDS 200­250 NAMES TO REACH BDC SCALE
+15 ï¿½ THE GROWTH GAP ï¿½ THE FIRM NEEDS 200ï¿½250 NAMES TO REACH BDC SCALE
 
-Overland needs 200­250 portfolio companies to match
+The firm needs 200ï¿½250 portfolio companies to match
 leading BDC diversification -- at today's pace, it won't get
 there.
 
-TODAY · MID-2026                                                                       THE BINDING CONSTRAINT
+TODAY ï¿½ MID-2026                                                                       THE BINDING CONSTRAINT
 
 ~30                                                                                    Supply, not conversion.
 
-Portfolio companies · 8 IPs · $2.55B funded AUM · 16 closes TTM (4/qtr) · 4% lead-to-  Conversion is already at peer benchmark (4% lead-to-close). Reaching 200­250 names at today's
-close, in line with peer BDCs.                                                         16 closes/yr requires ~3­4× lift in qualified lead volume by 2030 -- and WF channel exclusivity for
+Portfolio companies ï¿½ 8 IPs ï¿½ $2.55B funded AUM ï¿½ 16 closes TTM (4/qtr) ï¿½ 4% lead-to-  Conversion is already at peer benchmark (4% lead-to-close). Reaching 200ï¿½250 names at today's
+close, in line with peer BDCs.                                                         16 closes/yr requires ~3ï¿½4ï¿½ lift in qualified lead volume by 2030 -- and WF channel exclusivity for
                                                                                        non-sponsored flow is the strategic moat to surface it.
 DIVERSIFICATION TARGET
 
-200 ­ 250
+200 ï¿½ 250
 
  Portfolio companies by YE 2030 -- diversification consistent with
  leading BDC peers.
@@ -440,13 +440,13 @@ P1 is the lever. Proprietary screens on NAICS Association, Pitchbook, Preqin, an
 parallel lead-generation function.
                                                                                                                             THE DIVERSIFICATION GAP
 
-16 · PEER BENCHMARKS · HOW THE INDUSTRY MANAGES AT SCALE
+16 ï¿½ PEER BENCHMARKS ï¿½ HOW THE INDUSTRY MANAGES AT SCALE
 
 Lead-enhancement automation potentially unlocks +115
 closes, +$8.6B AUM, +$4.1B NAV and +$285M cumulative
 fees vs. Status Quo through 2030.
 
-2030 SCENARIO COMPARISON · STATUS QUO VS. AUTOMATION-BASE           YEAR-BY-YEAR  VS. STATUS QUO · CLOSES, AUM, NAV & FEES
+2030 SCENARIO COMPARISON ï¿½ STATUS QUO VS. AUTOMATION-BASE           YEAR-BY-YEAR  VS. STATUS QUO ï¿½ CLOSES, AUM, NAV & FEES
 
 2030 RUN-RATE    STATUS QUO  AUTO-BASE                       VS SQ  YEAR         CLOSES   AUM ($M)   NAV ($M)                FEES ($M)
 
@@ -460,46 +460,46 @@ WHY THIS IS A LEVER, NOT A COST                                     2030        
                                                                     5-YR / '30  +115     +8,625     +4,106
  vs. Status Quo: 225 PCs vs. 110 PCs by YE'30
 5-yr cum fee revenue: $710M vs. $425M (+$285M)
-2030 run-rate Overland fees: $245M vs. $120M (+$125M/yr)
+2030 run-rate firm fees: $245M vs. $120M (+$125M/yr)
 
 Mechanism The +$285M cumulative / +$125M run-rate fee delta flows from the closes ramp (16  47/yr) that P1 lead enhancement makes throughput-feasible (see slide 10). Without the ramp, portfolio holds at ~110 PCs and
 fees track Status Quo.
 
-Assumption The ramp embeds a +2.44× lift over today's 4% lead-to-close baseline. P1 ships H2 '26; uplift is currently unmeasured -- re-mark after 6 months of production data.
-SECTION 04 OF 05 · LEVER 02 · HEAD COUNT AVOIDANCE                                                 DIVIDER
+Assumption The ramp embeds a +2.44ï¿½ lift over today's 4% lead-to-close baseline. P1 ships H2 '26; uplift is currently unmeasured -- re-mark after 6 months of production data.
+SECTION 04 OF 05 ï¿½ LEVER 02 ï¿½ HEAD COUNT AVOIDANCE                                                 DIVIDER
 
 The Workflow Evidence
 
-Non-sponsor labor intensity exposes a $42.8M / yr run-rate savings vs. the 1.88× peer baseline by
+Non-sponsor labor intensity exposes a $42.8M / yr run-rate savings vs. the 1.88ï¿½ peer baseline by
 2030.
 
-CENTERBRIDGE | OVERLAND · DEAL LIFECYCLE PROCESS MAPPING
+CENTERBRIDGE | DIRECT LENDING ï¿½ DEAL LIFECYCLE PROCESS MAPPING
                                                                                                                                                                                                                                                                                                                THE WORKFLOW EVIDENCE
 
-18 · WORKFLOW FRICTION · NON-SPONSOR DEALS COST MORE LABOR PER DOLLAR OF AUM
+18 ï¿½ WORKFLOW FRICTION ï¿½ NON-SPONSOR DEALS COST MORE LABOR PER DOLLAR OF AUM
 
 Non-sponsor deals embed materially more labor per dollar of
 AUM at every stage of the lifecycle.
 
 STAGE                 FRICTION SOURCE                                                                                                                  LOW  BASE  HIGH
 
-Sourcing              WF RMs surface a wider distribution of candidates than sponsor-funneled flow; 60­80% of WF leads die in initial screen vs. 40­  +30%  +40%  +50%
+Sourcing              WF RMs surface a wider distribution of candidates than sponsor-funneled flow; 60ï¿½80% of WF leads die in initial screen vs. 40ï¿½  +30%  +40%  +50%
 Underwriting          60% sponsor.                                                                                                                    +30%  +60%  +90%
 IC preparation                                                                                                                                        +30%  +50%  +70%
                       Data room reconstruction, GAAP normalization, addback substantiation against unaudited financials, deeper management ODD,
-                      legal cleanup. 200­400+ hours vs. 150­250 sponsor.
+                      legal cleanup. 200ï¿½400+ hours vs. 150ï¿½250 sponsor.
 
                       No sponsor CIM. Credit narrative built from raw inputs. Structural reformatting and consistency checks consume IC-prep hours.
 
-Syndication           Overland syndicates a meaningful portion of each deal to existing LPs, prospective LPs, and selected GPs -- marketing,          +40%  +60%  +80%
+Syndication           the firm syndicates a meaningful portion of each deal to existing LPs, prospective LPs, and selected GPs -- marketing,          +40%  +60%  +80%
                       allocation, and investor Q&A all run through the underwriting deal team. Larger DL platforms (Antares, Golub, Blue Owl) carry
                       dedicated capital-markets desks staffed with capital-markets IPs who absorb this workstream off the deal team's plate.
 
 Portfolio monitoring  Variable reporting maturity; family/founder management requires hand-holding. 1.6 covenants/deal means relationship-based       +40%  +70%  +100%
-                      monitoring, not triggered diligence. ~30­60 extra hours / name / year.
+                      monitoring, not triggered diligence. ~30ï¿½60 extra hours / name / year.
 
-Translation: peer ratios are not portable. The 13-manager peer-average is 1.88× cos/IP ; the friction premiums above -- including a syndication workstream that larger DL platforms offload to dedicated capital-markets
-desks -- mean an Overland IP carries ~50­70% more work per name than the average peer IP. Absent automation, Overland's natural ratio lands closer to ~1.1­1.3× , materially below the peer mean -- driving the 2030
+Translation: peer ratios are not portable. The 13-manager peer-average is 1.88ï¿½ cos/IP ; the friction premiums above -- including a syndication workstream that larger DL platforms offload to dedicated capital-markets
+desks -- mean an a direct-lending IP carries ~50ï¿½70% more work per name than the average peer IP. Absent automation, the firm's natural ratio lands closer to ~1.1ï¿½1.3ï¿½ , materially below the peer mean -- driving the 2030
 IP requirement on the next slide.
 
 Assumption Per-stage premiums are estimated against sponsor-led    Implication Peer cos/IP ratios are not directly portable to a non-sponsor
@@ -507,27 +507,27 @@ comparables; sourcing premium derives from observed lead-to-close  book without 
 conversion (4% TTM) and inferred screen failure rates.
                                                                                                                                        THE WORKFLOW EVIDENCE
 
-19 · PEER COHORT · BDC MANAGER LABOR INTENSITY · GROUNDING THE 1.88× REGRESSION
+19 ï¿½ PEER COHORT ï¿½ BDC MANAGER LABOR INTENSITY ï¿½ GROUNDING THE 1.88ï¿½ REGRESSION
 
-Non-sponsor workload is heavier, yet Overland already runs Cos/IP at ~2× the peer mean.
+Non-sponsor workload is heavier, yet the firm already runs Cos/IP at ~2ï¿½ the peer mean.
 
 #   GP / MANAGER             BDC VEHICLES                    BDC NAV ($B)               DLAUM ($B)              AVG COS           DL IPS DLAUM / IP ($M)  COS / IP
 
-1   Morgan Stanley           MSDL                                               $1.69                     $20               227   44   $454.5                      5.16×
-                             Overland Advantage                                   2.55                   2.55                 30                                   3.75×
-2   Overland (current)       OBDC, OCIC, OTF, OBDC II, OTIC                       33.3                    115                     8    318.8                       3.30×
-                             GBDC, GCRED                                          7.85                                      429                                    2.45×
-3   Blue Owl Capital         OCSL                                                 1.38                      76              417   130  884.6                       2.43×
-                             FSK                                                  5.85                      12              163                                    2.11×
-4   Golub Capital            --                                                   11.0                      39              232   170  447.1                       1.88×
-                             ABDC                                                 0.78                   91.0               325                                    1.85×
-5   Oaktree Capital          HLEND                                                12.9                      90              432   67   179.1                       1.53×
-                             ARCC, ASIF                                           15.7                    129               382                                    1.29×
-6   KKR / FS-KKR             NCDL                                                 0.86                    190               722   110  354.5                       1.18×
-                             BCRED, BXSL                                          51.1                      50              236                                    1.16×
-7   Peer average             GSBD                                                 1.37                    230               508   249  390.0                       0.82×
-                             ADS, MFIC                                            18.1                      30              173                                    0.63×
-8   Antares Capital          TSLX                                                 1.54                    238               326   233  386.3                       0.48×
+1   Morgan Stanley           MSDL                                               $1.69                     $20               227   44   $454.5                      5.16ï¿½
+                             The firm (Advantage tier)                                   2.55                   2.55                 30                                   3.75ï¿½
+2   The firm (current)       OBDC, OCIC, OTF, OBDC II, OTIC                       33.3                    115                     8    318.8                       3.30ï¿½
+                             GBDC, GCRED                                          7.85                                      429                                    2.45ï¿½
+3   Blue Owl Capital         OCSL                                                 1.38                      76              417   130  884.6                       2.43ï¿½
+                             FSK                                                  5.85                      12              163                                    2.11ï¿½
+4   Golub Capital            --                                                   11.0                      39              232   170  447.1                       1.88ï¿½
+                             ABDC                                                 0.78                   91.0               325                                    1.85ï¿½
+5   Oaktree Capital          HLEND                                                12.9                      90              432   67   179.1                       1.53ï¿½
+                             ARCC, ASIF                                           15.7                    129               382                                    1.29ï¿½
+6   KKR / FS-KKR             NCDL                                                 0.86                    190               722   110  354.5                       1.18ï¿½
+                             BCRED, BXSL                                          51.1                      50              236                                    1.16ï¿½
+7   Peer average             GSBD                                                 1.37                    230               508   249  390.0                       0.82ï¿½
+                             ADS, MFIC                                            18.1                      30              173                                    0.63ï¿½
+8   Antares Capital          TSLX                                                 1.54                    238               326   233  386.3                       0.48ï¿½
                              CGBD                                                 1.33                      40              143
 9   HPS Investment Partners                                                                                 15              165   250  516.0                            --
 
@@ -546,68 +546,68 @@ Non-sponsor workload is heavier, yet Overland already runs Cos/IP at ~2× the pee
 16  Carlyle Group                                                                                                                 N/D  --
                                                                                                                                                                                                                                                                                                                THE WORKFLOW EVIDENCE
 
-20 · THE IP GAP · WHAT 225 NAMES COSTS WITHOUT AUTOMATION
+20 ï¿½ THE IP GAP ï¿½ WHAT 225 NAMES COSTS WITHOUT AUTOMATION
 
-Without automation, Overland regresses toward the peer-
-average 1.88×, and the IP requirement compounds from
+Without automation, the firm regresses toward the peer-
+average 1.88ï¿½, and the IP requirement compounds from
 there.
 
-IPS REQUIRED AT 2030 PORTFOLIO TARGETS                                                        IMPLIED RUN-RATE 2030 HC COSTS · $600K / IP FULLY LOADED
+IPS REQUIRED AT 2030 PORTFOLIO TARGETS                                                        IMPLIED RUN-RATE 2030 HC COSTS ï¿½ $600K / IP FULLY LOADED
 
 SCENARIO                          COS/IP IPs @ 225                                  IP Costs  SCENARIO                     IPS      $M / YR
 
-Peer average (regression anchor)  1.88                                         120  $71.8M    Peer-average regression      106­133  $64­80
+Peer average (regression anchor)  1.88                                         120  $71.8M    Peer-average regression      106ï¿½133  $64ï¿½80
                                                                                     $36.0M
-Overland today (no automation)    3.75                                         60   $27.0M    Overland current ratio held  53­67    $32­40
+The firm today (no automation)    3.75                                         60   $27.0M    the firm's current ratio held  53ï¿½67    $32ï¿½40
                                                                                     $20.8M
-Automation-assisted (base)              5.0                                    45             Automation base              40­50    $24­30
+Automation-assisted (base)              5.0                                    45             Automation base              40ï¿½50    $24ï¿½30
 
-Automation-assisted (optimistic)        6.5                                    35             Automation optimistic        31­38    $19­23
+Automation-assisted (optimistic)        6.5                                    35             Automation optimistic        31ï¿½38    $19ï¿½23
 
-Regression anchor 1.88× is the GP-weighted mean Cos/IP across the 13                                                                  Anchor to the average, not the outliers. Holding 3.75× through 2030 defies peer gravity as the book
-BDC managers benchmarked on slide 04 (excluding Overland and Carlyle,                                                                 matures from 30 to 200+ names. Unautomated steady state regresses toward 1.88× -- implying ~120
+Regression anchor 1.88ï¿½ is the GP-weighted mean Cos/IP across the 13                                                                  Anchor to the average, not the outliers. Holding 3.75ï¿½ through 2030 defies peer gravity as the book
+BDC managers benchmarked on slide 04 (excluding the firm and Carlyle,                                                                 matures from 30 to 200+ names. Unautomated steady state regresses toward 1.88ï¿½ -- implying ~120
 where IP count was not disclosed). It absorbs the full spread of the peer set                                                         IPs and $71.8M/yr.
 and is the most defensible baseline for where a non-sponsor book settles at
-scale absent a structural production-function shift.                           CBP leadership framing Defensible savings range $43­49M/yr ·
+scale absent a structural production-function shift.                           CBP leadership framing Defensible savings range $43ï¿½49M/yr ï¿½
                                                                                midpoint ~$46M vs. no automation (Automation-Base to Automation-
                                                                                Optimistic at $600K/IP).
-SECTION 05 OF 05 · LEVER 03 · CBP DATA UNIFICATION                                                DIVIDER
+SECTION 05 OF 05 ï¿½ LEVER 03 ï¿½ CBP DATA UNIFICATION                                                DIVIDER
 
 The Build Plan
 
 A shared platform amortized across ~$46B AUM -- 13 domain apps on one substrate spanning Credit,
 PE, and RE.
 
-CENTERBRIDGE | OVERLAND · DEAL LIFECYCLE PROCESS MAPPING
+CENTERBRIDGE | DIRECT LENDING ï¿½ DEAL LIFECYCLE PROCESS MAPPING
                                                                                                                                                                                                                                                    THE BUILD PLAN
 
-22 · THE BUILD · 13 DOMAIN APPS ON A SHARED PLATFORM LAYER · ~$46B AUM
+22 ï¿½ THE BUILD ï¿½ 13 DOMAIN APPS ON A SHARED PLATFORM LAYER ï¿½ ~$46B AUM
 
 A platform layer amortized firm-wide across ~$46B AUM,
 plus 13 domain apps spanning intake through amendments.
 
-PLATFORM / DATA SUBSTRATE                 13 DOMAIN APPLICATIONS · PHASE-MAPPED
+PLATFORM / DATA SUBSTRATE                 13 DOMAIN APPLICATIONS ï¿½ PHASE-MAPPED
 
-Strategy-agnostic; serves CB Credit, PE,  A1 · Pipeline Intelligence  REVENUE      A2 · NDA Workflow             A3 · Deal CRM
+Strategy-agnostic; serves CB Credit, PE,  A1 ï¿½ Pipeline Intelligence  REVENUE      A2 ï¿½ NDA Workflow             A3 ï¿½ Deal CRM
 RE. Amortized against ~$46B firm-wide
-AUM.                                      A4 · Diligence Workflow                  A5 · Fin Modeling             A6 · Memo Drafting
+AUM.                                      A4 ï¿½ Diligence Workflow                  A5 ï¿½ Fin Modeling             A6 ï¿½ Memo Drafting
 
-Master data API · golden records          A7 · IC Deliberation        IC TRACK     A8 · Term Sheet & Legal Docs  A9 · Syndication
-Document registry · firm-wide
-LLM service · Claude API brokering        A10 · Closing                            A11 · Loan Admin              A12 · Port Monitoring        CHRONOGRAPH
-Snowflake medallion ·
-Bronze/Silver/Gold                        A13 · Valuation             CHRONOGRAPH  Each app: private PG schema, event bus, versioned schemas
+Master data API ï¿½ golden records          A7 ï¿½ IC Deliberation        IC TRACK     A8 ï¿½ Term Sheet & Legal Docs  A9 ï¿½ Syndication
+Document registry ï¿½ firm-wide
+LLM service ï¿½ Claude API brokering        A10 ï¿½ Closing                            A11 ï¿½ Loan Admin              A12 ï¿½ Port Monitoring        CHRONOGRAPH
+Snowflake medallion ï¿½
+Bronze/Silver/Gold                        A13 ï¿½ Valuation             CHRONOGRAPH  Each app: private PG schema, event bus, versioned schemas
 
                                           WHY THIS WORKS                                              HEADCOUNT
 
-                                          Workflow specificity to non-sponsored DL · firm-owned data substrate · Existing 5-person CB dev team contributes ~1.5­2 FTE · 2­3 engineers
+                                          Workflow specificity to non-sponsored DL ï¿½ firm-owned data substrate ï¿½ Existing 5-person CB dev team contributes ~1.5ï¿½2 FTE ï¿½ 2ï¿½3 engineers
 
-OPERATING ECONOMICS                       vendor independence · revenue acceleration via A1 first.    + 1 product + 0.5 data net new = 3.5­4.5 incremental FTE.
+OPERATING ECONOMICS                       vendor independence ï¿½ revenue acceleration via A1 first.    + 1 product + 0.5 data net new = 3.5ï¿½4.5 incremental FTE.
 
-0.3 ­ 0.8%
+0.3 ï¿½ 0.8%
                                                                                                                                                                                                                                                                    THE BUILD PLAN
 
-23 · THE BUILD · 13 DOMAIN APPS · FUNCTION, EQUIVALENTS & PRIMARY GAP CLOSED
+23 ï¿½ THE BUILD ï¿½ 13 DOMAIN APPS ï¿½ FUNCTION, EQUIVALENTS & PRIMARY GAP CLOSED
 
 Each domain app closes a workflow gap that commercial tooling leaves open.
 
@@ -615,68 +615,68 @@ Each domain app closes a workflow gap that commercial tooling leaves open.
 
 A1   Pipeline Intelligence    Deal origination & pipeline; golden-source deal record        Custom-built -- no direct equivalent                    Only canonical deal record that propagates across a connected suite as the golden-source
                                                                                                                                                     MDM entity
-A2   NDA Workflow             NDA workflow; post-signature obligation tracking              Ironclad · DocuSign CLM                                 Natively gates downstream deal access on NDA execution -- no commercial CLM does this
+A2   NDA Workflow             NDA workflow; post-signature obligation tracking              Ironclad ï¿½ DocuSign CLM                                 Natively gates downstream deal access on NDA execution -- no commercial CLM does this
                                                                                                                                                     inside a connected platform
-A3   Deal CRM                 Deal CRM, ethical walls, relationship intelligence            DealCloud · Salesforce FSC · MS Dynamics CRM            Enforces ethical walls across the deal suite and propagates relationships into live
+A3   Deal CRM                 Deal CRM, ethical walls, relationship intelligence            DealCloud ï¿½ Salesforce FSC ï¿½ MS Dynamics CRM            Enforces ethical walls across the deal suite and propagates relationships into live
                                                                                                                                                     downstream workflows
-A4   Diligence Workflow       Diligence workflow, QA tracking, similar-question retrieval   Ansarada · Asana                                        Seeds DD queue from a structured triage memo and links findings back into model and IC
+A4   Diligence Workflow       Diligence workflow, QA tracking, similar-question retrieval   Ansarada ï¿½ Asana                                        Seeds DD queue from a structured triage memo and links findings back into model and IC
                                                                                                                                                     memo in a unified layer
-A5   Fin Modeling             Financial modeling, scenario & Monte Carlo, version control   Crystal Ball · Quantrix · Alteryx · Tableau · Power BI  Maintains audit lineage from document receipt through model output; auto-refreshes
+A5   Fin Modeling             Financial modeling, scenario & Monte Carlo, version control   Crystal Ball ï¿½ Quantrix ï¿½ Alteryx ï¿½ Tableau ï¿½ Power BI  Maintains audit lineage from document receipt through model output; auto-refreshes
                                                                                                                                                     inputs from agreed terms and DD findings
 A6   Memo Drafting            Credit memo drafting with LLM-assisted authoring              Custom-built -- no direct equivalent                    Memo seeded by DD findings, model outputs, and agreed terms from upstream deal data
                                                                                                                                                     -- not drafted in isolation
 A7   IC Deliberation          IC deliberation: sealed pre-vote, append-only decision log    Zeck                                                    Writes IC decisions to an immutable audit trail that propagates approved terms to
                                                                                                                                                     downstream execution apps
-A8   Term Sheet & Legal Docs  Term sheet & legal doc drafting; precedent library; clause    Harvey AI · Ironclad                                    Auto-populates term sheets from IC-approved economics and selects precedent clauses
-                              comparison                                                    Debt Domain · SyndTrak                                  driven by live deal context
+A8   Term Sheet & Legal Docs  Term sheet & legal doc drafting; precedent library; clause    Harvey AI ï¿½ Ironclad                                    Auto-populates term sheets from IC-approved economics and selects precedent clauses
+                              comparison                                                    Debt Domain ï¿½ SyndTrak                                  driven by live deal context
 A9   Syndication                                                                                                                                    Combines joint book-running controls, AI-assisted co-lender DD, and a post-close
                               Syndication, agency, co-lender DD & borrower portal                                                                   borrower portal in one workspace
                                                                                                                                                     Hardened idempotent two-phase funding handoff -- activates loan ledger only after wire
 A10  Closing                  Closing checklist, KYC/AML gating, two-phase funding handoff  Allvue (closing module)                                 and compliance clearance
                                                                                                                                                     Integrates directly with upstream deal data -- eliminates manual reconciliation and re-
-A11  Loan Admin               Loan administration, payments, amendments, loan ledger        WSO · Allvue Investment Accounting                      keying from negotiation systems
+A11  Loan Admin               Loan administration, payments, amendments, loan ledger        WSO ï¿½ Allvue Investment Accounting                      keying from negotiation systems
                                                                                                                                                     Receives loan events in real time from the firm's own loan admin; full covenant, financial,
-A12  Port Monitoring          Portfolio monitoring: covenants, early-warning risk scores    Chronograph · 73 Strings Monitor/Extract                and deal context in one layer
+A12  Port Monitoring          Portfolio monitoring: covenants, early-warning risk scores    Chronograph ï¿½ 73 Strings Monitor/Extract                and deal context in one layer
                                                                                                                                                     First-class consumer of a unified portfolio data product -- direct lineage from loan admin
-A13  Valuation                Valuation: stage-gate fair value, roll-forward, IPEV/ASC 820  Chronograph Valuations · 73 Strings 73 Value            back to original deal
+A13  Valuation                Valuation: stage-gate fair value, roll-forward, IPEV/ASC 820  Chronograph Valuations ï¿½ 73 Strings 73 Value            back to original deal
 
     Every domain app exists because a commercial gap exists -- not because we want to rebuild what vendors already do well. Each row is a workflow no off-the-shelf tool
     closes inside a connected private-credit suite.
                                                                                                                                                                                                                                                    THE BUILD PLAN
 
-24 · DELIVERY SCHEDULE · A1 SHIPS FIRST · PLATFORM COMPLETE BY 2030
+24 ï¿½ DELIVERY SCHEDULE ï¿½ A1 SHIPS FIRST ï¿½ PLATFORM COMPLETE BY 2030
 
 Build chronologically: each app feeds the next, and shipping the deal lifecycle
 in order earns buy-in from one domain team at a time.
 
                               2026 H1  2026 H2                 2027 H1     2027 H2     2028 H1     2028 H2     2029 H1        2029 H2              2030
 
-Platform / Substrate          BUILD    PRODUCTION · FIRM-WIDE              PRODUCTION  PRODUCTION  PRODUCTION
-A1 · Pipeline Intelligence    BUILD    PRODUCTION                          PRODUCTION  BUILD       PRODUCTION
+Platform / Substrate          BUILD    PRODUCTION ï¿½ FIRM-WIDE              PRODUCTION  PRODUCTION  PRODUCTION
+A1 ï¿½ Pipeline Intelligence    BUILD    PRODUCTION                          PRODUCTION  BUILD       PRODUCTION
                                                                            BUILD       BUILD       BUILD
-A2 · NDA Workflow             BUILD    PRODUCTION                                                  BUILD
+A2 ï¿½ NDA Workflow             BUILD    PRODUCTION                                                  BUILD
 
-A3 · Deal CRM                          BUILD                   PRODUCTION
+A3 ï¿½ Deal CRM                          BUILD                   PRODUCTION
 
-A6 · Memo Drafting                     BUILD                   PRODUCTION
+A6 ï¿½ Memo Drafting                     BUILD                   PRODUCTION
 
-A4 · Diligence                                                 BUILD
+A4 ï¿½ Diligence                                                 BUILD
 
-A5 · Fin Modeling                                              BUILD
+A5 ï¿½ Fin Modeling                                              BUILD
 
-A7 · IC Deliberation
+A7 ï¿½ IC Deliberation
 
-A8 · Term Sheet & Legal Docs
+A8 ï¿½ Term Sheet & Legal Docs
 
-A9 · Syndication
+A9 ï¿½ Syndication
 
-A10 · Closing                                                                                                  PRODUCTION
+A10 ï¿½ Closing                                                                                                  PRODUCTION
                                                                                                                PRODUCTION
-A11 · Loan Admin
+A11 ï¿½ Loan Admin
 
-A12 · Port Monitoring                                                                                          BUILD (GATED)  PRODUCTION
+A12 ï¿½ Port Monitoring                                                                                          BUILD (GATED)  PRODUCTION
                                                                                                                BUILD (GATED)  PRODUCTION
-A13 · Valuation
+A13 ï¿½ Valuation
 
- Chronograph decision                                                                                          2027 H2 · FIX / REPLACE / REDEFINE
+ Chronograph decision                                                                                          2027 H2 ï¿½ FIX / REPLACE / REDEFINE
 

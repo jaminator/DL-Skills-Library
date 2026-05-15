@@ -1,5 +1,5 @@
 ---
-name: ol-compcert-review
+name: dl-compcert-review
 description: Extracts covenant metrics from borrower compliance certificate PDFs, recomputes them against the credit agreement's specific definitions, and surfaces CFO arithmetic errors and definitional misapplications for asset management review. Produces a structured ComplianceCertificateValidation output with per-covenant calculations, headroom percentages, error flags, and an overall compliance status. Use when reviewing a quarterly or monthly compliance certificate, validating covenant calculations against the credit agreement, or preparing the AM portfolio monitoring update.
 ---
 

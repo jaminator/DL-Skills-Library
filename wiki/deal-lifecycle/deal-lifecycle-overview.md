@@ -3,13 +3,13 @@ title: Deal Lifecycle Overview
 category: deal-lifecycle
 tags: [process, deal-lifecycle]
 sources:
-  - Overland_Deal_Lifecycle_Automation_051326_vJA.pdf
+  - deal_lifecycle_automation_051326_vJA.pdf
 last_updated: 2026-05-13
 ---
 
 # Deal Lifecycle Overview
 
-Overland's credit process is an end-to-end workflow spanning **19 phases organized into 6 visible stages**, moving each opportunity from sourcing through portfolio monitoring. The lifecycle is the spine of the underwriting library — every skill, prompt, and project instruction maps to a phase or a transition between phases.
+The firm's credit process is an end-to-end workflow spanning **19 phases organized into 6 visible stages**, moving each opportunity from sourcing through portfolio monitoring. The lifecycle is the spine of the underwriting library — every skill, prompt, and project instruction maps to a phase or a transition between phases.
 
 ## The six stages
 
@@ -55,4 +55,4 @@ Pain points cluster (see [[pain-point-register]]) in P4 (posting memo), P7 / P11
 
 ## Sources
 
-- `Overland_Deal_Lifecycle_Automation_051326_vJA.pdf`, slides 04–06
+- `deal_lifecycle_automation_051326_vJA.pdf`, slides 04–06

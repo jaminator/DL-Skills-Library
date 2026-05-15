@@ -3,13 +3,13 @@ title: Three Strategic Options (A / B / C)
 category: strategic-options
 tags: [strategic-options, governance]
 sources:
-  - Overland_Deal_Lifecycle_Automation_051326_vJA.pdf
+  - deal_lifecycle_automation_051326_vJA.pdf
 last_updated: 2026-05-13
 ---
 
 # Three Strategic Options (A / B / C)
 
-The deal lifecycle deck frames three paths Overland could take to close the [[growth-gap]] and capture the [[efficiency-dividend]]. Two move a number; only one moves the operating model.
+The deal lifecycle deck frames three paths the firm could take to close the [[growth-gap]] and capture the [[efficiency-dividend]]. Two move a number; only one moves the operating model.
 
 ## Option A — Extend the Status Quo
 
@@ -63,4 +63,4 @@ Only Option C simultaneously closes the Growth Gap, captures the Efficiency Divi
 
 ## Sources
 
-- `Overland_Deal_Lifecycle_Automation_051326_vJA.pdf`, slide 10
+- `deal_lifecycle_automation_051326_vJA.pdf`, slide 10

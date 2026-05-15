@@ -3,7 +3,7 @@ title: Pain Point Register
 category: pain-points
 tags: [pain-point, process]
 sources:
-  - Overland_Deal_Lifecycle_Automation_051326_vJA.pdf
+  - deal_lifecycle_automation_051326_vJA.pdf
 last_updated: 2026-05-13
 ---
 
@@ -43,7 +43,7 @@ The deal lifecycle deck identifies **23 pain points** distributed across all six
 ### Stage 5 — Closing (P13–P16)
 
 - Commitment book is tracked in ad hoc Excel; no syndication management system.
-- WF inexperience with DDTL / direct lending pushes administrative burden onto Overland.
+- WF inexperience with DDTL / direct lending pushes administrative burden onto the firm.
 - No closing checklist tracking; KYC repository is fully manual.
 - Inconsistent UW-to-AM handoff at close — the databook may not reach Chronograph.
 
@@ -51,7 +51,7 @@ The deal lifecycle deck identifies **23 pain points** distributed across all six
 
 - Chronograph is not fully utilized as the source of truth; monitoring features go unused.
 - Mark-to-market valuations are manual Excel.
-- Compliance certificates frequently contain CFO arithmetic errors that Overland catches manually.
+- Compliance certificates frequently contain CFO arithmetic errors that the firm catches manually.
 - DDTL draws are approved over email; no compliance verification is tracked.
 
 ## Gap typology
@@ -71,4 +71,4 @@ Pain points dictate the order in which skills and prompts are built. The pilot p
 
 ## Sources
 
-- `Overland_Deal_Lifecycle_Automation_051326_vJA.pdf`, slide 05
+- `deal_lifecycle_automation_051326_vJA.pdf`, slide 05

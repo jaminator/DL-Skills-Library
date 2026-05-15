@@ -3,7 +3,7 @@ title: IC and Asset Management Gaps
 category: pain-points
 tags: [pain-point, governance, process]
 sources:
-  - Overland_Deal_Lifecycle_Automation_051326_vJA.pdf
+  - deal_lifecycle_automation_051326_vJA.pdf
 last_updated: 2026-05-13
 ---
 
@@ -87,4 +87,4 @@ The pilot's success pattern transfers directly into these phases.
 
 ## Sources
 
-- `Overland_Deal_Lifecycle_Automation_051326_vJA.pdf`, slides 05, 09
+- `deal_lifecycle_automation_051326_vJA.pdf`, slides 05, 09

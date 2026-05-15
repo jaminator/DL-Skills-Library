@@ -124,7 +124,7 @@ class CovenantCalculation(BaseModel):
 class ComplianceCertificateValidation(BaseModel):
     """Top-level structured output of the P17 compliance certificate parser.
 
-    Produced by the ol-compcert-review skill via the
+    Produced by the dl-compcert-review skill via the
     compliance_certificate_parser prompt. Always emitted in HITL state
     PENDING_REVIEW with the [DRAFT — HUMAN REVIEW REQUIRED] watermark
     rendered immediately above the JSON in the calling skill's response.

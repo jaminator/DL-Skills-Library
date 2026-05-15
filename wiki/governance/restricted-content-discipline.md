@@ -4,7 +4,7 @@ category: governance
 tags: [governance, policy, process]
 sources:
   - arrakis_blueprint_v2_3.md
-  - Overland_Deal_Lifecycle_Automation_051326_vJA.pdf
+  - deal_lifecycle_automation_051326_vJA.pdf
 last_updated: 2026-05-13
 ---
 
@@ -19,7 +19,7 @@ Per [[data-classification-tiers]], the RESTRICTED tier covers the four categorie
 1. **Fund-level economics above the co-lender tranche.** Fund waterfalls, GP economics, carried interest splits, and any figure that describes Centerbridge's fund-level position rather than the loan economics.
 2. **IC deliberation content.** Discussion text from the IC, conditional approval reasoning, internal debate over structure or pricing.
 3. **Individual IC votes.** Vote records, dissenters' positions, abstentions.
-4. **Centerbridge-internal portfolio context.** Comparison to other CB credits, cross-strategy allocation discussion, exposure limits, sleeve composition.
+4. **firm-internal portfolio context.** Comparison to other CB credits, cross-strategy allocation discussion, exposure limits, sleeve composition.
 
 What **is** permissible to share externally:
 
@@ -84,4 +84,4 @@ The discrimination between internal and external happens at the prompt level, no
 ## Sources
 
 - `arrakis_blueprint_v2_3.md`, Section 5.5 (classification) and Section 7 (HITL review)
-- `Overland_Deal_Lifecycle_Automation_051326_vJA.pdf`, slide 09 (foundation controls)
+- `deal_lifecycle_automation_051326_vJA.pdf`, slide 09 (foundation controls)

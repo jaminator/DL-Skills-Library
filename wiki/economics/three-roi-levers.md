@@ -3,7 +3,7 @@ title: Three ROI Levers
 category: economics
 tags: [economics]
 sources:
-  - Overland_Deal_Lifecycle_Automation_051326_vJA.pdf
+  - deal_lifecycle_automation_051326_vJA.pdf
 last_updated: 2026-05-13
 ---
 
@@ -15,7 +15,7 @@ The deal lifecycle deck frames the buildout case on **three independent ROI leve
 
 **$285M cumulative** 5-yr fee delta vs. Status Quo (110 portfolio companies by YE 2030). Automation-Base scales the book to **225 portfolio companies and $245M run-rate fees** vs. $120M.
 
-This lever is the [[growth-gap]] expressed as a revenue line. The mechanism is the P1 lead-enhancement layer — a step-change in qualified-lead volume that, combined with Overland's already-peer-benchmark 4% lead-to-close conversion, makes a 200–250 portfolio target throughput-feasible.
+This lever is the [[growth-gap]] expressed as a revenue line. The mechanism is the P1 lead-enhancement layer — a step-change in qualified-lead volume that, combined with the firm's already-peer-benchmark 4% lead-to-close conversion, makes a 200–250 portfolio target throughput-feasible.
 
 The fee delta is back-loaded: 2026–2027 contribute single-digit millions; 2028 hits +$49M / yr; 2029 hits +$91.5M / yr; 2030 hits +$125M / yr.
 
@@ -25,7 +25,7 @@ The fee delta is back-loaded: 2026–2027 contribute single-digit millions; 2028
 
 This lever is the [[efficiency-dividend]] expressed as an avoided-cost line. The mechanism is the **cos / IP lift** from the peer-average regression anchor (1.88×) to the automation base (5.0×) or upside (6.5×), saving ~75 IPs at 225 names and ~$120M cumulatively over 5 years.
 
-The deck is explicit that without automation, Overland regresses toward the peer mean as the book grows from 30 names today to 110+. This is not a hypothetical — it is the natural production-function response to scaling a non-sponsor book without instrumentation. See [[non-sponsor-friction-premium]].
+The deck is explicit that without automation, the firm regresses toward the peer mean as the book grows from 30 names today to 110+. This is not a hypothetical — it is the natural production-function response to scaling a non-sponsor book without instrumentation. See [[non-sponsor-friction-premium]].
 
 ## Lever 03 — CBP Data Unification
 
@@ -69,4 +69,4 @@ The three-lever framing tells the library what to measure when reporting on its 
 
 ## Sources
 
-- `Overland_Deal_Lifecycle_Automation_051326_vJA.pdf`, slides 12, 13
+- `deal_lifecycle_automation_051326_vJA.pdf`, slides 12, 13

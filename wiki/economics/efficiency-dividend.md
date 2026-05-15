@@ -3,13 +3,13 @@ title: The Efficiency Dividend
 category: economics
 tags: [economics, opportunity]
 sources:
-  - Overland_Deal_Lifecycle_Automation_051326_vJA.pdf
+  - deal_lifecycle_automation_051326_vJA.pdf
 last_updated: 2026-05-13
 ---
 
 # The Efficiency Dividend
 
-The Efficiency Dividend is the cost lever paired with the [[growth-gap]]: same growth target (225 portfolio companies by YE 2030), but **automation changes what it costs to get there**. Where the Growth Gap measures the revenue Overland leaves on the table, the Efficiency Dividend measures the IP headcount and operating cost it avoids.
+The Efficiency Dividend is the cost lever paired with the [[growth-gap]]: same growth target (225 portfolio companies by YE 2030), but **automation changes what it costs to get there**. Where the Growth Gap measures the revenue the firm leaves on the table, the Efficiency Dividend measures the IP headcount and operating cost it avoids.
 
 ## The numbers (2030 run-rate)
 
@@ -24,12 +24,12 @@ Net annual benefit at 2030 run-rate: **$42.8M / yr** at the base case. Sensitivi
 
 ## The mechanism
 
-Automation lifts cos / IP from the peer-average regression baseline (1.88×) to a target of **5.0× (base case)** or **6.5× (upside case)**. Without automation, the deck argues Overland regresses toward the peer average as the book grows, because non-sponsor labor intensity (see [[non-sponsor-friction-premium]]) means peer cos / IP ratios are not directly portable to a non-sponsor book.
+Automation lifts cos / IP from the peer-average regression baseline (1.88×) to a target of **5.0× (base case)** or **6.5× (upside case)**. Without automation, the deck argues the firm regresses toward the peer average as the book grows, because non-sponsor labor intensity (see [[non-sponsor-friction-premium]]) means peer cos / IP ratios are not directly portable to a non-sponsor book.
 
 | Scenario | cos / IP | IPs at 225 | IP cost ($M / yr) |
 | --- | --- | --- | --- |
 | Peer average regression anchor | 1.88× | 120 | $71.8M |
-| Overland today (no automation) | 3.75× | 60 | $36.0M |
+| The firm today (no automation) | 3.75× | 60 | $36.0M |
 | Automation-assisted (base) | 5.0× | 45 | $27.0M |
 | Automation-assisted (optimistic) | 6.5× | 35 | $20.8M |
 
@@ -65,4 +65,4 @@ The Efficiency Dividend is the case for breadth: the dividend compounds across t
 
 ## Sources
 
-- `Overland_Deal_Lifecycle_Automation_051326_vJA.pdf`, slides 08, 12, 13, 20
+- `deal_lifecycle_automation_051326_vJA.pdf`, slides 08, 12, 13, 20

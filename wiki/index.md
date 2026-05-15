@@ -35,7 +35,7 @@ Master catalog of every page in the wiki. Maintained by the `wiki-editor` agent.
 | [[restricted-content-discipline]] | governance | Redaction obligation for external-facing artifacts; canonical checklist text | seed |
 | [[compliance-certificate-parser-pilot]] | library-design | The P17 pilot — first end-to-end vertical slice, extract-and-validate shape, A12 Corrino target | lint |
 | [[library-artifact-bundle]] | library-design | The four-artifact construction pattern (skill + prompt + project instruction + Pydantic schema) | lint |
-| [[skill-naming-convention]] | methodology | The `ol-<domain>-<action-or-subtype>` skill naming pattern and the 16-domain registry | ingest |
+| [[skill-naming-convention]] | methodology | The `dl-<domain>-<action-or-subtype>` skill naming pattern and the 16-domain registry | ingest |
 
 ## Categories
 

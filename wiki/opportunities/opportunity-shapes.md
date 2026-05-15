@@ -3,7 +3,7 @@ title: Three Opportunity Shapes
 category: opportunities
 tags: [opportunity, process, architecture]
 sources:
-  - Overland_Deal_Lifecycle_Automation_051326_vJA.pdf
+  - deal_lifecycle_automation_051326_vJA.pdf
 last_updated: 2026-05-13
 ---
 
@@ -71,4 +71,4 @@ Once the shape is fixed, the [[library-artifact-bundle]] structure is determined
 
 ## Sources
 
-- `Overland_Deal_Lifecycle_Automation_051326_vJA.pdf`, slide 06
+- `deal_lifecycle_automation_051326_vJA.pdf`, slide 06

@@ -1,8 +1,8 @@
-# Overland Underwriting Library — Root Instructions
+# Direct Lending Underwriting Library — Root Instructions
 
-This repository is the **development environment** for the Overland Underwriting Library: a Claude-based knowledge and automation library that supports Overland's non-sponsored US middle-market direct lending underwriting team across the 6-stage, 19-phase deal lifecycle.
+This repository is the **development environment** for the Direct Lending Underwriting Library: a Claude-based knowledge and automation library that supports a direct lending firm's non-sponsored US middle-market underwriting team across the 6-stage, 19-phase deal lifecycle.
 
-The library is consumed by the broader Overland UW team through Claude Desktop (system instructions, project instructions, prompts, skills) — no repository access. Repo maintainers iterate here using Claude Code; the team consumes through copy-paste of the curated assets.
+The library is consumed by the broader UW team through Claude Desktop (system instructions, project instructions, prompts, skills) — no repository access. Repo maintainers iterate here using Claude Code; the team consumes through copy-paste of the curated assets.
 
 Every artifact is built so it can graduate directly into Project Arrakis Option C (Foldspace substrate + 13 domain applications). Portability is achieved through construction patterns, not embedded metadata.
 
@@ -12,8 +12,8 @@ Every artifact is built so it can graduate directly into Project Arrakis Option 
 
 Five files are authoritative. Read all five end-to-end before any other action.
 
-**Canonical Overland sources** (`docs/sources/`):
-1. `Overland_Deal_Lifecycle_Automation_051326_vJA.pdf` — the deal lifecycle deck. Authoritative for stages, phases, pain points, opportunities, pipeline economics, strategic framing. (A pre-extracted plain-text mirror exists at `Overland_Deal_Lifecycle_Automation_051326_vJA.txt` for tools that cannot parse the PDF.)
+**Canonical deal lifecycle sources** (`docs/sources/`):
+1. `deal_lifecycle_automation_051326_vJA.pdf` — the deal lifecycle deck. Authoritative for stages, phases, pain points, opportunities, pipeline economics, strategic framing. (A pre-extracted plain-text mirror exists at `deal_lifecycle_automation_051326_vJA.txt` for tools that cannot parse the PDF.)
 2. `arrakis_blueprint_v2_3.md` — Arrakis Option C architecture. Authoritative for Foldspace, the 13 applications, Spice, the Snowflake medallion, Pydantic conventions, the HITL state machine, the build sequencing.
 
 **Anthropic best-practices references** (`docs/anthropic/`):
@@ -42,7 +42,7 @@ These three reads orient any maintainer (human or Claude) without requiring a sw
 | Environment | Audience | Access | Artifacts |
 | --- | --- | --- | --- |
 | **Development** | Repo maintainers + Claude Code | Full repository | Source of truth |
-| **Distribution** | Overland UW team via Claude Desktop | `dist/` contents only | Compiled, self-contained |
+| **Distribution** | UW team via Claude Desktop | `dist/` contents only | Compiled, self-contained |
 
 Every artifact destined for the distribution environment is fully self-contained: no filesystem paths to `wiki/` or `docs/`, no git commands, no instructions to "check the repository." A Claude Desktop user must be able to run any distributed asset using only the documents uploaded into their project.
 
@@ -83,7 +83,7 @@ Portability is achieved through how artifacts are built. Boilerplate frontmatter
 3. **Parallel tool calls where independent.** Read multiple reference files at session start in parallel. Write wiki pages in different categories in parallel. Sequential where dependencies exist.
 4. **No filesystem-path references in distribution-environment artifacts.** Every skill, prompt, system instruction, and project instruction destined for Claude Desktop is fully self-contained.
 5. **HITL watermark.** `[DRAFT — HUMAN REVIEW REQUIRED]` on every IC-facing, legal, co-lender-facing, or AM-facing output.
-6. **RESTRICTED-content discipline.** Any artifact intended for co-lender or LP distribution explicitly excludes fund-level economics above the co-lender tranche, IC deliberation content, individual IC votes, and Centerbridge-internal portfolio context. Every external-facing prompt includes a redaction checklist line.
+6. **RESTRICTED-content discipline.** Any artifact intended for co-lender or LP distribution explicitly excludes fund-level economics above the co-lender tranche, IC deliberation content, individual IC votes, and firm-internal portfolio context. Every external-facing prompt includes a redaction checklist line.
 7. **`[INSUFFICIENT DATA — <what is missing>]`** is the only acceptable uncertainty marker. Never silently omit; never fabricate.
 8. **Commit after every phase.** Use `feat: phase-<n> <deliverable>` format. Never combine phase commits.
 9. **Never modify `raw/`.** The wiki-editor reads only.
@@ -92,9 +92,9 @@ Portability is achieved through how artifacts are built. Boilerplate frontmatter
 
 ## Skill naming convention
 
-Every skill in `skills/` follows the pattern **`ol-<domain>-<action-or-subtype>`** from creation. The prefix gives Claude Desktop users a single discovery affordance: typing `/ol-` surfaces every Overland skill, and typing `/ol-<domain>-` surfaces every skill within a domain (e.g., `/ol-ddq-` returns the full DDQ family).
+Every skill in `skills/` follows the pattern **`dl-<domain>-<action-or-subtype>`** from creation. The prefix gives Claude Desktop users a single discovery affordance: typing `/dl-` surfaces every direct-lending skill, and typing `/dl-<domain>-` surfaces every skill within a domain (e.g., `/dl-ddq-` returns the full DDQ family).
 
-- `ol-` — fixed prefix marking the skill as Overland Underwriting Library.
+- `dl-` — fixed prefix marking the skill as part of the Direct Lending Underwriting Library.
 - `<domain>` — the deliverable cluster or input type the skill operates on. Domain values are shared across related skills so the family surfaces together when typed.
 - `<action-or-subtype>` — what the skill does to that domain, or which subtype of the domain it handles.
 
@@ -102,28 +102,28 @@ Every skill in `skills/` follows the pattern **`ol-<domain>-<action-or-subtype>`
 
 | Domain | Meaning | Example skill names |
 | --- | --- | --- |
-| `teaser` | Inbound teaser parsing and enrichment | `ol-teaser-parse` |
-| `criteria` | Overland investment-criteria screening | `ol-criteria-screen` |
-| `nda` | NDA workflow | `ol-nda-extract` |
-| `ddq` | Due-diligence question lists across all rounds | `ol-ddq-kickoff`, `ol-ddq-initial`, `ol-ddq-followup`, `ol-ddq-gap` |
-| `financials` | GAAP normalization, addbacks, bridges | `ol-financials-normalize` |
-| `databook` | Initial and updated DD databook construction | `ol-databook-customers`, `ol-databook-model`, `ol-databook-comps`, `ol-databook-assemble` |
-| `expert` | Expert-call synthesis (AlphaSights, GLG) | `ol-expert-synthesize` |
-| `mgmt` | Management operational due diligence | `ol-mgmt-synthesize` |
-| `stoplight` | Eight-dimension risk rating | `ol-stoplight-rate` |
-| `memo` | Posting, pre-screen, commitment, closing, redacted memos | `ol-memo-posting`, `ol-memo-prescreen`, `ol-memo-commitment`, `ol-memo-closing`, `ol-memo-redact` |
-| `termsheet` | Term sheet drafting and revision | `ol-termsheet-draft` |
-| `ca` | Credit agreement parsing | `ol-ca-extract` |
-| `compcert` | Compliance certificate review (parse, recompute, flag) | `ol-compcert-review` |
-| `valuation` | ASC 820 valuation narrative drafting | `ol-valuation-draft` |
-| `amendment` | Amendment summarization | `ol-amendment-summarize` |
-| `wiki` | Wiki-editor operations (development environment only; never compiled into distribution) | `ol-wiki-ingest`, `ol-wiki-query`, `ol-wiki-lint`, `ol-wiki-update` |
+| `teaser` | Inbound teaser parsing and enrichment | `dl-teaser-parse` |
+| `criteria` | Investment-criteria screening | `dl-criteria-screen` |
+| `nda` | NDA workflow | `dl-nda-extract` |
+| `ddq` | Due-diligence question lists across all rounds | `dl-ddq-kickoff`, `dl-ddq-initial`, `dl-ddq-followup`, `dl-ddq-gap` |
+| `financials` | GAAP normalization, addbacks, bridges | `dl-financials-normalize` |
+| `databook` | Initial and updated DD databook construction | `dl-databook-customers`, `dl-databook-model`, `dl-databook-comps`, `dl-databook-assemble` |
+| `expert` | Expert-call synthesis (AlphaSights, GLG) | `dl-expert-synthesize` |
+| `mgmt` | Management operational due diligence | `dl-mgmt-synthesize` |
+| `stoplight` | Eight-dimension risk rating | `dl-stoplight-rate` |
+| `memo` | Posting, pre-screen, commitment, closing, redacted memos | `dl-memo-posting`, `dl-memo-prescreen`, `dl-memo-commitment`, `dl-memo-closing`, `dl-memo-redact` |
+| `termsheet` | Term sheet drafting and revision | `dl-termsheet-draft` |
+| `ca` | Credit agreement parsing | `dl-ca-extract` |
+| `compcert` | Compliance certificate review (parse, recompute, flag) | `dl-compcert-review` |
+| `valuation` | ASC 820 valuation narrative drafting | `dl-valuation-draft` |
+| `amendment` | Amendment summarization | `dl-amendment-summarize` |
+| `wiki` | Wiki-editor operations (development environment only; never compiled into distribution) | `dl-wiki-ingest`, `dl-wiki-query`, `dl-wiki-lint`, `dl-wiki-update` |
 
 **Canonical reference.** `wiki/methodology/skill-naming-convention.md` is the queryable wiki page agents should consult for the convention. This `CLAUDE.md` section is the binding instruction; the wiki page is the synthesized explanation.
 
-**Relationship to skill-authoring best practices.** This naming pattern sits on top of `docs/anthropic/Skills_Best_Practices.md`; it never overrides it. All other rules in the best-practices file — names are lowercase with hyphens only, no reserved words ("anthropic", "claude"), ≤64 characters, description ≤1024 characters in third person, SKILL.md body ≤500 lines, references one level deep, progressive disclosure — remain in force. The pattern is the "action-oriented" alternative form explicitly permitted by the best-practices guidance, adapted with the `ol-` prefix and shared-domain segment.
+**Relationship to skill-authoring best practices.** This naming pattern sits on top of `docs/anthropic/Skills_Best_Practices.md`; it never overrides it. All other rules in the best-practices file — names are lowercase with hyphens only, no reserved words ("anthropic", "claude"), ≤64 characters, description ≤1024 characters in third person, SKILL.md body ≤500 lines, references one level deep, progressive disclosure — remain in force. The pattern is the "action-oriented" alternative form explicitly permitted by the best-practices guidance, adapted with the `dl-` prefix and shared-domain segment.
 
-The `wiki-editor` agent is exempt only in that it lives in `agents/`, not `skills/`. The `ol-wiki-*` domain is reserved for any future Claude Desktop wiki-management skills (none required for the initial build).
+The `wiki-editor` agent is exempt only in that it lives in `agents/`, not `skills/`. The `dl-wiki-*` domain is reserved for any future Claude Desktop wiki-management skills (none required for the initial build).
 
 ---
 
@@ -143,12 +143,12 @@ Subsequent (post-pilot) work uses normal Conventional Commits prefixes (`feat:`,
 ## Repository layout
 
 ```
-dl-skills-library/                     # repo root (the "Overland UW Library")
+dl-skills-library/                     # repo root (the "Direct Lending UW Library")
 ├── CLAUDE.md                          ← this file
 ├── README.md
 ├── progress.json                      ← build-state tracker
 ├── docs/
-│   ├── sources/                       ← Overland deck PDF + Arrakis blueprint
+│   ├── sources/                       ← deal lifecycle deck PDF + Arrakis blueprint
 │   ├── anthropic/                     ← prompting, skills, agent-teams best-practices
 │   └── pilot-validation.md            ← created in Phase 4
 ├── raw/                               ← flat. No subfolders. Maintainer drop zone.

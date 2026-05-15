@@ -3,7 +3,7 @@ title: Posting Memo Friction (P4)
 category: pain-points
 tags: [pain-point, process, opportunity]
 sources:
-  - Overland_Deal_Lifecycle_Automation_051326_vJA.pdf
+  - deal_lifecycle_automation_051326_vJA.pdf
 last_updated: 2026-05-13
 ---
 
@@ -67,4 +67,4 @@ A well-constructed P4 pilot produces a draft that:
 
 ## Sources
 
-- `Overland_Deal_Lifecycle_Automation_051326_vJA.pdf`, slides 05, 06
+- `deal_lifecycle_automation_051326_vJA.pdf`, slides 05, 06

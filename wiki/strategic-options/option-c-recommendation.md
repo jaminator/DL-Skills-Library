@@ -3,7 +3,7 @@ title: Option C Recommendation
 category: strategic-options
 tags: [strategic-options, architecture]
 sources:
-  - Overland_Deal_Lifecycle_Automation_051326_vJA.pdf
+  - deal_lifecycle_automation_051326_vJA.pdf
   - arrakis_blueprint_v2_3.md
 last_updated: 2026-05-13
 ---
@@ -65,5 +65,5 @@ Option A's artifacts live in individual users' contexts. Nothing accrues to the 
 
 ## Sources
 
-- `Overland_Deal_Lifecycle_Automation_051326_vJA.pdf`, slide 10
+- `deal_lifecycle_automation_051326_vJA.pdf`, slide 10
 - `arrakis_blueprint_v2_3.md`, Project Arrakis — Overview

@@ -30,7 +30,7 @@ A prompt invocation always logs the exact `prompt_version` used. The AI output a
 
 Every prompt is classified using the four-tier [[data-classification-tiers]] scheme that governs data:
 
-- **RESTRICTED** — prompts that handle IC deliberation content, individual votes, fund-level economics, or Centerbridge-internal portfolio context. The pilot's compliance-certificate-parser prompt sits at the boundary (CONFIDENTIAL output but RESTRICTED context possible).
+- **RESTRICTED** — prompts that handle IC deliberation content, individual votes, fund-level economics, or firm-internal portfolio context. The pilot's compliance-certificate-parser prompt sits at the boundary (CONFIDENTIAL output but RESTRICTED context possible).
 - **CONFIDENTIAL** — prompts that handle deal financials, term-sheet economics, DD findings.
 - **INTERNAL** — utility prompts (search reformulation, NDA metadata extraction, workflow routing).
 - **PUBLIC** — not used in this domain.
