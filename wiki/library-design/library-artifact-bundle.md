@@ -83,6 +83,7 @@ Same artifacts, different runtimes. That is the portability principle made opera
 ## Related Concepts
 
 - [[compliance-certificate-parser-pilot]] — concrete instance of the bundle
+- [[production-skill-inventory]] — the four shipped Claude Desktop skills realizing this pattern in production
 - [[skill-naming-convention]] — the `dl-<domain>-<action-or-subtype>` rule the skill half of every bundle follows
 - [[opportunity-shapes]] — the three shapes that determine which artifact dominates
 - [[hitl-state-machine]] — review states the watermark maps to

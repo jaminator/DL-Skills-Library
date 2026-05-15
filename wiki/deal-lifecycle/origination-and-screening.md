@@ -79,6 +79,9 @@ Stage 3+ phases run on much larger upstream context (full DD findings, executed 
 - [[posting-memo-friction]] — P4 detail
 - [[opportunity-register]] — automation themes
 - [[growth-gap]] — why P1 is the revenue lever
+- [[sector-research-screener]] — the deployed P1 sourcing skill (`ol-industry-screener`)
+- [[posting-memo-automation]] — the deployed P4 posting-memo skills
+- [[production-skill-inventory]] — the live Claude Desktop skills automating these stages
 
 ## Sources
 

@@ -62,6 +62,7 @@ A well-constructed P4 pilot produces a draft that:
 - [[opportunity-register]] — automation responses
 - [[opportunity-shapes]] — generate-with-review, the shape a P4 build would exercise
 - [[compliance-certificate-parser-pilot]] — the first pilot built (P17, extract-and-validate); P4 is the recommended next build using the same [[library-artifact-bundle]]
+- [[posting-memo-automation]] — the deployed production skill pair that attacks this friction in Claude Desktop today
 - [[hitl-state-machine]] — review gating
 - [[ic-and-asset-mgmt-gaps]] — IC minutes gap (downstream sibling friction)
 

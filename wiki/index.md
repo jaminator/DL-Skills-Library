@@ -50,6 +50,11 @@ Master catalog of every page in the wiki. Maintained by the `wiki-editor` agent.
 | [[closing-am-input-schema]] | deal-templates | P16–P19 per-template input-bucket composition (closing memo/backup, tracker, draw calc, amendment) | ingest |
 | [[portco-coverage-workbook]] | deal-templates | Standing per-PortCo AM monitoring workbook; closing→Chronograph/Corrino seed, valuation/risk/LP-reporting & amendment launch point | ingest |
 | [[portco-coverage-input-schema]] | deal-templates | Per-sheet bucket composition of the coverage workbook; introduces financial-basis-matrix, cap-table-snapshot, valuation-mark, add-on-summary | ingest |
+| [[production-skill-inventory]] | production-skills | Gateway: the four skills deployed in Claude Desktop production, lifecycle mapping, sourcing→posting chain, naming-convention divergence flag | ingest |
+| [[sector-research-screener]] | production-skills | `ol-industry-screener` — P1 sub-vertical decomposition + attractiveness screen + frozen downstream handoff contract | ingest |
+| [[posting-memo-automation]] | production-skills | `overland-posting-memo` + `populating-posting-memo-backup` — the P4 narrative .docx / calc .xlsx skill pair and Overland structuring policy | ingest |
+| [[prompt-generator-skill]] | production-skills | `ol-prompt-generator` — cross-cutting prompt meta-skill embedding the Overland credit framework | ingest |
+| [[overland-credit-framework]] | methodology | The shared analytical spine: credit quality screen, FCF decomposition, base-rate evidence hierarchy, industry attractiveness screen | ingest |
 
 ## Categories
 
@@ -67,5 +72,6 @@ The wiki-editor records each category here the first time it writes a page in th
 | llm-integration | spice-llm-service (2026-05-13) | 5 |
 | governance | data-classification-tiers (2026-05-13) | 2 |
 | library-design | compliance-certificate-parser-pilot (2026-05-13) | 2 |
-| methodology | skill-naming-convention (2026-05-13) | 1 |
+| methodology | skill-naming-convention (2026-05-13) | 2 |
 | deal-templates | template-library-overview (2026-05-15) | 14 |
+| production-skills | production-skill-inventory (2026-05-15) | 4 |

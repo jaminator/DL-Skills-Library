@@ -70,11 +70,18 @@ This naming pattern is the "action-oriented" alternative form explicitly permitt
 
 The convention applies to skills in `skills/` only. Agents in `agents/` (including the `wiki-editor`) are scoped differently and do not carry the prefix.
 
+## Production divergence — maintainer flag
+
+> ⚠️ The skills **deployed in Claude Desktop production** (cataloged in [[production-skill-inventory]]) do not follow this convention. `ol-industry-screener` and `ol-prompt-generator` carry an `ol-` (Overland) prefix; `overland-posting-memo` and `populating-posting-memo-backup` are freeform descriptive names. Git history shows an `ol-` convention was trialed (commits `154f7ae`, `6164d0d`) then reverted in `CLAUDE.md` and this page back to `dl-` (`ddfd5ce`), leaving the deployed fleet on a scheme different from the documented one.
+
+The literal claim above ("Every skill in `skills/` follows the pattern") is not contradicted — `skills/` contains only `dl-compcert-review`, which conforms; the production skills are deployed Desktop assets, not repo `skills/` entries. The divergence is therefore a **governance gap**, not a page-vs-page contradiction: the convention is documented but not enforced on the live fleet. Resolution (rename the production skills to one canonical scheme, or formally adopt `ol-`/freeform and update `CLAUDE.md` + this page in lockstep) is a maintainer decision; the wiki-editor records the gap and does not reconcile it.
+
 ## Related Concepts
 
 - [[library-artifact-bundle]] — the four-artifact construction pattern the naming convention plugs into
 - [[compliance-certificate-parser-pilot]] — the first skill renamed under this convention (`dl-compcert-review`)
 - [[prompt-versioning-governance]] — analogous versioning discipline for the prompt half of each bundle
+- [[production-skill-inventory]] — the deployed Claude Desktop fleet that diverges from this convention (maintainer flag)
 
 ## Sources
 

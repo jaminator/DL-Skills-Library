@@ -39,6 +39,7 @@ The cluster consumes NDA-gated company financials and a CIM; it produces a stopl
 - [[screening-input-schema]] — the per-template input-bucket composition for this cluster
 - [[origination-and-screening]] — the lifecycle stages these templates serve
 - [[opportunity-shapes]] — the generate-with-review shape these memos take
+- [[posting-memo-automation]] — the deployed skill pair that populates the P4 memo + backup templates
 
 ## Sources
 
