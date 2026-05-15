@@ -9,7 +9,7 @@ last_updated: 2026-05-15
 
 # Sector Research Screener Skill
 
-`ol-industry-screener` is the deployed Phase-1 skill for the Overland sourcing workflow. Given a sector, industry, or thematic description ("aging infrastructure plays," "outsourced facilities services"), it decomposes the space into discrete sub-verticals, screens each against the Overland industry attractiveness framework, and emits a structured markdown handoff for downstream borrower identification. It is the first concrete automation of [[origination-and-screening|P1 Deal Sourcing]] — the phase the deck names the binding constraint on the [[growth-gap|growth path]].
+`dl-sector-screen` (production deployment name: `ol-industry-screener`) is the Phase-1 sourcing skill for the Overland sourcing workflow. Given a sector, industry, or thematic description ("aging infrastructure plays," "outsourced facilities services"), it decomposes the space into discrete sub-verticals, screens each against the Overland industry attractiveness framework, and emits a structured markdown handoff for downstream borrower identification. It is the first concrete automation of [[origination-and-screening|P1 Deal Sourcing]] — the phase the deck names the binding constraint on the [[growth-gap|growth path]].
 
 ## What it does
 

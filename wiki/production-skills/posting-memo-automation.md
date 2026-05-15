@@ -10,9 +10,9 @@ last_updated: 2026-05-15
 
 # Posting Memo Automation Skills
 
-The P4 posting-memo deliverable is automated by a **coupled pair** of deployed skills that split it along the narrative/quantitative seam: `overland-posting-memo` produces the Word memo; `populating-posting-memo-backup` produces the Excel backup that feeds its financial exhibits. Together they attack [[posting-memo-friction]] — the highest-yield single pain point in the lifecycle — by collapsing first-draft time on the most-frequently-drafted memo in [[origination-and-screening|Stage 2]]. They map onto the [[screening-templates]] artifacts (the Posting Memo `.docx` and Posting Memo Backup `.xlsx`).
+The P4 posting-memo deliverable is automated by a **coupled pair** of skills that split it along the narrative/quantitative seam: `dl-memo-posting` (production deployment name: `overland-posting-memo`) produces the Word memo; `dl-memo-posting-backup` (production deployment name: `populating-posting-memo-backup`) produces the Excel backup that feeds its financial exhibits. Together they attack [[posting-memo-friction]] — the highest-yield single pain point in the lifecycle — by collapsing first-draft time on the most-frequently-drafted memo in [[origination-and-screening|Stage 2]]. They map onto the [[screening-templates]] artifacts (the Posting Memo `.docx` and Posting Memo Backup `.xlsx`).
 
-## `overland-posting-memo` — the narrative
+## `dl-memo-posting` (production: `overland-posting-memo`) — the narrative
 
 Populates the bundled Overland Posting Memo Word template **in place** via `scripts/populate_memo.py`, preserving Word auto-numbering and run-level bold/italic formatting — it returns a populated `.docx`, not a regenerated document. It drafts twelve mapped sections (deal header, situation/company overview, financial headline, six-bullet Discussion & Analysis, sources-&-uses note, the 15-item risk-flags grid, five strengths, five considerations, recommendation with color rating, designated criteria). Its discipline is heavily prescriptive and worth capturing as institutional knowledge:
 
@@ -22,7 +22,7 @@ Populates the bundled Overland Posting Memo Word template **in place** via `scri
 - **Anchor to the operative LTM period** the financing is sized against; `TBD (source)` liberally rather than fabricate.
 - Strengths ordered macro→micro (industry → competitive → demand → financial → structure); credit considerations framed for a senior secured lender, not an equity investor.
 
-## `populating-posting-memo-backup` — the calc engine
+## `dl-memo-posting-backup` (production: `populating-posting-memo-backup`) — the calc engine
 
 Extracts CIM/CIP financials with openpyxl into the `FinSum` and `SUCAP` tabs of the bundled backup template, **writing input cells only and protecting every formula** (a mandatory pre-write `is_formula` gate; detailed FinSum and Returns tabs are off-limits). Its load-bearing conventions:
 

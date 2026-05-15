@@ -22,6 +22,57 @@
     "schema_complete": true,
     "schema_path": "schemas/compliance_certificate_validation.py"
   },
+  "production_bundles": {
+    "conformed_at": "2026-05-15",
+    "scope_rule": "conformance + four-artifact bundle construction; no behavioral refactoring",
+    "new_domains_registered": ["sector", "prompt"],
+    "bundles": [
+      {
+        "name": "dl-sector-screen",
+        "source_zip": "raw/ol-industry-screener.zip",
+        "production_name": "ol-industry-screener",
+        "lifecycle": "Stage 1 / P1 Deal Sourcing",
+        "shape": "generate-with-review",
+        "skill_path": "skills/dl-sector-screen/",
+        "schema_path": "schemas/sector_screen_handoff.py",
+        "prompt_path": "prompts/stage-1-origination/P1-sector-research-screener.md",
+        "project_instruction_path": "project-instructions/stage-1-origination.md"
+      },
+      {
+        "name": "dl-memo-posting",
+        "source_zip": "raw/overland-posting-memo.zip",
+        "production_name": "overland-posting-memo",
+        "lifecycle": "Stage 2 / P4 Posting Memo (narrative)",
+        "shape": "generate-with-review",
+        "skill_path": "skills/dl-memo-posting/",
+        "schema_path": "schemas/posting_memo_content.py",
+        "prompt_path": "prompts/stage-2-screening/P4-posting-memo.md",
+        "project_instruction_path": "project-instructions/stage-2-screening.md"
+      },
+      {
+        "name": "dl-memo-posting-backup",
+        "source_zip": "raw/populating-posting-memo-backup.zip",
+        "production_name": "populating-posting-memo-backup",
+        "lifecycle": "Stage 2 / P4 Posting Memo (quantitative)",
+        "shape": "extract-and-validate",
+        "skill_path": "skills/dl-memo-posting-backup/",
+        "schema_path": "schemas/posting_memo_backup_extraction.py",
+        "prompt_path": "prompts/stage-2-screening/P4-posting-memo-backup.md",
+        "project_instruction_path": "project-instructions/stage-2-screening.md"
+      },
+      {
+        "name": "dl-prompt-generate",
+        "source_zip": "raw/ol-prompt-generator.zip",
+        "production_name": "ol-prompt-generator",
+        "lifecycle": "Cross-cutting (no lifecycle phase)",
+        "shape": "generate-with-review",
+        "skill_path": "skills/dl-prompt-generate/",
+        "schema_path": "schemas/generated_prompt_spec.py",
+        "prompt_path": "prompts/cross-cutting/prompt-generator.md",
+        "project_instruction_path": "N/A — documented exemption (non-lifecycle utility; see SKILL.md Portability note)"
+      }
+    ]
+  },
   "checkpoints": [
     {
       "phase": 0,
@@ -57,6 +108,11 @@
       "phase": "lint-2",
       "completed_at": "2026-05-15",
       "deliverable": "post-templates lint pass: stale-residual contradictions repaired in 2 pages (gerund-form skill descriptors superseded by skill-naming-convention link); skill-naming-convention orphan reconnected (0 -> 2 topical inbounds); page_count reconciled (45 -> 46) to match index/file count; no broken wikilinks, no missing sources, no schema violations, no stale pages, no CLAUDE.md<->registry drift"
+    },
+    {
+      "phase": "push-1",
+      "completed_at": "2026-05-15",
+      "deliverable": "four production skills conformed into skills/ as full four-artifact dl-* bundles (dl-sector-screen, dl-memo-posting, dl-memo-posting-backup, dl-prompt-generate); no behavioral refactoring; assets/scripts byte-identical; 4 schemas + 4 prompts added; 2 stage project instructions built (stage-1-origination, stage-2-screening) with inline wiki institutional-knowledge embeds; sector + prompt domains registered lockstep in CLAUDE.md + skill-naming-convention.md; wiki UPDATE+LINT retired the production naming-divergence flag and repointed old->new names across 6 pages; raw/ untouched"
     }
   ]
 }

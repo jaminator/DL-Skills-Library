@@ -87,6 +87,8 @@ Portability is achieved through how artifacts are built. Boilerplate frontmatter
 7. **`[INSUFFICIENT DATA — <what is missing>]`** is the only acceptable uncertainty marker. Never silently omit; never fabricate.
 8. **Commit after every phase.** Use `feat: phase-<n> <deliverable>` format. Never combine phase commits.
 9. **Never modify `raw/`.** The wiki-editor reads only.
+10. **Work on the local `main` branch by default.** Do not create git worktrees or feature branches when spawning agents or agent teams. Every agent — orchestrator and teammates — operates on the single shared `main` working tree in the primary working directory. Worktree isolation is reserved for the rare case the user explicitly requests it; it is never the default for routine artifact or wiki work. Agent-team file-conflict avoidance is achieved by task partitioning (per `docs/anthropic/Agent_Teams.md`), not by branch or worktree isolation.
+11. **Commit and push to GitHub `main` on these triggers.** When (a) an artifact-coding deliverable is "pushed" — i.e., a skill, prompt, schema, project-instruction, or other coded artifact reaches a committable checkpoint — or (b) a wiki **INGEST** or **LINT** pass completes, commit the change and `git push origin main` in the same step. Use the established commit convention (`feat: phase-<n> …` during phased build; Conventional Commits afterward). Wiki **QUERY** is read-only and never triggers a commit. If the push fails (no remote, auth, non-fast-forward), surface the failure with the git output — never silently skip the push.
 
 ---
 
@@ -104,6 +106,7 @@ Every skill in `skills/` follows the pattern **`dl-<domain>-<action-or-subtype>`
 | --- | --- | --- |
 | `teaser` | Inbound teaser parsing and enrichment | `dl-teaser-parse` |
 | `criteria` | Investment-criteria screening | `dl-criteria-screen` |
+| `sector` | Sector / sub-vertical sourcing screen (P1 deal-sourcing decomposition; distinct from per-deal `criteria` screening) | `dl-sector-screen` |
 | `nda` | NDA workflow | `dl-nda-extract` |
 | `ddq` | Due-diligence question lists across all rounds | `dl-ddq-kickoff`, `dl-ddq-initial`, `dl-ddq-followup`, `dl-ddq-gap` |
 | `financials` | GAAP normalization, addbacks, bridges | `dl-financials-normalize` |
@@ -117,6 +120,7 @@ Every skill in `skills/` follows the pattern **`dl-<domain>-<action-or-subtype>`
 | `compcert` | Compliance certificate review (parse, recompute, flag) | `dl-compcert-review` |
 | `valuation` | ASC 820 valuation narrative drafting | `dl-valuation-draft` |
 | `amendment` | Amendment summarization | `dl-amendment-summarize` |
+| `prompt` | Cross-cutting prompt meta-skill — prompt authoring (no lifecycle phase) | `dl-prompt-generate` |
 | `wiki` | Wiki-editor operations (development environment only; never compiled into distribution) | `dl-wiki-ingest`, `dl-wiki-query`, `dl-wiki-lint`, `dl-wiki-update` |
 
 **Canonical reference.** `wiki/methodology/skill-naming-convention.md` is the queryable wiki page agents should consult for the convention. This `CLAUDE.md` section is the binding instruction; the wiki page is the synthesized explanation.

@@ -5,7 +5,7 @@ tags: [skills, conventions, naming, governance, template]
 sources:
   - CLAUDE.md
   - Skills_Best_Practices.md
-last_updated: 2026-05-13
+last_updated: 2026-05-15
 ---
 
 # Skill Naming Convention
@@ -38,6 +38,7 @@ All other constraints from `docs/anthropic/Skills_Best_Practices.md` apply uncha
 | --- | --- | --- |
 | `teaser` | Inbound teaser parsing and enrichment | `dl-teaser-parse` |
 | `criteria` | Investment-criteria screening | `dl-criteria-screen` |
+| `sector` | Sector / sub-vertical sourcing screen (P1 deal-sourcing decomposition; distinct from per-deal `criteria` screening) | `dl-sector-screen` |
 | `nda` | NDA workflow | `dl-nda-extract` |
 | `ddq` | Due-diligence question lists across all rounds | `dl-ddq-kickoff`, `dl-ddq-initial`, `dl-ddq-followup`, `dl-ddq-gap` |
 | `financials` | GAAP normalization, addbacks, bridges | `dl-financials-normalize` |
@@ -51,6 +52,7 @@ All other constraints from `docs/anthropic/Skills_Best_Practices.md` apply uncha
 | `compcert` | Compliance certificate review (parse, recompute, flag) | `dl-compcert-review` |
 | `valuation` | ASC 820 valuation narrative drafting | `dl-valuation-draft` |
 | `amendment` | Amendment summarization | `dl-amendment-summarize` |
+| `prompt` | Cross-cutting prompt meta-skill — prompt authoring (no lifecycle phase) | `dl-prompt-generate` |
 | `wiki` | Wiki-editor operations (development environment only; never compiled into distribution) | `dl-wiki-ingest`, `dl-wiki-query`, `dl-wiki-lint`, `dl-wiki-update` |
 
 ## Adding a new domain
@@ -70,18 +72,18 @@ This naming pattern is the "action-oriented" alternative form explicitly permitt
 
 The convention applies to skills in `skills/` only. Agents in `agents/` (including the `wiki-editor`) are scoped differently and do not carry the prefix.
 
-## Production divergence — maintainer flag
+## Production provenance — repo gap resolved
 
-> ⚠️ The skills **deployed in Claude Desktop production** (cataloged in [[production-skill-inventory]]) do not follow this convention. `ol-industry-screener` and `ol-prompt-generator` carry an `ol-` (Overland) prefix; `overland-posting-memo` and `populating-posting-memo-backup` are freeform descriptive names. Git history shows an `ol-` convention was trialed (commits `154f7ae`, `6164d0d`) then reverted in `CLAUDE.md` and this page back to `dl-` (`ddfd5ce`), leaving the deployed fleet on a scheme different from the documented one.
+The governance gap previously flagged here — documented convention vs. a non-conforming live fleet — **is resolved at the repository level.** `skills/` now holds five conforming `dl-*` four-artifact bundles: `dl-compcert-review` (the in-repo pilot) plus the four conformed production skills `dl-sector-screen`, `dl-memo-posting`, `dl-memo-posting-backup`, and `dl-prompt-generate`. Every skill in `skills/` follows the `dl-<domain>-<action-or-subtype>` pattern; the `sector` and `prompt` domains the conformance required were registered in the registry above and in `CLAUDE.md` in lockstep.
 
-The literal claim above ("Every skill in `skills/` follows the pattern") is not contradicted — `skills/` contains only `dl-compcert-review`, which conforms; the production skills are deployed Desktop assets, not repo `skills/` entries. The divergence is therefore a **governance gap**, not a page-vs-page contradiction: the convention is documented but not enforced on the live fleet. Resolution (rename the production skills to one canonical scheme, or formally adopt `ol-`/freeform and update `CLAUDE.md` + this page in lockstep) is a maintainer decision; the wiki-editor records the gap and does not reconcile it.
+What remains is **provenance, not a gap.** The skills still deployed in Claude Desktop production (cataloged in [[production-skill-inventory]]) carry their original deployment names — `ol-industry-screener` and `ol-prompt-generator` (an `ol-`/Overland prefix), `overland-posting-memo` and `populating-posting-memo-backup` (freeform) — until the live fleet is redeployed under the repo-conformant names. Git history shows an `ol-` convention was trialed (commits `154f7ae`, `6164d0d`) then reverted to `dl-` (`ddfd5ce`); the deployment names are recorded as the **production provenance** of each repo bundle, not as an error to erase. The wiki documents both the conformant repo name and its production-deployment origin; the redeployment of the Desktop fleet is a maintainer operation tracked outside the wiki.
 
 ## Related Concepts
 
 - [[library-artifact-bundle]] — the four-artifact construction pattern the naming convention plugs into
 - [[compliance-certificate-parser-pilot]] — the first skill renamed under this convention (`dl-compcert-review`)
 - [[prompt-versioning-governance]] — analogous versioning discipline for the prompt half of each bundle
-- [[production-skill-inventory]] — the deployed Claude Desktop fleet that diverges from this convention (maintainer flag)
+- [[production-skill-inventory]] — the production skills, now conformed into `skills/` as `dl-*` bundles with deployment names kept as provenance
 
 ## Sources
 

@@ -4,7 +4,7 @@ category: deal-lifecycle
 tags: [process, deal-lifecycle]
 sources:
   - deal_lifecycle_automation_051326_vJA.pdf
-last_updated: 2026-05-13
+last_updated: 2026-05-15
 ---
 
 # Origination and Screening (Stages 1–2)
@@ -79,8 +79,8 @@ Stage 3+ phases run on much larger upstream context (full DD findings, executed 
 - [[posting-memo-friction]] — P4 detail
 - [[opportunity-register]] — automation themes
 - [[growth-gap]] — why P1 is the revenue lever
-- [[sector-research-screener]] — the deployed P1 sourcing skill (`ol-industry-screener`)
-- [[posting-memo-automation]] — the deployed P4 posting-memo skills
+- [[sector-research-screener]] — the P1 sourcing skill `dl-sector-screen` (production: `ol-industry-screener`)
+- [[posting-memo-automation]] — the P4 posting-memo skills `dl-memo-posting` / `dl-memo-posting-backup` (production: `overland-posting-memo` / `populating-posting-memo-backup`)
 - [[production-skill-inventory]] — the live Claude Desktop skills automating these stages
 
 ## Sources

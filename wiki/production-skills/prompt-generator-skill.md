@@ -9,7 +9,7 @@ last_updated: 2026-05-15
 
 # Prompt Generator Skill
 
-`ol-prompt-generator` is the deployed cross-cutting utility skill. It designs and emits production-ready Claude prompts — system, task, or user prompts — tailored to a specific input set, tool configuration, target model, and output format. It is the only one of the four production skills not bound to a lifecycle phase: it is a **meta-skill** that productizes prompt engineering itself for the underwriting team's general Claude Desktop work, and bakes Overland's analytical conventions into the prompts it generates.
+`dl-prompt-generate` (production deployment name: `ol-prompt-generator`) is the cross-cutting utility skill. It designs and emits production-ready Claude prompts — system, task, or user prompts — tailored to a specific input set, tool configuration, target model, and output format. It is the only one of the four production skills not bound to a lifecycle phase: it is a **meta-skill** that productizes prompt engineering itself for the underwriting team's general Claude Desktop work, and bakes Overland's analytical conventions into the prompts it generates.
 
 ## Elicitation framework
 

@@ -35,7 +35,7 @@ Master catalog of every page in the wiki. Maintained by the `wiki-editor` agent.
 | [[restricted-content-discipline]] | governance | Redaction obligation for external-facing artifacts; canonical checklist text | seed |
 | [[compliance-certificate-parser-pilot]] | library-design | The P17 pilot — first end-to-end vertical slice, extract-and-validate shape, A12 Corrino target | lint |
 | [[library-artifact-bundle]] | library-design | The four-artifact construction pattern (skill + prompt + project instruction + Pydantic schema) | lint |
-| [[skill-naming-convention]] | methodology | The `dl-<domain>-<action-or-subtype>` skill naming pattern and the 16-domain registry | ingest |
+| [[skill-naming-convention]] | methodology | The `dl-<domain>-<action-or-subtype>` skill naming pattern and the 18-domain registry; production-skill conformance into `skills/` (deployment names kept as provenance) | lint |
 | [[template-library-overview]] | deal-templates | Gateway: the 17-template + 2-reference deal-document chain, dependency map, recurring construction patterns | ingest |
 | [[screening-templates]] | deal-templates | P3–P4 cluster: kick-off data requests, posting memo + backup, screening memo + sponsor addendum | ingest |
 | [[dd-analytical-workbooks]] | deal-templates | P6 analytical core: databook, Overland model, comps, refi-payback analysis | ingest |
@@ -50,10 +50,10 @@ Master catalog of every page in the wiki. Maintained by the `wiki-editor` agent.
 | [[closing-am-input-schema]] | deal-templates | P16–P19 per-template input-bucket composition (closing memo/backup, tracker, draw calc, amendment) | ingest |
 | [[portco-coverage-workbook]] | deal-templates | Standing per-PortCo AM monitoring workbook; closing→Chronograph/Corrino seed, valuation/risk/LP-reporting & amendment launch point | ingest |
 | [[portco-coverage-input-schema]] | deal-templates | Per-sheet bucket composition of the coverage workbook; introduces financial-basis-matrix, cap-table-snapshot, valuation-mark, add-on-summary | ingest |
-| [[production-skill-inventory]] | production-skills | Gateway: the four skills deployed in Claude Desktop production, lifecycle mapping, sourcing→posting chain, naming-convention divergence flag | ingest |
-| [[sector-research-screener]] | production-skills | `ol-industry-screener` — P1 sub-vertical decomposition + attractiveness screen + frozen downstream handoff contract | ingest |
-| [[posting-memo-automation]] | production-skills | `overland-posting-memo` + `populating-posting-memo-backup` — the P4 narrative .docx / calc .xlsx skill pair and Overland structuring policy | ingest |
-| [[prompt-generator-skill]] | production-skills | `ol-prompt-generator` — cross-cutting prompt meta-skill embedding the Overland credit framework | ingest |
+| [[production-skill-inventory]] | production-skills | Gateway: the four production skills, now conformed into `skills/` as `dl-*` bundles (deployment names kept as provenance), lifecycle mapping, sourcing→posting chain | ingest |
+| [[sector-research-screener]] | production-skills | `dl-sector-screen` (production: `ol-industry-screener`) — P1 sub-vertical decomposition + attractiveness screen + frozen downstream handoff contract | ingest |
+| [[posting-memo-automation]] | production-skills | `dl-memo-posting` + `dl-memo-posting-backup` (production: `overland-posting-memo` / `populating-posting-memo-backup`) — the P4 narrative .docx / calc .xlsx skill pair and Overland structuring policy | ingest |
+| [[prompt-generator-skill]] | production-skills | `dl-prompt-generate` (production: `ol-prompt-generator`) — cross-cutting prompt meta-skill embedding the Overland credit framework | ingest |
 | [[overland-credit-framework]] | methodology | The shared analytical spine: credit quality screen, FCF decomposition, base-rate evidence hierarchy, industry attractiveness screen | ingest |
 
 ## Categories
