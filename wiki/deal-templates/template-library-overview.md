@@ -45,6 +45,7 @@ These templates are the concrete realization of the deal lifecycle in [[deal-lif
 - [[dd-analytical-workbooks]] — P6 analytical core
 - [[term-sheet-and-ic-templates]] — P6–P11 decision and negotiation instruments
 - [[closing-and-am-templates]] — P16–P19 closing and monitoring cluster
+- [[portco-coverage-workbook]] — the standing post-close AM monitoring workbook
 - [[form-credit-agreement]] — the covenant source of truth
 - [[template-input-schema]] — the canonical input-bucket library every template composes
 - [[deal-lifecycle-overview]] — the lifecycle these templates instantiate

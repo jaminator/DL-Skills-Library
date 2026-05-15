@@ -53,6 +53,7 @@ One covenant-definition source — the [[form-credit-agreement]] §1.6 / Article
 - [[template-input-schema]] — the canonical bucket library and `deal_terms_core`
 - [[closing-and-am-templates]] — the structural description of the same cluster
 - [[compliance-certificate-parser-pilot]] — automates `reported_vs_covenant`
+- [[portco-coverage-input-schema]] — the standing AM workbook that re-references this composition
 - [[form-credit-agreement]] — the single covenant-definition source
 - [[term-sheet-ic-input-schema]] — where `deal_terms_core` originates
 

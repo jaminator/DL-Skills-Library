@@ -72,6 +72,7 @@ Each follow-on reuses the [[library-artifact-bundle]] this pilot validated.
 - [[opportunity-shapes]] — extract-and-validate, the shape this pilot exercises
 - [[closing-and-asset-management]] — Stage 6 detail (P17–P19)
 - [[ic-and-asset-mgmt-gaps]] — the AM friction this pilot addresses
+- [[portco-coverage-workbook]] — the standing workbook whose Covenant Input this pilot automates
 - [[application-directory]] — A12 Corrino, the Arrakis target
 
 ## Sources

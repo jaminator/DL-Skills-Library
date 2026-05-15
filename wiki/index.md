@@ -48,6 +48,8 @@ Master catalog of every page in the wiki. Maintained by the `wiki-editor` agent.
 | [[dd-workbook-input-schema]] | deal-templates | P6 per-workbook input-bucket composition (databook, model, comps, refi) | ingest |
 | [[term-sheet-ic-input-schema]] | deal-templates | P6–P11 per-template input-bucket composition and the `deal_terms_core` thesis | ingest |
 | [[closing-am-input-schema]] | deal-templates | P16–P19 per-template input-bucket composition (closing memo/backup, tracker, draw calc, amendment) | ingest |
+| [[portco-coverage-workbook]] | deal-templates | Standing per-PortCo AM monitoring workbook; closing→Chronograph/Corrino seed, valuation/risk/LP-reporting & amendment launch point | ingest |
+| [[portco-coverage-input-schema]] | deal-templates | Per-sheet bucket composition of the coverage workbook; introduces financial-basis-matrix, cap-table-snapshot, valuation-mark, add-on-summary | ingest |
 
 ## Categories
 
@@ -66,4 +68,4 @@ The wiki-editor records each category here the first time it writes a page in th
 | governance | data-classification-tiers (2026-05-13) | 2 |
 | library-design | compliance-certificate-parser-pilot (2026-05-13) | 2 |
 | methodology | skill-naming-convention (2026-05-13) | 1 |
-| deal-templates | template-library-overview (2026-05-15) | 12 |
+| deal-templates | template-library-overview (2026-05-15) | 14 |
