@@ -150,6 +150,32 @@ Every push/build plan (`push-<n>-plan-*.md`, and any analogous design contract w
 
 ---
 
+## Push workflow
+
+All post-pilot build work proceeds in **pushes**. A push is one full iteration of the four steps below. The plan number and the push number are the **same `<n>`** and they increment by exactly 1 only **after** a full iteration completes (plan → execute → log → wiki). Never reuse an `<n>`; never advance `<n>` mid-iteration.
+
+1. **Plan.** Write `plan/push-<n>-plan-*.md` *before* any execution. Re-read the binding best-practices files first (conformance rule 1): `docs/anthropic/Skills_Best_Practices.md`, `docs/anthropic/Prompting_Best_Practices.md`, `docs/anthropic/Agent_Teams.md`. The plan is a design contract: objective, the artifacts to build, naming/lifecycle/shape, the build sequence, evaluations (authored before extensive docs), and out-of-scope. Every plan **must** include an explicit **execution-model section** (see below). The plan is committed before the execution checkpoint.
+
+2. **Execute.** Build strictly against the approved plan on the shared local `main` working tree (rule 10 — no worktrees/branches by default). Commit per the commit convention; commit and `git push origin main` on the rule-11 triggers (artifact-coding checkpoint; wiki INGEST/LINT).
+
+3. **Log.** Write `push-logs/push-<n>-log.md` — a retrospective record (distinct from the forward-looking plan): what was built, executional issues and lessons learned, the execution model actually used and whether it was the right call, and recommendations / a suggested next build for push `<n+1>`. One log per push. `push-logs/` holds only these retrospectives.
+
+4. **Wiki UPDATE + LINT.** Record the push in the wiki (UPDATE: add/extend the relevant page, reconcile `wiki/index.md` and `wiki/log.md`, update `progress.json` with a `push-<n>` checkpoint), then run a full LINT pass per `wiki/WIKI-SCHEMA.md`. The LINT completion is a rule-11 push trigger.
+
+Only after step 4 is `<n>` considered closed; the next push is `<n+1>`.
+
+### Execution-model section (mandatory in every plan)
+
+Every `plan/push-<n>-plan-*.md` must state, with rationale grounded in `docs/anthropic/Agent_Teams.md` (and the Skills/Prompting best-practices where relevant), whether the push is executed as:
+
+- **Single agent, sequential (default).** Correct for dependency-chained bundle builds where almost no two steps are independent (the typical four-artifact bundle: template/inspect → scripts → references → SKILL.md → schema → prompt → project-instruction → evaluations → wiki). Parallel fan-out adds coordination + token cost with near-zero benefit here. Track progress with a task list, not agent coordination.
+- **Sub-agents (report-back).** Warranted for bounded, independent, parallelizable units that only need to return a result — e.g., a broad read-only search/validation sweep, or building several genuinely independent skills with no shared script. Specify each sub-agent's role and its bounded deliverable.
+- **Agent team (3–5 teammates, task-partitioned).** Warranted only for genuinely parallel independent workstreams or competing-hypothesis investigation. Per Agent_Teams.md: 3–5 teammates, 5–6 tasks each, **partition by file to avoid conflicts** (not by branch/worktree — rule 10 keeps the single shared `main` tree), monitor and steer, start with research/review-shaped work. Recommend concrete teammate roles (e.g., one per independent skill, or reviewer lenses: schema/no-drift, best-practices conformance, evaluation).
+
+State the chosen model, the rationale, the recommended sub-agent/teammate roles if any, and the file-partitioning that prevents write conflicts. When in doubt, default to single-agent sequential and say why.
+
+---
+
 ## Repository layout
 
 ```
@@ -161,7 +187,8 @@ dl-skills-library/                     # repo root (the "Direct Lending UW Libra
 │   ├── sources/                       ← deal lifecycle deck PDF + Arrakis blueprint
 │   ├── anthropic/                     ← prompting, skills, agent-teams best-practices
 │   └── pilot-validation.md            ← created in Phase 4
-├── plan/                              ← push/build design contracts (push-<n>-plan-*.md)
+├── plan/                              ← forward-looking push design contracts (push-<n>-plan-*.md)
+├── push-logs/                         ← retrospective push records (push-<n>-log.md)
 ├── raw/                               ← flat. No subfolders. Maintainer drop zone.
 ├── wiki/
 │   ├── WIKI-SCHEMA.md                 ← page format, conventions, lint rules
