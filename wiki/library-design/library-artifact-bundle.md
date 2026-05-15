@@ -5,7 +5,7 @@ tags: [architecture, process, template, governance]
 sources:
   - arrakis_blueprint_v2_3.md
   - deal_lifecycle_automation_051326_vJA.pdf
-last_updated: 2026-05-13
+last_updated: 2026-05-15
 ---
 
 # Library Artifact Bundle
@@ -18,9 +18,9 @@ The pattern was proven by [[compliance-certificate-parser-pilot]] and is the reu
 
 ### 1. Skill — the procedural workflow
 
-A markdown file at `skills/<gerund-name>/SKILL.md` that tells Claude **how** to perform the task. Conforms to `docs/anthropic/Skills_Best_Practices.md`:
+A markdown file at `skills/dl-<domain>-<action-or-subtype>/SKILL.md` that tells Claude **how** to perform the task. Conforms to `docs/anthropic/Skills_Best_Practices.md`:
 
-- Frontmatter `name` is lowercase + hyphens, ≤64 chars, gerund form.
+- Frontmatter `name` is lowercase + hyphens, ≤64 chars, and follows the [[skill-naming-convention]] (`dl-<domain>-<action-or-subtype>`).
 - `description` is third-person, ≤1024 chars, names both **what** and **when**.
 - Body ≤500 lines. Anti-patterns section explicit. References one level deep.
 - No filesystem-path leakage. Self-contained for a Claude Desktop user.
@@ -83,6 +83,7 @@ Same artifacts, different runtimes. That is the portability principle made opera
 ## Related Concepts
 
 - [[compliance-certificate-parser-pilot]] — concrete instance of the bundle
+- [[skill-naming-convention]] — the `dl-<domain>-<action-or-subtype>` rule the skill half of every bundle follows
 - [[opportunity-shapes]] — the three shapes that determine which artifact dominates
 - [[hitl-state-machine]] — review states the watermark maps to
 - [[spice-llm-service]] — the broker the bundle graduates to

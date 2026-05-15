@@ -5,7 +5,7 @@ tags: [pilot, opportunity, application, process]
 sources:
   - deal_lifecycle_automation_051326_vJA.pdf
   - arrakis_blueprint_v2_3.md
-last_updated: 2026-05-13
+last_updated: 2026-05-15
 ---
 
 # Compliance Certificate Parser Pilot (P17)
@@ -39,7 +39,7 @@ P4 remains the highest-yield single pain point and is the recommended **next** b
 The pilot passed all four self-validation checks documented in `docs/pilot-validation.md` (Phase 4):
 
 1. **Prompt** — stable cache-eligible system prefix, semantic XML inputs, `[INSUFFICIENT DATA]` marker, `[DRAFT — HUMAN REVIEW REQUIRED]` watermark, quote-grounded retrieval discipline.
-2. **Skill** — gerund-named `name`, third-person `description` (574/1024 chars), body 121/500 lines, references one level deep, no path leakage, anti-patterns section present.
+2. **Skill** — `name` follows the [[skill-naming-convention]] (`dl-compcert-review`), third-person `description` (574/1024 chars), body 121/500 lines, references one level deep, no path leakage, anti-patterns section present.
 3. **Project instruction** — header, deal-context slot, deliverables table, eight behavioral rules, versioning convention, four wiki pages embedded inline with compile-date markers. Runs without filesystem access.
 4. **Pydantic schema** — parses cleanly; snake_case; JSON-serializable types; required-vs-optional explicit; `schema_version` declared; HITL state default; module docstring names phase, Arrakis target, landing tier.
 
@@ -69,6 +69,7 @@ Each follow-on reuses the [[library-artifact-bundle]] this pilot validated.
 ## Related Concepts
 
 - [[library-artifact-bundle]] — the abstract pattern this pilot proves
+- [[skill-naming-convention]] — the naming rule this pilot's skill (`dl-compcert-review`) follows
 - [[opportunity-shapes]] — extract-and-validate, the shape this pilot exercises
 - [[closing-and-asset-management]] — Stage 6 detail (P17–P19)
 - [[ic-and-asset-mgmt-gaps]] — the AM friction this pilot addresses
