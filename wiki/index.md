@@ -36,6 +36,13 @@ Master catalog of every page in the wiki. Maintained by the `wiki-editor` agent.
 | [[compliance-certificate-parser-pilot]] | library-design | The P17 pilot — first end-to-end vertical slice, extract-and-validate shape, A12 Corrino target | lint |
 | [[library-artifact-bundle]] | library-design | The four-artifact construction pattern (skill + prompt + project instruction + Pydantic schema) | lint |
 | [[skill-naming-convention]] | methodology | The `dl-<domain>-<action-or-subtype>` skill naming pattern and the 16-domain registry | ingest |
+| [[template-library-overview]] | deal-templates | Gateway: the 17-template + 2-reference deal-document chain, dependency map, recurring construction patterns | ingest |
+| [[screening-templates]] | deal-templates | P3–P4 cluster: kick-off data requests, posting memo + backup, screening memo + sponsor addendum | ingest |
+| [[dd-analytical-workbooks]] | deal-templates | P6 analytical core: databook, Overland model, comps, refi-payback analysis | ingest |
+| [[term-sheet-and-ic-templates]] | deal-templates | P6–P11 instruments: DD list, IC summary scorecard, Wells & Overland term sheet | ingest |
+| [[closing-and-am-templates]] | deal-templates | P16–P19 cluster: closing memo + backup, compliance tracker, DDTL draw calc, amendment memo | ingest |
+| [[form-credit-agreement]] | deal-templates | Precedent + covenant source of truth; Article 6 / §1.6 architecture the P17 parser mirrors | ingest |
+| [[market-deal-terms-reference]] | deal-templates | Counsel market-benchmarking deck across four MM segments; calibrates term-sheet variables | ingest |
 
 ## Categories
 
@@ -54,3 +61,4 @@ The wiki-editor records each category here the first time it writes a page in th
 | governance | data-classification-tiers (2026-05-13) | 2 |
 | library-design | compliance-certificate-parser-pilot (2026-05-13) | 2 |
 | methodology | skill-naming-convention (2026-05-13) | 1 |
+| deal-templates | template-library-overview (2026-05-15) | 7 |

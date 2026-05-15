@@ -4,9 +4,9 @@
   "wiki": {
     "seed_complete": true,
     "pending_raw_files": [],
-    "last_ingest_date": "2026-05-13",
+    "last_ingest_date": "2026-05-15",
     "last_lint_date": "2026-05-13",
-    "page_count": 31
+    "page_count": 38
   },
   "pilot": {
     "phase_selected": "P17 Compliance Certificate Parser",
