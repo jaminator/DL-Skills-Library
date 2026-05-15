@@ -40,6 +40,7 @@ The cluster consumes QoE, CIM, audited and management financials, and market dat
 - [[term-sheet-and-ic-templates]] — consumes leverage, returns, and pricing outputs
 - [[form-credit-agreement]] — the covenant definitions the model must mirror
 - [[term-sheet-and-commitment]] — the lifecycle stages this DD core serves
+- [[dd-workbook-input-schema]] — the per-workbook input-bucket composition for this cluster
 - [[template-library-overview]] — the full template chain
 
 ## Sources

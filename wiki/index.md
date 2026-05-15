@@ -43,6 +43,11 @@ Master catalog of every page in the wiki. Maintained by the `wiki-editor` agent.
 | [[closing-and-am-templates]] | deal-templates | P16–P19 cluster: closing memo + backup, compliance tracker, DDTL draw calc, amendment memo | ingest |
 | [[form-credit-agreement]] | deal-templates | Precedent + covenant source of truth; Article 6 / §1.6 architecture the P17 parser mirrors | ingest |
 | [[market-deal-terms-reference]] | deal-templates | Counsel market-benchmarking deck across four MM segments; calibrates term-sheet variables | ingest |
+| [[template-input-schema]] | deal-templates | Canonical input-bucket library (`$defs`/`$ref`); the single deal-terms object every template composes | ingest |
+| [[screening-input-schema]] | deal-templates | P3–P4 per-template input-bucket composition (kick-off, posting backup/memo, screening deck/addendum) | ingest |
+| [[dd-workbook-input-schema]] | deal-templates | P6 per-workbook input-bucket composition (databook, model, comps, refi) | ingest |
+| [[term-sheet-ic-input-schema]] | deal-templates | P6–P11 per-template input-bucket composition and the `deal_terms_core` thesis | ingest |
+| [[closing-am-input-schema]] | deal-templates | P16–P19 per-template input-bucket composition (closing memo/backup, tracker, draw calc, amendment) | ingest |
 
 ## Categories
 
@@ -61,4 +66,4 @@ The wiki-editor records each category here the first time it writes a page in th
 | governance | data-classification-tiers (2026-05-13) | 2 |
 | library-design | compliance-certificate-parser-pilot (2026-05-13) | 2 |
 | methodology | skill-naming-convention (2026-05-13) | 1 |
-| deal-templates | template-library-overview (2026-05-15) | 7 |
+| deal-templates | template-library-overview (2026-05-15) | 12 |

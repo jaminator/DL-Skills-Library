@@ -34,6 +34,7 @@ This is firm-confidential third-party advisory material — RESTRICTED, not for 
 - [[term-sheet-and-ic-templates]] — where market terms are applied
 - [[non-sponsor-friction-premium]] — why the non-sponsored segment differs
 - [[compliance-certificate-parser-pilot]] — consumes the EBITDA add-back taxonomy
+- [[template-input-schema]] — calibrates the value ranges of the bucket library
 - [[template-library-overview]] — the full template chain
 
 ## Sources

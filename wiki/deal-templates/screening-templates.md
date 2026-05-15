@@ -36,6 +36,7 @@ The cluster consumes NDA-gated company financials and a CIM; it produces a stopl
 - [[posting-memo-friction]] — the P4 pain point this cluster instantiates
 - [[dd-analytical-workbooks]] — the next stage that consumes screening outputs
 - [[template-library-overview]] — the full template chain
+- [[screening-input-schema]] — the per-template input-bucket composition for this cluster
 - [[origination-and-screening]] — the lifecycle stages these templates serve
 - [[opportunity-shapes]] — the generate-with-review shape these memos take
 

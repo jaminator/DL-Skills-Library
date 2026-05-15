@@ -41,6 +41,7 @@ The cluster consumes the executed [[form-credit-agreement]] and the [[dd-analyti
 - [[closing-and-asset-management]] — the lifecycle stages this cluster serves
 - [[ic-and-asset-mgmt-gaps]] — the DDTL-draw and hand-off gaps it closes
 - [[form-credit-agreement]] — the covenant source of truth
+- [[closing-am-input-schema]] — the per-template input-bucket composition for this cluster
 - [[template-library-overview]] — the full template chain
 
 ## Sources

@@ -37,7 +37,7 @@ Two documents are institutional **precedent**, not per-deal fill-ins: the [[form
 
 ## Why this matters for the library
 
-These templates are the concrete realization of the deal lifecycle in [[deal-lifecycle-overview]]. They define the knowable output schemas that make each phase a viable automation target (see [[opportunity-shapes]]): the posting memo and IC summary are generate-with-review, the trackers and draw calc are extract-and-validate. Several externally distributed templates carry RESTRICTED content (IC deliberation, fund economics, pricing grids) and inherit the [[restricted-content-discipline]] redaction obligation.
+These templates are the concrete realization of the deal lifecycle in [[deal-lifecycle-overview]]. They define the knowable output schemas that make each phase a viable automation target (see [[opportunity-shapes]]): the posting memo and IC summary are generate-with-review, the trackers and draw calc are extract-and-validate. Their *input* schemas — the logical buckets each template consumes, and the single canonical deal-terms object most of them share — are catalogued in [[template-input-schema]] and the per-cluster schema pages. Several externally distributed templates carry RESTRICTED content (IC deliberation, fund economics, pricing grids) and inherit the [[restricted-content-discipline]] redaction obligation.
 
 ## Related Concepts
 
@@ -46,6 +46,7 @@ These templates are the concrete realization of the deal lifecycle in [[deal-lif
 - [[term-sheet-and-ic-templates]] — P6–P11 decision and negotiation instruments
 - [[closing-and-am-templates]] — P16–P19 closing and monitoring cluster
 - [[form-credit-agreement]] — the covenant source of truth
+- [[template-input-schema]] — the canonical input-bucket library every template composes
 - [[deal-lifecycle-overview]] — the lifecycle these templates instantiate
 
 ## Sources

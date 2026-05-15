@@ -38,6 +38,7 @@ This is firm-proprietary legal precedent — RESTRICTED, never externally distri
 - [[closing-and-am-templates]] — the monitoring artifacts that test against it
 - [[market-deal-terms-reference]] — market context for negotiating its bracketed variables
 - [[term-sheet-and-ic-templates]] — the term sheet negotiated toward this precedent
+- [[template-input-schema]] — supplies the covenant/EBITDA vocabulary for the bucket library
 - [[restricted-content-discipline]] — handling of firm-proprietary legal precedent
 
 ## Sources

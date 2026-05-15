@@ -35,6 +35,7 @@ The cluster consumes the [[dd-analytical-workbooks|DD analytical core]] and [[sc
 - [[ic-and-asset-mgmt-gaps]] — the IC-summary capture gap this cluster exposes
 - [[form-credit-agreement]] — where the agreed terms are codified
 - [[restricted-content-discipline]] — redaction obligation for the IC summary
+- [[term-sheet-ic-input-schema]] — the per-template input-bucket composition and `deal_terms_core`
 - [[template-library-overview]] — the full template chain
 
 ## Sources
