@@ -4,14 +4,14 @@ category: llm-integration
 tags: [llm-integration, governance, process]
 sources:
   - arrakis_blueprint_v2_3.md
-last_updated: 2026-05-13
+last_updated: 2026-05-15
 ---
 
 # HITL Review State Machine
 
-Every LLM-generated output in Arrakis flows through a **mandatory human-review gate** before any consequential action. The HITL (Human-In-The-Loop) state machine defines the seven states a draft passes through, the transitions allowed between them, and the audit record persisted at each terminal state. This is the operational mechanism that makes "Claude drafts; humans decide" a property of the platform.
+Every LLM-generated output in Arrakis flows through a **mandatory human-review gate** before any consequential action. The HITL (Human-In-The-Loop) state machine defines the eight states a draft passes through, the transitions allowed between them, and the audit record persisted at each terminal state. This is the operational mechanism that makes "Claude drafts; humans decide" a property of the platform.
 
-## The seven states
+## The eight states
 
 ```
 AI_DRAFT → VALIDATION_PASSED → PENDING_REVIEW → IN_REVIEW

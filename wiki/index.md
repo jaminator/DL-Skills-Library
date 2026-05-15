@@ -27,7 +27,7 @@ Master catalog of every page in the wiki. Maintained by the `wiki-editor` agent.
 | [[master-data-entities]] | data-substrate | Seven golden-record entities with SCD Type 2 and ownership transfer | seed |
 | [[redpanda-event-bus]] | data-substrate | Topic taxonomy, standard envelope, outbox pattern, idempotent consumer contract | seed |
 | [[spice-llm-service]] | llm-integration | Centralized LLM brokering; resilience, token budgets, output validation | seed |
-| [[hitl-state-machine]] | llm-integration | Seven review states, override audit record, drift detection | seed |
+| [[hitl-state-machine]] | llm-integration | Eight review states, override audit record, drift detection | lint |
 | [[mcp-tool-catalog]] | llm-integration | foldspace-mcp tool surface, error contract, governance metadata | seed |
 | [[prompt-versioning-governance]] | llm-integration | Versioned prompts in Postgres + Git, four-tier classification, cross-app prompts as data contracts | lint |
 | [[output-validation-failure-taxonomy]] | llm-integration | Five disposition categories Spice applies before returning a Claude response | lint |
