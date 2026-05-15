@@ -84,6 +84,7 @@ What remains is **provenance, not a gap.** The skills still deployed in Claude D
 - [[compliance-certificate-parser-pilot]] — the first skill renamed under this convention (`dl-compcert-review`)
 - [[prompt-versioning-governance]] — analogous versioning discipline for the prompt half of each bundle
 - [[production-skill-inventory]] — the production skills, now conformed into `skills/` as `dl-*` bundles with deployment names kept as provenance
+- [[push-workflow]] — the sibling CLAUDE.md-binding / wiki-synthesized convention pair governing the build loop
 
 ## Sources
 

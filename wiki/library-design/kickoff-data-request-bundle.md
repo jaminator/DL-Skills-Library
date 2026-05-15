@@ -36,6 +36,10 @@ The bundle exercises the **degrees-of-freedom split** from `Skills_Best_Practice
 
 Execution-based (the bundle ships scripts, unlike the inspection-only [[compliance-certificate-parser-pilot]]). All four artifact checks and three functional evaluations passed — HVAC roll-up, SaaS (compliance N/A, ARR KPI shift), and an industrials manufacturer on a non-calendar FYE (FYE-aware quarter labeling). See `docs/pilot-validation.md` → Push-2 Validation.
 
+## Execution & logging
+
+Push-2 was the first build run under the codified [[push-workflow]] four-step loop and the first to produce a `push-logs/` retrospective. It was executed **single-agent sequential** — the textbook fit for a fully dependency-chained four-artifact bundle, where sub-agent or agent-team fan-out would have added coordination and token cost with no parallel benefit. The retrospective (what was built, the executional lessons, and the recommended push-3 build) lives at `push-logs/push-2-log.md`.
+
 ## Arrakis target
 
 Graduates into the Foldspace screening application (the same app as the P4 pair, see [[application-directory]]): `KickoffDataRequest` is the Spice output validator and the `SCREENING_LAND` data product; `<sector_classification>`/`<system_date>` map to MCP tool calls; the watermark becomes the rendered review banner with `review_state = "PENDING_REVIEW"` in [[hitl-state-machine]].
@@ -49,6 +53,7 @@ Graduates into the Foldspace screening application (the same app as the P4 pair,
 - [[compliance-certificate-parser-pilot]] — the first (inspection-only) library build
 - [[skill-naming-convention]] — the `dl-ddq-kickoff` naming rule
 - [[restricted-content-discipline]] — the outbound redaction obligation this artifact carries
+- [[push-workflow]] — the four-step push loop this bundle was the first full iteration of
 
 ## Sources
 

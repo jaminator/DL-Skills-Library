@@ -56,6 +56,7 @@ Master catalog of every page in the wiki. Maintained by the `wiki-editor` agent.
 | [[posting-memo-automation]] | production-skills | `dl-memo-posting` + `dl-memo-posting-backup` (production: `overland-posting-memo` / `populating-posting-memo-backup`) — the P4 narrative .docx / calc .xlsx skill pair and Overland structuring policy | ingest |
 | [[prompt-generator-skill]] | production-skills | `dl-prompt-generate` (production: `ol-prompt-generator`) — cross-cutting prompt meta-skill embedding the Overland credit framework | ingest |
 | [[overland-credit-framework]] | methodology | The shared analytical spine: credit quality screen, FCF decomposition, base-rate evidence hierarchy, industry attractiveness screen | ingest |
+| [[push-workflow]] | methodology | The four-step post-pilot build loop (plan → execute → log → wiki) + plan/push numbering + execution-model selection; CLAUDE.md-binding, wiki-synthesized | ingest |
 
 ## Categories
 
@@ -73,6 +74,6 @@ The wiki-editor records each category here the first time it writes a page in th
 | llm-integration | spice-llm-service (2026-05-13) | 5 |
 | governance | data-classification-tiers (2026-05-13) | 2 |
 | library-design | compliance-certificate-parser-pilot (2026-05-13) | 3 |
-| methodology | skill-naming-convention (2026-05-13) | 2 |
+| methodology | skill-naming-convention (2026-05-13) | 3 |
 | deal-templates | template-library-overview (2026-05-15) | 14 |
 | production-skills | production-skill-inventory (2026-05-15) | 4 |

@@ -83,6 +83,8 @@ Same artifacts, different runtimes. That is the portability principle made opera
 ## Related Concepts
 
 - [[compliance-certificate-parser-pilot]] — concrete instance of the bundle
+- [[kickoff-data-request-bundle]] — push-2 concrete instance (the P3 kick-off bundle)
+- [[push-workflow]] — the four-step loop each bundle is built under
 - [[production-skill-inventory]] — the four shipped Claude Desktop skills realizing this pattern in production
 - [[skill-naming-convention]] — the `dl-<domain>-<action-or-subtype>` rule the skill half of every bundle follows
 - [[opportunity-shapes]] — the three shapes that determine which artifact dominates

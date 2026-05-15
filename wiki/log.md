@@ -219,3 +219,28 @@ Append-only chronology of every INGEST, QUERY, LINT, and UPDATE operation perfor
   - **Contradictions:** none. The new page's D-2 carve-out and outbound-redaction framing are consistent with `posting-memo-automation`, `restricted-content-discipline`, and the amended `project-instructions/stage-2-screening.md`.
 - Out of scope / untouched: `skill-naming-convention.md` domain registry (`ddq` row pre-existed, not altered). No `raw/`, `docs/`, or `CLAUDE.md` writes by the wiki-editor. No git operations. No agents spawned.
 - `progress.json`: `wiki.last_lint_date` set to 2026-05-15 (atomic).
+
+## 2026-05-15 — UPDATE — Codify the push workflow + push-2 execution/logging in the wiki
+
+- Trigger: CLAUDE.md gained a binding **Push workflow** section (four-step plan → execute → log → wiki loop, shared plan/push `<n>` numbering, mandatory execution-model section) and `push-logs/` was added to the repository layout; the push-2 retrospective log (`push-logs/push-2-log.md`) was written. Both are durable institutional knowledge not yet in the wiki.
+- New page: `wiki/methodology/push-workflow.md` — "Push Workflow". Synthesizes the four-step loop, the numbering rule, and the single-agent / sub-agent / agent-team execution-model selection framework (grounded in `docs/anthropic/Agent_Teams.md`), with push-1/push-2 as worked precedent. Mirrors the [[skill-naming-convention]] CLAUDE.md-binding / wiki-synthesized pattern. Tags `process, playbook, governance` (all in the taxonomy — no new tags).
+- Cross-links wired (resolves the push-2 lint's deferred reciprocal-link note): `kickoff-data-request-bundle` gained an "Execution & logging" subsection + `[[push-workflow]]` (and is now inbound-linked from `library-artifact-bundle` and `push-workflow`); `library-artifact-bundle` Related Concepts += `[[kickoff-data-request-bundle]]`, `[[push-workflow]]`; `skill-naming-convention` Related Concepts += `[[push-workflow]]`.
+- `index.md`: one catalog row added (methodology); Categories table `methodology` 2 → 3.
+- New categories: none (methodology pre-exists). New tags: none.
+- `progress.json`: `wiki.page_count` 52 → 53; `wiki.last_ingest_date` 2026-05-15 (UPDATE writes a page).
+- Out of scope / untouched: `CLAUDE.md` (the binding source; written by the orchestrator, only referenced here), `raw/`, `docs/sources/`, `docs/anthropic/`. No git operations by the wiki-editor.
+
+## 2026-05-15 — LINT — Post-workflow-codification lint pass; clean across all six checks
+
+- Files touched: `wiki/log.md` (this entry only). No page edited for repair.
+- Scope: full sweep of all 53 topical pages plus `index.md` reconciliation, against WIKI-SCHEMA §5, with targeted attention to the new `push-workflow` page and the reciprocal links added this UPDATE.
+- Findings — all checks clean:
+  - **Broken wikilinks:** clean. Every `[[target]]` in `push-workflow` resolves (`library-artifact-bundle`, `skill-naming-convention`, `kickoff-data-request-bundle`, `compliance-certificate-parser-pilot`, `posting-memo-friction`); the one piped link `[[skill-naming-convention|index/log]]` resolves to an existing slug. All newly added back-links resolve.
+  - **Orphans:** none — and the push-2 lint's flagged near-leaf is now resolved: `kickoff-data-request-bundle` has ≥2 inbound topical links (`library-artifact-bundle`, `push-workflow`). `push-workflow` has 3 inbound (`library-artifact-bundle`, `skill-naming-convention`, `kickoff-data-request-bundle`).
+  - **Missing sources:** none. `push-workflow` declares two `sources:` and a populated `## Sources` section.
+  - **Schema violations:** none. `push-workflow` carries all five frontmatter fields, both required sections, body within 200–800 words, `category: methodology` matching its folder.
+  - **Stale pages:** none. All 53 pages dated 2026-05-13 or 2026-05-15.
+  - **Index / file reconciliation:** clean. 53 on-disk topical pages, 53 `index.md` rows, `progress.json.wiki.page_count` = 53 — all agree. Categories table sums to 53; methodology now 3 (skill-naming-convention, overland-credit-framework, push-workflow), library-design 3, all other counts unchanged.
+  - **Contradictions:** none. `push-workflow` is consistent with the CLAUDE.md Push workflow section it synthesizes (numbering, four steps, execution-model selection), with `library-artifact-bundle` (the unit each push builds), and with `kickoff-data-request-bundle`'s execution note (single-agent sequential). No CLAUDE.md ↔ wiki drift.
+- Out of scope / untouched: no `raw/`, `docs/`, `skills/`, `prompts/`, `project-instructions/`, `schemas/`, or `CLAUDE.md` writes by the wiki-editor. No git operations. No agents spawned.
+- `progress.json`: `wiki.last_lint_date` set to 2026-05-15 (atomic).
